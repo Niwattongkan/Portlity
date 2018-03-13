@@ -66,7 +66,7 @@
                             <a>Portfolio</a>	
                            <ul class="sub-menu">
                                 <li><a href="portfolioWork.jsp">Work portfolio</a></li>
-                                <li><a href="portfolioPrint.jsp">Example portfolio</a></li>
+                                <li><a href="examplePortfolio.jsp">Example portfolio</a></li>
                             </ul>  
                         </li>                    
                         <li class="menu-item"><a href="studentLogin.jsp" onclick="signOut();">Sign off</a></li>
@@ -83,8 +83,8 @@
             <div id="intro" class="preload darken" data-autoplay="5000" data-navigation="true" data-pagination="true" data-transition="fadeUp">
                 <div class="intro-item" style="background-image: url(images/nomanssky.png);">
                     <div class="caption">
-                        <h2>Beetle</h2>
-                        <p>HTML5 template for landing page, blog and resume</p>
+                        <h2>PORTFOLIO BY MFU GROUP</h2>
+                        <p>Feel the new experience of ising portfolio</p>
                         <a class="button white transparent" href="#">Read More</a>
                     </div>
                 </div>
