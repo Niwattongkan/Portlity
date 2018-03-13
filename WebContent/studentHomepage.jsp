@@ -60,13 +60,13 @@
                     <ul class="reset" role="navigation">
                         <li class="menu-item"><a href="studentHomepage.jsp">Home</a>
                         </li>
-                        <li class="menu-item"><a href="listDataOfStudent.do">Personal</a>                           
+                        <li class="menu-item"><a href="saveDataOfStudent.do">Personal</a>                           
                         </li>
                         <li class="menu-item">
                             <a>Portfolio</a>	
                            <ul class="sub-menu">
                                 <li><a href="portfolioWork.jsp">Work portfolio</a></li>
-                                <li><a href="portfolioPrint.jsp">Example portfolio</a></li>
+                                <li><a href="examplePortfolio.jsp">Example portfolio</a></li>
                             </ul>  
                         </li>                    
                         <li class="menu-item"><a href="studentLogin.jsp" onclick="signOut();">Sign off</a></li>
