@@ -81,10 +81,10 @@
     <main role="main">
         <div id="intro-wrap">
             <div id="intro" class="preload darken" data-autoplay="5000" data-navigation="true" data-pagination="true" data-transition="fadeUp">
-                <div class="intro-item" style="background-image: url(images/nomanssky.png);">
+                <div class="intro-item" style="background-image: url(images/portEx1.jpg);">
                     <div class="caption">
-                        <h2>Beetle</h2>
-                        <p>HTML5 template for landing page, blog and resume</p>
+                        <h2>PORTFOLIO BY MFU GROUP</h2>
+                        <p>Feel the new experience of ising portfolio</p>
                         <a class="button white transparent" href="#">Read More</a>
                     </div>
                 </div>
