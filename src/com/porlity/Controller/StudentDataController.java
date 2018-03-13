@@ -20,7 +20,7 @@ public class StudentDataController {
 	@EJB(mappedName = "ejb:/PorlityClient//UserServiecBean!com.porlity.Service.UserService")
 	UserService userser;
 	
-	@RequestMapping("/listDataOfStudent")
+	@RequestMapping("/listDataOfStudent.do")
 	public ModelAndView listDataOfStudent (HttpServletRequest request) {
 		ModelAndView mv = new ModelAndView("studentProfile.jsp");
 		HttpSession session=request.getSession(false);
@@ -28,15 +28,17 @@ public class StudentDataController {
 		 if(session!=null){  
 	        	userId = (String)session.getAttribute("userId"); 
 	        	System.out.println("userId" + userId);	     
-	        } 
+	        }
 		List<user> listuser;
 		try{
 			listuser = userser.getfindbyID(Long.parseLong(userId));
 			mv.addObject("listuser",listuser);
 		}catch (Exception e) {
 			// TODO: handle exception
-		}	
-		return mv;		
+		}
+	
+		return mv;
+		
 	}
 	@RequestMapping("/saveDataOfStudent")
 	public String savePersonal(@ModelAttribute("user") user userr, BindingResult result, HttpServletRequest request) {
@@ -49,14 +51,19 @@ public class StudentDataController {
 		try {
 			if(userId != null ){
 				user userUpdate = userser.findUser(Integer.parseInt(userId));
-				userUpdate.setName(userr.getName());
-				userUpdate.setSurname(userr.getSurname());
+				userUpdate.setFirstName(userr.getFirstName());
+				userUpdate.setSurName(userr.getSurName());
 				userUpdate.setEmail(userr.getEmail());
 				userUpdate.setAddress(userr.getAddress());
-				userUpdate.setBdate(userr.getBdate());
-				userUpdate.setNationality(userr.getNationality());
+				userUpdate.setBirthDay(userr.getBirthDay());
 				userUpdate.setHight(userr.getHight());
 				userUpdate.setWight(userr.getWight());
+				userUpdate.setAge(userr.getAge());
+				userUpdate.setClassroom(userr.getClassroom());
+				userUpdate.setHistoryEducattionPrimary(userr.getHistoryEducattionPrimary());
+				userUpdate.setHistoryEducattionHihgthschool13(userr.getHistoryEducattionHihgthschool13());
+				userUpdate.setHistoryEducattionHihgthschool46(userr.getHistoryEducattionHihgthschool46());
+				userUpdate.setPhone(userr.getPhone());
 				userser.update(userUpdate);
 			}
 		} catch (Exception e) {

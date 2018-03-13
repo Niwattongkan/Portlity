@@ -35,12 +35,6 @@ public class PersonalController {
 	@EJB(mappedName = "ejb:/Portlity//UserServiecBean!com.porlity.Service.UserService")
 	UserService userser;
 
-	@RequestMapping("/openPersonal")
-	public ModelAndView open(HttpServletRequest request) {
-		ModelAndView mv = new ModelAndView("personal.jsp");
-		return mv;
-	}
-
 	@RequestMapping("/savePersonal")
 	public String savePersonal(@ModelAttribute("user") user userr, BindingResult result, HttpServletRequest request) {
         HttpSession session=request.getSession(false);
@@ -52,14 +46,20 @@ public class PersonalController {
 		try {
 			if(userId != null ){
 				user userUpdate = userser.findUser(Integer.parseInt(userId));
-				userUpdate.setName(userr.getName());
-				userUpdate.setSurname(userr.getSurname());
+				userUpdate.setFirstName(userr.getFirstName());
+				userUpdate.setSurName(userr.getSurName());
+				userUpdate.setNicName(userr.getNicName());
 				userUpdate.setEmail(userr.getEmail());
 				userUpdate.setAddress(userr.getAddress());
-				userUpdate.setBdate(userr.getBdate());
-				userUpdate.setNationality(userr.getNationality());
+				userUpdate.setBirthDay(userr.getBirthDay());
 				userUpdate.setHight(userr.getHight());
 				userUpdate.setWight(userr.getWight());
+				userUpdate.setAge(userr.getAge());
+				userUpdate.setClassroom(userr.getClassroom());
+				userUpdate.setHistoryEducattionPrimary(userr.getHistoryEducattionPrimary());
+				userUpdate.setHistoryEducattionHihgthschool13(userr.getHistoryEducattionHihgthschool13());
+				userUpdate.setHistoryEducattionHihgthschool46(userr.getHistoryEducattionHihgthschool46());
+				userUpdate.setPhone(userr.getPhone());
 				userser.update(userUpdate);
 			}
 		} catch (Exception e) {

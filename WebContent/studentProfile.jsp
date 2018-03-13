@@ -1,5 +1,7 @@
-<!doctype html>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
 <meta charset="utf-8" />
@@ -41,24 +43,27 @@
 		<div class="content">
 			<div class="container-fluid">
 				<div class="row">
-				<c:forEach items="${listuser}" var="listuser">
+			
 					<div class="col-lg-4 col-md-5">
 						<div class="card card-user">
 							<div class="image">
 								<img src="assetsPersonal/img/background.jpg" alt="..." />
 							</div>
+							
 							<div class="content">
 								<div class="author">
 									<img class="avatar border-white"
 										src="assetsPersonal/img/faces/face-2.jpg" alt="..." />
 									<h4 class="title">
-										${listuser.name}<br />
+										<br />
 									</h4>
 								</div>
 							</div>
+					
 							<hr>
 							<div class="text-center">
 								<div class="row">
+								
 									<div class="col-md-3 col-md-offset-1">
 										<h5>
 											1<br /> <small>Portfolio</small>
@@ -71,9 +76,12 @@
 									</div>
 									<div class="col-md-3">
 										<h5>
+										<c:forEach items="${listuser}" var="listuser">
 											${listuser.classroom}<br /> <small>Classroom</small>
+										</c:forEach>
 										</h5>
 									</div>
+								
 								</div>
 							</div>
 						</div>
@@ -86,19 +94,21 @@
 							</div>
 							<div class="content">
 								<form>
+								<c:forEach items="${listuser}" var="listuser">
 									<div class="row">
+									
 										<div class="col-md-6">
 											<div class="form-group">
-												<label>${listuser.name}</label> <input type="text"
+												<label></label> First Name<input type="text"
 													class="form-control border-input" placeholder="First Name"
-													value="Chet">
+													value="${listuser.firstName}">
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
-												<label>${listuser.surname}</label> <input type="text"
+												<label></label> Last Name<input type="text"
 													class="form-control border-input" placeholder="Last Name"
-													value="Faker">
+													value="${listuser.surName}">
 											</div>
 										</div>
 									</div>
@@ -106,41 +116,83 @@
 									<div class="row">
 										<div class="col-md-12">
 											<div class="form-group">
-												<label>${listuser.address}</label> <input type="text"
+												<label>Home Address</label> <input type="text"
 													class="form-control border-input"
-													placeholder="Home Address" value="Melbourne, Australia">
+													placeholder="" value="${listuser.address}">
 											</div>
 										</div>
 									</div>
 
 									<div class="row">
-										<div class="col-md-4">
+										<div class="col-md-3">
 											<div class="form-group">
-												<label>${listuser.classroom}</label> <input type="text"
+												<label>Email</label> <input type="email"
 													class="form-control border-input" placeholder=""
-													value="Melbourne">
+													value="${listuser.email}">
 											</div>
 										</div>
-										<div class="col-md-4">
+										<div class="col-md-3">
 											<div class="form-group">
-												<label>${listuser.email}</label> <input type="text"
+												<label>Nicname</label> <input type="text"
 													class="form-control border-input" placeholder="Country"
-													value="Australia">
+													value="${listuser.nicName}">
 											</div>
 										</div>
-										<div class="col-md-4">
+										<div class="col-md-3">
 											<div class="form-group">
-												<label>${listuser.nicname}</label> <input type="text"
-													class="form-control border-input" placeholder="ZIP Code">
+												<label>Phone</label> <input type="number"
+													class="form-control border-input" placeholder="ZIP Code" value="${listuser.phone}">
 											</div>
 										</div>
 									</div>
 
 									<div class="row">
-										<div class="col-md-12">
+										<div class="col-md-3">
 											<div class="form-group">
-												<label>${listuser.hight}</label> <input type="number"
-													class="form-control border-input" placeholder="ZIP Code">
+												<label>Higth</label> <input type="number"
+													class="form-control border-input" placeholder="ZIP Code" value="${listuser.hight}">
+											</div>
+										</div>
+									</div>
+									
+									<div class="row">
+										<div class="col-md-3">
+											<div class="form-group">
+												<label>Wigth</label> <input type="number"
+													class="form-control border-input" placeholder="ZIP Code" value="${listuser.wight}">
+											</div>
+										</div>
+									</div>
+									
+									<div class="row">
+										<div class="col-md-3">
+											<div class="form-group">
+												<label>Age</label> <input type="number"
+													class="form-control border-input" placeholder="ZIP Code" value="${listuser.age}">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3">
+											<div class="form-group">
+												<label>Primary</label> <input type="text"
+													class="form-control border-input" placeholder="ZIP Code" value="${listuser.historyEducattionPrimary}">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3">
+											<div class="form-group">
+												<label>Education Hihgthschool 1-3 </label> <input type="text"
+													class="form-control border-input" placeholder="ZIP Code" value="${listuser.historyEducattionHihgthschool13}">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3">
+											<div class="form-group">
+												<label>Education Hihgthschool 4-6 </label> <input type="text"
+													class="form-control border-input" placeholder="ZIP Code" value="${listuser.historyEducattionHihgthschool46}">
 											</div>
 										</div>
 									</div>
@@ -148,12 +200,11 @@
 										<button type="submit" class="btn btn-info btn-fill btn-wd">Update Profile</button>
 									</div>
 									<div class="clearfix"></div>
+									</c:forEach>
 								</form>
 							</div>
 						</div>
 					</div>
-				</c:forEach>
-
 				</div>
 			</div>
 		</div>
@@ -168,7 +219,6 @@
 			</div>
 		</footer>
 
-	</div>
 	</div>
 
 

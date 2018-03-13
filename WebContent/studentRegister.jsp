@@ -64,12 +64,12 @@
 										<div class="form-group">
 											<label>First Name <small>(required)</small></label>
 											<form:input name="firstname" type="text" class="form-control"
-												placeholder="Andrew..." path="name" />
+												placeholder="Andrew..." path="firstName" />
 										</div>
 										<div class="form-group">
 											<label>Last Name <small>(required)</small></label>
 											<form:input name="lastname" type="text" class="form-control"
-												placeholder="Smith..." path="surname" />
+												placeholder="Smith..." path="surName" />
 										</div>
 									</div>
 									<div class="col-sm-10 col-sm-offset-1">
@@ -90,7 +90,28 @@
 										<div class="form-group">
 											<label>Nicname</label>
 											<form:input type="text" class="form-control"
-												placeholder="Big" path="nicname" />
+												placeholder="Big" path="nicName" />
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="form-group">
+											<label>Phone</label>
+											<form:input type="text" class="form-control"
+												placeholder="0936478546" path="phone" />
+										</div>
+									</div>
+									<div class="col-sm-5 col-sm-offset-1">
+										<div class="form-group">
+											<label>BirthDay</label>
+											<form:input type="text" class="form-control"
+												placeholder="19/06/42" path="birthDay" />
+										</div>
+									</div>
+									<div class="col-sm-5 col-sm-offset-1">
+										<div class="form-group">
+											<label>Age</label>
+											<form:input type="text" class="form-control"
+												placeholder="18" path="age" />
 										</div>
 									</div>
 									<div class="col-sm-5 col-sm-offset-1">
@@ -98,6 +119,13 @@
 											<label>Higth</label>
 											<form:input type="text" class="form-control"
 												placeholder="184" path="hight" />
+										</div>
+									</div>
+									<div class="col-sm-5 col-sm-offset-1">
+										<div class="form-group">
+											<label>Wigth</label>
+											<form:input type="text" class="form-control"
+												placeholder="74" path="wight" />
 										</div>
 									</div>
 									<div class="col-sm-5">
@@ -115,8 +143,21 @@
 											</form:select>
 										</div>
 									</div>
+									<div class="col-sm-5 col-sm-offset-1">
+										<div class="form-group">
+											<label>Primary</label>
+											<form:input type="text" class="form-control"
+												placeholder="Assumption Convent School" path="historyEducattionPrimary" />
+											<label>Hihgthschool 1-3</label>
+											<form:input type="text" class="form-control"
+												placeholder="Triamudom School" path="historyEducattionHihgthschool13" />
+											<label>Hihgthschool 4-6</label>
+											<form:input type="text" class="form-control"
+												placeholder="Triamudom School" path="historyEducattionHihgthschool46" />	
+										</div>
+									</div>			
 									<input type='submit' 										
-										 value="Send" />
+										 value="Next" />
 								</form:form>
 							</div>
 						</div>

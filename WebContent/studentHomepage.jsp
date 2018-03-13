@@ -60,7 +60,7 @@
                     <ul class="reset" role="navigation">
                         <li class="menu-item"><a href="studentHomepage.jsp">Home</a>
                         </li>
-                        <li class="menu-item"><a href="saveDataOfStudent.do">Personal</a>                           
+                        <li class="menu-item"><a href="listDataOfStudent.do">Personal</a>                           
                         </li>
                         <li class="menu-item">
                             <a>Portfolio</a>	
