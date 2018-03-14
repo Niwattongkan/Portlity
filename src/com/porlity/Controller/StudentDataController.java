@@ -70,10 +70,11 @@ public class StudentDataController {
 			// TODO: handle exception
 		}
 		return "redirect:listDataOfStudent.do";
+
 	}
 	@RequestMapping("/editDataSutent")
 	public ModelAndView newPersonal(HttpServletRequest request) {
-		ModelAndView mv = new ModelAndView("PersonalForm.jsp");
+		ModelAndView mv = new ModelAndView("listDataOfStudent.do");
 		user userr = new user();
 		mv.addObject("user", userr);
 		return mv;

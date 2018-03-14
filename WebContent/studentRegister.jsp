@@ -156,8 +156,7 @@
 												placeholder="Triamudom School" path="historyEducattionHihgthschool46" />	
 										</div>
 									</div>			
-									<input type='submit' 										
-										 value="Next" />
+									<input type='submit' value="Next" />
 								</form:form>
 							</div>
 						</div>
