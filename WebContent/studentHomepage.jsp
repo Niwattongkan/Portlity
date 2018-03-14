@@ -84,8 +84,8 @@
                 <div class="intro-item" style="background-image: url(images/portEx1.jpg);">
                     <div class="caption">
                         <h2>PORTFOLIO BY MFU GROUP</h2>
-                        <p>Feel the new experience of ising portfolio</p>
-                        <a class="button white transparent" href="#">Read More</a>
+                        <p>Feel the new experience of using portfolio</p> 
+                        <a class="button white transparent" href="examplePortfolio.jsp">Read More</a>            
                     </div>
                 </div>
                 <div class="intro-item" style="background-image: url(images/recordplayer.jpg);">

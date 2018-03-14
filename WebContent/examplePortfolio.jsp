@@ -11,7 +11,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Portfolio</title>
+<title>Portfolio - Example</title>
 
 <!-- Bootstrap Core CSS -->
 <link href="vendorPortfolio/bootstrap/css/bootstrap.min.css"
@@ -28,7 +28,7 @@
 
 <!-- Custom CSS -->
 <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-<!-- Custom CSS -->
+<!-- CSS Picture popup -->
 <link href="css/SlidePicture.css" rel="stylesheet">
 </head>
 <body>
@@ -50,7 +50,7 @@
 					</span>
 				</span> <img id="myImg" class="img-fluid" src="images/pictures/AgroIndustry/cover.jpg"
 					alt="">
-				</a>
+					</a>
 				<div id="myModal" class="modal">
 						<span class="close">&times;</span> <img class="modal-content"
 							id="img01">
@@ -200,6 +200,6 @@
 	<!-- Custom scripts for this template -->
 	<script src="js/stylish-portfolio.min.js"></script>
 	<!-- Slide Picture -->
-	<!-- <script src="js/SlidePicture.js"></script> -->
+	 <script src="js/SlidePicture.js"></script> 
 </body>
 </html>
