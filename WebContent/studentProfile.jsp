@@ -44,23 +44,19 @@
 		<div class="content">
 			<div class="container-fluid">
 				<div class="row">
-			
 					<div class="col-lg-4 col-md-5">
 						<div class="card card-user">
 							<div class="image">
 								<img src="assetsPersonal/img/background.jpg" alt="..." />
 							</div>
-							
 							<div class="content">
 								<div class="author">
-									<img class="avatar border-white"
-										src="assetsPersonal/img/faces/face-2.jpg" alt="..." />
+									<img class="avatar border-white" src="assetsPersonal/img/faces/face-2.jpg" alt="..." />
 									<h4 class="title">
 										<br />
 									</h4>
 								</div>
 							</div>
-					
 							<hr>
 							<div class="text-center">
 								<div class="row">
@@ -94,7 +90,6 @@
 								<h4 class="title">Edit Profile</h4>
 							</div>
 							<div class="content">
-								<form>
 								<form:form method="post" action="savePersonal.do" commandName="user">
 								<c:forEach items="${listuser}" var="listuser">
 									<div class="row">
@@ -214,7 +209,6 @@
 									</c:forEach>
 									</form:form>
 									<div class="clearfix"></div>
-								</form>
 							</div>
 						</div>
 					</div>

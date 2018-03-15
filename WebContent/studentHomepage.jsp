@@ -62,6 +62,8 @@
                         </li>
                         <li class="menu-item"><a href="editDataSutent.do">Personal</a>                           
                         </li>
+                         <li class="menu-item"><a href="newPagedetail.do">Activity</a>                           
+                        </li>
                         <li class="menu-item">
                             <a>Portfolio</a>	
                            <ul class="sub-menu">

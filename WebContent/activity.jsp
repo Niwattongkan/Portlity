@@ -1,6 +1,8 @@
 <!DOCTYPE html>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
+
 <meta charset="utf-8">
 <link
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"
@@ -30,11 +32,10 @@
 	<!-- Include Editor JS files. -->
 	<script type="text/javascript"
 		src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/js/froala_editor.pkgd.min.js"></script>
-	<form action="save" method="POST">
-		<textarea name="editor_content" id="myEditor"></textarea>
-		<button>Submit</button>
-	</form>
-
+	<form:form method="post" action="savepageDetail.do" commandName="pageDetail">
+		<form:textarea name="editor_content" id="myEditor" path="body"/></textarea>
+		<input type='submit' value="Next" />
+	</form:form>
 	<script>
 		$(function() {
 			$('#myEditor').froalaEditor({
