@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -29,9 +30,9 @@
       <div class="container text-center my-auto">
         <h1 class="mb-1">Welcome to portfolio</h1>
         <h3 class="mb-5">
-          <em>your activity can keep in portfolio</em>
+          <em>Print your port</em>
         </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">Let start</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">Print</a>
       </div>
       <div class="overlay"></div>
     </header>
@@ -82,16 +83,6 @@
       </div>
     </section>
     
-   
-    <!-- dowload -->
-    <section class="callout">
-      <div class="container text-center">
-        <h2 class="mx-auto mb-5">Next to print
-          <em>your</em>
-          Portfolio</h2>
-        <a class="btn btn-primary btn-xl" href="printPortfolio.jsp">Print Now</a>
-      </div>
-    </section>
   
     <!-- Footer -->
     <footer class="footer text-center">
