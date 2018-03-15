@@ -81,16 +81,9 @@
 									</div>
 									<div class="col-sm-7 col-sm-offset-1">
 										<div class="form-group">
-											<label>Adress</label>
+											<label>Address</label>
 											<form:input type="text" class="form-control"
 												placeholder="333/1 mo.1" path="address" />
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="form-group">
-											<label>Nicname</label>
-											<form:input type="text" class="form-control"
-												placeholder="Big" path="nicName" />
 										</div>
 									</div>
 									<div class="col-sm-3">
@@ -100,9 +93,17 @@
 												placeholder="0936478546" path="phone" />
 										</div>
 									</div>
-									<div class="col-sm-5 col-sm-offset-1">
+									<div class="col-sm-3 col-sm-offset-1">
 										<div class="form-group">
-											<label>BirthDay</label>
+											<label>Nickname</label>
+											<form:input type="text" class="form-control"
+												placeholder="Big" path="nicName" />
+										</div>
+									</div>
+									
+									<div class="col-sm-5">
+										<div class="form-group">
+											<label>Birthday</label>
 											<form:input type="text" class="form-control"
 												placeholder="19/06/42" path="birthDay" />
 										</div>
@@ -110,53 +111,57 @@
 									<div class="col-sm-5 col-sm-offset-1">
 										<div class="form-group">
 											<label>Age</label>
-											<form:input type="text" class="form-control"
-												placeholder="18" path="age" />
+											<form:input type="text" class="form-control" placeholder="18"
+												path="age" />
 										</div>
 									</div>
-									<div class="col-sm-5 col-sm-offset-1">
+									<div class="col-sm-5">
 										<div class="form-group">
-											<label>Higth</label>
+											<label>Weight</label>
 											<form:input type="text" class="form-control"
 												placeholder="184" path="hight" />
 										</div>
 									</div>
 									<div class="col-sm-5 col-sm-offset-1">
 										<div class="form-group">
-											<label>Wigth</label>
-											<form:input type="text" class="form-control"
-												placeholder="74" path="wight" />
+											<label>Height</label>
+											<form:input type="text" class="form-control" placeholder="74"
+												path="wight" />
 										</div>
 									</div>
 									<div class="col-sm-5">
 										<div class="form-group">
 											<label>Classroom</label><br>
 											<form:select class="form-control" path="classroom">
-												<form:option value="6/1" >6/1</form:option>
-												<form:option value="6/2" >6/2</form:option>
-												<form:option value="6/3" >6/3</form:option>
-												<form:option value="6/4" >6/4</form:option>
-												<form:option value="6/5" >6/5</form:option>
-												<form:option value="6/6" >6/6</form:option>
-												<form:option value="6/7" >6/7</form:option>
-												<form:option value="6/8" >6/8</form:option>
+												<form:option value="6/1">6/1</form:option>
+												<form:option value="6/2">6/2</form:option>
+												<form:option value="6/3">6/3</form:option>
+												<form:option value="6/4">6/4</form:option>
+												<form:option value="6/5">6/5</form:option>
+												<form:option value="6/6">6/6</form:option>
+												<form:option value="6/7">6/7</form:option>
+												<form:option value="6/8">6/8</form:option>
 											</form:select>
 										</div>
 									</div>
-									<div class="col-sm-5 col-sm-offset-1">
+									<div class="col-sm-9 col-sm-offset-1">
 										<div class="form-group">
 											<label>Primary</label>
 											<form:input type="text" class="form-control"
-												placeholder="Assumption Convent School" path="historyEducattionPrimary" />
-											<label>Hihgthschool 1-3</label>
+												placeholder="Assumption Convent School"
+												path="historyEducattionPrimary" />
+											<label>Grade 1-3</label>
 											<form:input type="text" class="form-control"
-												placeholder="Triamudom School" path="historyEducattionHihgthschool13" />
-											<label>Hihgthschool 4-6</label>
+												placeholder="Triamudom School"
+												path="historyEducattionHihgthschool13" />
+											<label>Grade 4-6</label>
 											<form:input type="text" class="form-control"
-												placeholder="Triamudom School" path="historyEducattionHihgthschool46" />	
+												placeholder="Triamudom School"
+												path="historyEducattionHihgthschool46" />
 										</div>
-									</div>			
-									<input type='submit' value="Next" />
+										<input type="submit" class="btn btn-info btn-fill btn-wd" value="Next" />
+									</div>
+
 								</form:form>
 							</div>
 						</div>
