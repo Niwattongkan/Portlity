@@ -2,7 +2,6 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
-
 <meta charset="utf-8">
 <link
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"
@@ -16,11 +15,7 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/css/froala_style.min.css"
 	rel="stylesheet" type="text/css" />
 </head>
-
 <body>
-	<!-- Create a tag that we will use as the editable area. -->
-	<!-- You can use a div tag as well. -->
-	<!-- Include external JS libs. -->
 	<script type="text/javascript"
 		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script type="text/javascript"
@@ -31,20 +26,20 @@
 	<!-- Include Editor JS files. -->
 	<script type="text/javascript"
 		src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/js/froala_editor.pkgd.min.js"></script>
-
-	<pre id="eg-previewer"></pre>
-	<form:form method="post" action="savepageDetail.do"
-		commandName="pageDetail">
-			<form:textarea name="editor_content" id="myEditor" path="body" />
-		<input type='submit' value="Next" />
-	</form:form>
+	<div id="froala-editor">
+		<p>Start typing and you can preview the content of the WYSIWYG
+			HTML editor as you type below the editing box.</p>
+	</div>
+	<br />
+	<div id="preview" class="fr-view">
+		<p>Start typing and you can preview the content of the WYSIWYG
+			HTML editor as you type below the editing box.</p>
+	</div>
 	<script>
-		$(function() {
-			$('#myEditor').froalaEditor({
-				toolbarInline : false
-			})
-		});
+		$('div#froala-editor').froalaEditor().on('froalaEditor.contentChanged',
+				function(e, editor) {
+					$('#preview').html(editor.html.get());
+				})
 	</script>
-
 </body>
 </html>
