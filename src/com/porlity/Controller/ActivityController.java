@@ -12,9 +12,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.porlity.Service.pageDetailService;
 import com.porlity.entity.pageDetail;
-
 @Controller
-public class PagedetailController {
+public class ActivityController {
 	@EJB(mappedName = "ejb:/Portlity//pageDetailServiceBean!com.porlity.Service.pageDetailService")
 	pageDetailService pageDetailServ;
 	
@@ -47,5 +46,3 @@ public class PagedetailController {
 		return mv;
 	}
 }
-	
-

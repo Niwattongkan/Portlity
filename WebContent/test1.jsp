@@ -1,46 +1,26 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta charset="utf-8">
-<link
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"
-	rel="stylesheet" type="text/css" />
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
-<link
-	href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/css/froala_editor.pkgd.min.css"
-	rel="stylesheet" type="text/css" />
-<link
-	href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/css/froala_style.min.css"
-	rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
 </head>
-
 <body>
-	<!-- Create a tag that we will use as the editable area. -->
-	<!-- You can use a div tag as well. -->
-
-	<!-- Include external JS libs. -->
-	<script type="text/javascript"
-		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script type="text/javascript"
-		src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
-	<script type="text/javascript"
-		src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
-
-	<!-- Include Editor JS files. -->
-	<script type="text/javascript"
-		src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/js/froala_editor.pkgd.min.js"></script>
-	<form action="save" method="POST">
-		<textarea name="editor_content" id="myEditor"></textarea>
-		<button>Submit</button>
-	</form>
-
-	<script>
-		$(function() {
-			$('#myEditor').froalaEditor({
-				toolbarInline : false
-			})
-		});
-	</script>
+	<table border="1">
+		<c:forEach items="${listuser}" var="listuser">
+			<tr>
+				${listuser.age}
+				<td><a href="editDataSutent.do">edit</a></td>
+				<!-- <td><a href="editEmp.do?id=${emp.employeeId}">Edit</a></td>
+				<td><a href="deleteEmp.do?id=${emp.employeeId}">Remove</a></td>
+				<td><a href="listPhone.do?id=${emp.employeeId }">List Phone</a></td> -->
+			</tr>
+		</c:forEach>
+	</table>
+		<c:forEach items="${listuser}" var="listuser">
+			${listuser.classroom}
+		</c:forEach>
 </body>
 </html>
