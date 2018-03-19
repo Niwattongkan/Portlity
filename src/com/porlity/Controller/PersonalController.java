@@ -116,9 +116,9 @@ public class PersonalController {
 				listuserGoogle = userser.getfindbyGoogle(userGoogleId);
 		        HttpSession session=request.getSession();  
 		        session.setAttribute("userId",listuserGoogle.get(0).getUserID()+"");  
+		        //get(0) is lastArary of object in EJB <list>
 				return "newUser";
-			}
-			else {
+			}else {
 		        HttpSession session=request.getSession();  
 		        session.setAttribute("userId",listuserGoogle.get(0).getUserID()+"");
 				return "login";

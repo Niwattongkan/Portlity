@@ -23,67 +23,38 @@
 
 	<body class="portfolio">
 
-		<header role="banner" class="transparent light">
-			<div class="row">
-				<div class="nav-inner row-content buffer-left buffer-right even clear-after">
-					<div id="brand">
-						<h1 class="reset"><!--<img src="img/logo.png" alt="logo">--><a href="home-01.html">Beetle</a></h1>
-					</div><!-- brand -->
-					<a id="menu-toggle" href="#"><i class="fa fa-bars fa-lg"></i></a>
-					<nav>
-						<ul class="reset" role="navigation">
-							<li class="menu-item">
-								<a href="home-01.html">Home</a>
-								<ul class="sub-menu">
-									<li><a href="home-01.html">Generic Home Page</a></li>
-									<li><a href="home-02.html">App Showcase</a></li>
-									<li><a href="home-03.html">App Showcase Alternative</a></li>
-								</ul>
-							</li>
-							<li class="menu-item">
-								<a href="works-4-columns.html">Works</a>
-								<ul class="sub-menu">
-									<li><a href="works-4-columns.html">Four Columns Grid Style</a></li>
-									<li><a href="works-3-columns.html">Three Columns Grid Style</a></li>
-									<li><a href="works-4-columns-alternative.html">Four Columns Mosaic Style</a></li>
-									<li><a href="works-3-columns-alternative.html">Three Columns Mosaic Style</a></li>
-									<li><a href="works-4-columns-lightbox.html">Lightbox Gallery</a></li>
-									<li><a href="single-work-post.html">Single Work Page</a></li>
-								</ul>
-							</li>
-							<li class="menu-item">
-								<a href="blog-4-columns-masonry.html">Blog</a>
-								<ul class="sub-menu">
-									<li><a href="blog-4-columns-masonry.html">Four Columns Grid</a></li>
-									<li><a href="blog-list-sidebar.html">List Style with Sidebar</a></li>
-									<li><a href="single-blog-post.html">Single Post</a></li>
-									<li><a href="single-blog-post-sidebar.html">Single Post with Sidebar</a></li>
-								</ul>
-							</li>
-							<li class="menu-item"><a href="resume.html">Resume</a></li>
-							<li class="menu-item">
-								<a href="#">Features</a>
-								<ul class="sub-menu">
-									<li><a href="search.html">Search Page</a></li>
-									<li><a href="no-results.html">Search Page - No Results</a></li>
-									<li><a href="page-not-found.html">404 - Page Not Found</a></li>
-									<li>
-										<a href="#">Sub Menu</a>
-										<ul class="sub-menu">
-											<li><a href="#">Sub Sub Menu 01</a></li>
-											<li><a href="#">Sub Sub Menu 02</a></li>
-											<li><a href="#">Sub Sub Menu 03</a></li>
-										</ul>										
-									</li>
-								</ul>								
-							</li>
-							<li class="menu-item"><a href="contact.html">Contact</a></li>
-						</ul>
-					</nav>
-				</div><!-- row-content -->	
-			</div><!-- row -->	
-		</header>
-
+		 <header role="banner" class="transparent light">
+        <div class="row">
+            <div class="nav-inner row-content buffer-left buffer-right even clear-after">
+                <div id="brand">
+                    <h1 class="reset">
+                        <!--<img src="img/logo.png" alt="logo">--><a href="studentHomepage.jsp">Portlity</a></h1>
+                </div>
+                <!-- brand -->
+                <a id="menu-toggle" href="#"><i class="fa fa-bars fa-lg"></i></a>
+                <nav>
+                    <ul class="reset" role="navigation">
+                        <li class="menu-item"><a href="studentHomepage.jsp">Home</a>
+                        </li>
+                        <li class="menu-item"><a href="editDataSutent.do">Personal</a>                           
+                        </li>
+                         <li class="menu-item"><a href="addActivity.do">Activity</a>                           
+                        </li>
+                        <li class="menu-item">
+                            <a>Portfolio</a>	
+                           <ul class="sub-menu">
+                                <li><a href="portfolioWork.jsp">Work portfolio</a></li>
+                                <li><a href="examplePortfolio.jsp">Example portfolio</a></li>
+                            </ul>  
+                        </li>                    
+                        <li class="menu-item"><a href="studentLogin.jsp" onclick="signOut();">Sign off</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- row-content -->
+        </div>
+        <!-- row -->
+    </header>
 		<main role="main">
 			<div id="intro-wrap" class="full-height">
 				<div id="intro" class="preload darken more-button">					
@@ -106,7 +77,7 @@
 						<li data-group="lightbox">Lightbox</li>
 						<li data-group="minimal">Minimal</li>
 						<li data-group="web-design">Web design</li>
-						<li ><a href="addActivity.jsp">New actity</a></li>
+						<li ><a href="addActivity.do">New actity</a></li>
 					</ul>
 					<div class="grid-items portfolio-section preload">
 						<article class="item column four" data-groups='["fun", "icons"]'>
@@ -243,49 +214,44 @@
 		</main><!-- main -->
 
 		<footer role="contentinfo">
-			<div class="row">
-				<div class="row-content buffer clear-after">
-					<section id="top-footer">
-						<div class="widget column three"><!-- la class="widget" è forse generata utomaticamente da wp -->
-							<h4>Menu</h4>
-							<ul class="plain">
-								<li><a href="home-01.html">Home</a></li>
-								<li><a href="works-3-columns.html">Portfolio</a></li>
-								<li><a href="blog-4-columns-masonry.html">Blog</a></li>
-								<li><a href="resume.html">Resume</a></li>
-								<li><a href="file:///Users/pasqualevitiello/My%20Folder/Job/Envato/PR%20Themeforest/Flattie/Markup/Beetle/contact.html">Contact</a></li>
-							</ul>
-						</div>
-						<div class="widget column three">
-							<h4>Archives</h4>
-							<ul class="plain">
-								<li><a href="#">March 2014</a></li>
-								<li><a href="#">April 2014</a></li>
-								<li><a href="#">May 2014</a></li>
-								<li><a href="#">June 2014</a></li>
-								<li><a href="#">July 2014</a></li>
-							</ul>
-						</div>								
-						<div class="widget column three">
-							<h4>Widget</h4>
-							<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-						</div>				
-						<div class="widget meta-social column three">
-							<h4>Follow Us</h4>
-							<ul class="inline">
-								<li><a href="#" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
-								<li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
-								<li><a href="#" class="pinterest-share border-box"><i class="fa fa-pinterest fa-lg"></i></a></li>
-							</ul>
-						</div>														
-					</section><!-- top-footer -->
-					<section id="bottom-footer">
-						<p class="keep-left">&copy; 2014 <a href="http://mokaine.com/" alt="Mokaine Lab">Mokaine</a>. All Rights Reserved.</p>
-						<p class="keep-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-					</section><!-- bottom-footer -->			
-				</div><!-- row-content -->	
-			</div><!-- row -->	
-		</footer>
+        <div class="row">
+            <div class="row-content buffer clear-after">
+                <section id="top-footer">
+                    <div class="widget column three">
+                        <!-- la class="widget" è forse generata utomaticamente da wp -->
+                        <h4>Menu</h4>
+                        <ul class="plain">
+                            <li><a href="home-01.html">Home</a></li>
+                            <li><a href="works-3-columns.html">Portfolio</a></li>
+                            <li><a href="blog-4-columns-masonry.html">Blog</a></li>
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="file:///Users/pasqualevitiello/My%20Folder/Job/Envato/PR%20Themeforest/Flattie/Markup/Beetle/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget column three">
+                        <h4>Portlity</h4>
+                        <p>This web application create for student everyone and it free</p>
+                    </div>
+                    <div class="widget meta-social column three">
+                        <h4>Follow Us</h4>
+                        <ul class="inline">
+                            <li><a href="#" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
+                            <li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
+                            <li><a href="#" class="pinterest-share border-box"><i class="fa fa-pinterest fa-lg"></i></a></li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- top-footer -->
+                <section id="bottom-footer">
+                    <p class="keep-left">&copy; 2018 <a href="" alt="Mokaine Lab">Portlity</a>.</p>
+                </section>
+                <!-- bottom-footer -->
+            </div>
+            <!-- row-content -->
+        </div>
+        <!-- row -->
+    </footer>
+
 
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
