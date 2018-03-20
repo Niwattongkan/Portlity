@@ -62,7 +62,7 @@
                         </li>
                         <li class="menu-item"><a href="editDataSutent.do">Personal</a>                           
                         </li>
-                         <li class="menu-item"><a href="newPagedetail.do">Activity</a>                           
+                         <li class="menu-item"><a href="activityList.jsp">Activity</a>                           
                         </li>
                         <li class="menu-item">
                             <a>Portfolio</a>	
@@ -121,7 +121,7 @@
             <section class="row section call-to-action">
                 <div class="row-content buffer even">
                     <p>Let do your portfolio</p>
-                    <a class="button red" href="workPortfolio.jsp">Do It</a>
+                    <a class="button red" href="portfolioWork.jsp">Do It</a>
                 </div>
             </section>
             
@@ -297,18 +297,8 @@
                         </ul>
                     </div>
                     <div class="widget column three">
-                        <h4>Archives</h4>
-                        <ul class="plain">
-                            <li><a href="#">March 2014</a></li>
-                            <li><a href="#">April 2014</a></li>
-                            <li><a href="#">May 2014</a></li>
-                            <li><a href="#">June 2014</a></li>
-                            <li><a href="#">July 2014</a></li>
-                        </ul>
-                    </div>
-                    <div class="widget column three">
-                        <h4>Widget</h4>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <h4>Portlity</h4>
+                        <p>This web application create for student everyone and it free</p>
                     </div>
                     <div class="widget meta-social column three">
                         <h4>Follow Us</h4>
@@ -321,8 +311,7 @@
                 </section>
                 <!-- top-footer -->
                 <section id="bottom-footer">
-                    <p class="keep-left">&copy; 2014 <a href="http://mokaine.com/" alt="Mokaine Lab">Mokaine</a>. All Rights Reserved.</p>
-                    <p class="keep-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <p class="keep-left">&copy; 2018 <a href="" alt="Mokaine Lab">Portlity</a>.</p>
                 </section>
                 <!-- bottom-footer -->
             </div>

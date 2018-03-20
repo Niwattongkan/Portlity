@@ -17,7 +17,7 @@ import com.porlity.entity.user;
 
 @Controller
 public class StudentDataController {
-	@EJB(mappedName = "ejb:/PorlityClient//UserServiecBean!com.porlity.Service.UserService")
+	@EJB(mappedName = "ejb:/Portlity//UserServiecBean!com.porlity.Service.UserService")
 	UserService userser;
 	
 	@RequestMapping("/listDataOfStudent.do")
@@ -27,7 +27,8 @@ public class StudentDataController {
 		String userId = null;
 		 if(session!=null){  
 	        	userId = (String)session.getAttribute("userId"); 
-	        	System.out.println("userId" + userId);	     
+	        	System.out.println("userId" + userId);
+	     
 	        }
 		List<user> listuser;
 		try{
@@ -38,6 +39,7 @@ public class StudentDataController {
 		}
 	
 		return mv;
+		
 		
 	}
 	@RequestMapping("/saveDataOfStudent")
@@ -70,7 +72,6 @@ public class StudentDataController {
 			// TODO: handle exception
 		}
 		return "redirect:listDataOfStudent.do";
-
 	}
 	@RequestMapping("/editDataSutent")
 	public ModelAndView newPersonal(HttpServletRequest request) {
