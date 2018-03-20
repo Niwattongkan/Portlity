@@ -110,8 +110,8 @@
 									<div class="col-sm-5 col-sm-offset-1">
 										<div class="form-group">
 											<label>Age</label>
-											<form:input type="text" class="form-control"
-												placeholder="18" path="age" />
+											<form:input type="text" class="form-control" placeholder="18"
+												path="age" />
 										</div>
 									</div>
 									<div class="col-sm-5 col-sm-offset-1">
@@ -124,22 +124,22 @@
 									<div class="col-sm-5 col-sm-offset-1">
 										<div class="form-group">
 											<label>Wigth</label>
-											<form:input type="text" class="form-control"
-												placeholder="74" path="wight" />
+											<form:input type="text" class="form-control" placeholder="74"
+												path="wight" />
 										</div>
 									</div>
 									<div class="col-sm-5">
 										<div class="form-group">
 											<label>Classroom</label><br>
 											<form:select class="form-control" path="classroom">
-												<form:option value="6/1" >6/1</form:option>
-												<form:option value="6/2" >6/2</form:option>
-												<form:option value="6/3" >6/3</form:option>
-												<form:option value="6/4" >6/4</form:option>
-												<form:option value="6/5" >6/5</form:option>
-												<form:option value="6/6" >6/6</form:option>
-												<form:option value="6/7" >6/7</form:option>
-												<form:option value="6/8" >6/8</form:option>
+												<form:option value="6/1">6/1</form:option>
+												<form:option value="6/2">6/2</form:option>
+												<form:option value="6/3">6/3</form:option>
+												<form:option value="6/4">6/4</form:option>
+												<form:option value="6/5">6/5</form:option>
+												<form:option value="6/6">6/6</form:option>
+												<form:option value="6/7">6/7</form:option>
+												<form:option value="6/8">6/8</form:option>
 											</form:select>
 										</div>
 									</div>
@@ -147,15 +147,18 @@
 										<div class="form-group">
 											<label>Primary</label>
 											<form:input type="text" class="form-control"
-												placeholder="Assumption Convent School" path="historyEducattionPrimary" />
+												placeholder="Assumption Convent School"
+												path="historyEducattionPrimary" />
 											<label>Hihgthschool 1-3</label>
 											<form:input type="text" class="form-control"
-												placeholder="Triamudom School" path="historyEducattionHihgthschool13" />
+												placeholder="Triamudom School"
+												path="historyEducattionHihgthschool13" />
 											<label>Hihgthschool 4-6</label>
 											<form:input type="text" class="form-control"
-												placeholder="Triamudom School" path="historyEducattionHihgthschool46" />	
+												placeholder="Triamudom School"
+												path="historyEducattionHihgthschool46" />
 										</div>
-									</div>			
+									</div>
 									<input type='submit' value="Next" />
 								</form:form>
 							</div>
