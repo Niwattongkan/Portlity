@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.porlity.Service.ActivitySerice;
@@ -32,11 +33,19 @@ public class ActivityController {
 		 return mv;
 	 }
 	 @RequestMapping("/saveActivity")
+	 @ResponseBody
 	 public String saveActivity(@ModelAttribute("activity") activity activity, BindingResult result,
 				HttpServletRequest request) {	 
 		 String htmlBody = request.getParameter("htmlValue");
 		 String ActivityId = Long.toString(activity.getActivityId());
-		 String userId = (String) request.getSession().getAttribute("userId");
+		 HttpSession session=request.getSession(false);
+	        String userId = null;
+		        if(session!=null){  
+		        	userId = (String)session.getAttribute("userId"); 
+		        }else{
+		        	System.out.println("userId is null");
+		        }
+		        	System.out.println("userId " + userId);
 		 user user = userser.findUser(Long.parseLong(userId));
 		 	try{
 		 		if(ActivityId != null )
@@ -44,13 +53,13 @@ public class ActivityController {
 		 			activity.setPage(htmlBody);
 		 			activitySer.update(activity);
 		 			System.out.println("update activity " + activity.getActivityId());
-		 			return "listActivity.do";
+		 			return "success";
 		 		}else{
 		 			activity.setUser(user);
 		 			activity.setPage(htmlBody);
 		 			activitySer.insert(activity);
 		 			System.out.println("insert activit y" + ActivityId);
-		 			return "listActivity.do";
+		 			return "success";
 		 		}
 		 	}catch (Exception e) {
 				// TODO: handle exception
@@ -61,21 +70,21 @@ public class ActivityController {
 	 }
 	 @RequestMapping("/listActivity")
 	 public ModelAndView listActivity(HttpServletRequest request){
-		 HttpSession session=request.getSession(false);
-	        String userId = null;
-	        if(session!=null){  
-	        	userId = (String)session.getAttribute("userId"); 
-	        }
-	        	System.out.println("userId " + userId);
-    	ModelAndView mv  = new ModelAndView("activityList.jsp");
-//    	List<activity> activtyList;
-//		try {
-//			activtyList = activitySer.findIdStudent(Long.parseLong(userId));
-//			mv.addObject("activtyList",activtyList);
-//		}catch (Exception e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//	 }
+		 ModelAndView mv = new ModelAndView("portfolioAdd.jsp");
+			HttpSession session=request.getSession(false);
+			String userId = null;
+			 if(session!=null){  
+		        	userId = (String)session.getAttribute("userId"); 
+		        	System.out.println("userId" + userId);
+		     
+		        }
+			List<activity> listActivity;
+			try{
+				listActivity = activitySer.getfindbyuserID(Long.parseLong(userId));
+				mv.addObject("listActivity",listActivity);
+			}catch (Exception e) {
+				// TODO: handle exception
+			}
 		return mv;
 }
 }

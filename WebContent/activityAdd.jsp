@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
 <meta charset="utf-8">
@@ -14,6 +14,7 @@
 <link
 	href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/css/froala_style.min.css"
 	rel="stylesheet" type="text/css" />
+	
 
 <script>
 	function onClickSave() {
@@ -26,7 +27,7 @@
 			},
 			success : function(result) {
 				console.log('result', result);
-				if (result === 'sucess') {
+				if (result === 'success') {
 					window.location = "http://localhost:8080/Portlity/activityList.jsp";}
 			},
 			error : function(xhr, status, error) {
@@ -44,19 +45,24 @@
 		src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
 	<script type="text/javascript"
 		src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
-
 	<!-- Include Editor JS files. -->
 	<script type="text/javascript"
 		src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/js/froala_editor.pkgd.min.js"></script>
 	<form>
-		<textarea  id="froala-editor"></textarea>
+		<textarea  id="froala-editor">
+			<c:forEach items="${listActivity}" var="listActivity">
+				${listActivity.page}
+			</c:forEach>
+		</textarea>
 		<input type="button" value="Next" onclick="onClickSave()">
 	</form>
 	<br />
 	<div id="preview" class="fr-view">
-
-		<p>Start typing and you can preview the content of the WYSIWYG
-			HTML editor as you type below the editing box.</p>
+		<p>
+				<c:forEach items="${listActivity}" var="listActivity">
+					${listActivity.page}
+				</c:forEach>
+		</p>
 
 	</div>
 	<script>
@@ -65,5 +71,6 @@
 					$('#preview').html(editor.html.get());
 				})
 	</script>
+
 </body>
 </html>

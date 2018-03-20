@@ -22,52 +22,10 @@
 	</head>
 
 	<body class="portfolio">
-
-		 <header role="banner" class="transparent light">
-        <div class="row">
-            <div class="nav-inner row-content buffer-left buffer-right even clear-after">
-                <div id="brand">
-                    <h1 class="reset">
-                        <!--<img src="img/logo.png" alt="logo">--><a href="studentHomepage.jsp">Portlity</a></h1>
-                </div>
-                <!-- brand -->
-                <a id="menu-toggle" href="#"><i class="fa fa-bars fa-lg"></i></a>
-                <nav>
-                    <ul class="reset" role="navigation">
-                        <li class="menu-item"><a href="studentHomepage.jsp">Home</a>
-                        </li>
-                        <li class="menu-item"><a href="editDataSutent.do">Personal</a>                           
-                        </li>
-                         <li class="menu-item"><a href="addActivity.do">Activity</a>                           
-                        </li>
-                        <li class="menu-item">
-                            <a>Portfolio</a>	
-                           <ul class="sub-menu">
-                                <li><a href="portfolioWork.jsp">Work portfolio</a></li>
-                                <li><a href="examplePortfolio.jsp">Example portfolio</a></li>
-                            </ul>  
-                        </li>                    
-                        <li class="menu-item"><a href="studentLogin.jsp" onclick="signOut();">Sign off</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- row-content -->
-        </div>
-        <!-- row -->
-    </header>
 		<main role="main">
 			<div id="intro-wrap" class="full-height">
 				<div id="intro" class="preload darken more-button">					
-					<div class="intro-item" style="background-image: url(http://placehold.it/1800x600/ddd/fff&text=Beetle%20image);">
-						<div class="caption">
-							<h2>The Lonely Lab</h2>
-							<p>If you’re any good at all, you know you can be better.</p>
-						</div><!-- caption -->					
-					</div>								
-				</div><!-- intro -->
-			</div><!-- intro-wrap -->
-
-			<div id="main" class="row">
+						<div id="main" class="row">
 				<div class="row-content buffer clear-after">
 					<ul class="inline cats filter-options">
 						<li data-group="advertising">Advertising</li>
@@ -112,13 +70,18 @@
 				</div><!-- row-content -->
 			</div><!-- row -->
 		</main><!-- main -->
+					
+											
+				</div><!-- intro -->
+			</div><!-- intro-wrap -->
 
+		
 		<footer role="contentinfo">
         <div class="row">
             <div class="row-content buffer clear-after">
                 <section id="top-footer">
                     <div class="widget column three">
-                        <!-- la class="widget" è forse generata utomaticamente da wp -->
+                        <!-- la class="widget" � forse generata utomaticamente da wp -->
                         <h4>Menu</h4>
                         <ul class="plain">
                             <li><a href="home-01.html">Home</a></li>
