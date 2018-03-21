@@ -36,7 +36,7 @@
 <link href='https://fonts.googleapis.com/css?family=Muli:400,300'
 	rel='stylesheet' type='text/css'>
 <link href="assetsPersonal/css/themify-icons.css" rel="stylesheet">
-
+<link rel="icon" href="favicon.ico">
 </head>
 <body>
 	<div>

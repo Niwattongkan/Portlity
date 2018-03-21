@@ -95,7 +95,7 @@ function renderButton() {
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
-					<img src="images/portlity.jpg" alt="IMG">
+					<img src="img/logo.png" alt="IMG">
 				</div>
 
 				<form class="login100-form validate-form">

@@ -30,6 +30,7 @@
 <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 <!-- CSS Picture popup -->
 <link href="css/SlidePicture.css" rel="stylesheet">
+<link rel="icon" href="favicon.ico">
 </head>
 <body>
 	<section class="content-section" id="portfolio">
