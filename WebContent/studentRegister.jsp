@@ -119,14 +119,14 @@
 										<div class="form-group">
 											<label>Weight</label>
 											<form:input type="text" class="form-control"
-												placeholder="184" path="hight" />
+												placeholder="64" path="wight" />
 										</div>
 									</div>
 									<div class="col-sm-5 col-sm-offset-1">
 										<div class="form-group">
-											<label>Height</label>
-											<form:input type="text" class="form-control" placeholder="74"
-												path="wight" />
+											<label>Wigth</label>
+											<form:input type="text" class="form-control" placeholder="184"
+												path="hight" />
 										</div>
 									</div>
 									<div class="col-sm-5">
@@ -161,7 +161,6 @@
 										</div>
 										<input type="submit" class="btn btn-info btn-fill btn-wd" value="Next" />
 									</div>
-
 								</form:form>
 							</div>
 						</div>
