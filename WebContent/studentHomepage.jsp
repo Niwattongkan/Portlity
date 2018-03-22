@@ -52,7 +52,7 @@
             <div class="nav-inner row-content buffer-left buffer-right even clear-after">
                 <div id="brand">
                     <h1 class="reset">
-                        <!--<img src="img/logo.png" alt="logo">--><a href="studentHomepage.jsp">Portlity</a></h1>
+                        <a href="studentHomepage.jsp">Portlity</a></h1>
                 </div>
                 <!-- brand -->
                 <a id="menu-toggle" href="#"><i class="fa fa-bars fa-lg"></i></a>
@@ -68,7 +68,7 @@
                             <a>Portfolio</a>	
                            <ul class="sub-menu">
                                 <li><a href="portfolioWork.jsp">Work portfolio</a></li>
-                                <li><a href="examplePortfolio.jsp">Example portfolio</a></li>
+                                <li><a href="portfolioExample.jsp">Example portfolio</a></li>
                             </ul>  
                         </li>                    
                         <li class="menu-item"><a href="studentLogin.jsp" onclick="signOut();">Sign off</a></li>
@@ -94,21 +94,21 @@
                     <div class="caption">
                         <h2>Example portfolio</h2>  
                         <p>There are many examples of work.</p>                       
-                        <a class="button white transparent" href="#">Example More</a>                  
+                        <a class="button white transparent" href="portfolioExample.jsp">Example More</a>                  
                     </div>
                 </div>
                 <div class="intro-item" style="background-image: url(images/cover3.jpg);">
                     <div class="caption">
                         <h2>Activity portfolio</h2>
                         <p>You can add an event by yourself.</p>
-                        <a class="button white transparent" href="#">Let starting</a>
+                        <a class="button white transparent" href="activityAdd.jsp">Let starting</a>
                     </div>
                 </div>
                 <div class="intro-item" style="background-image: url(images/cover4.jpg);">
                     <div class="caption">
                         <h2>Create portfolio</h2>
                         <p>Start designing your portfolio.</p>
-                        <a class="button white transparent" href="#">Let starting</a>
+                        <a class="button white transparent" href="portfolioWork.jsp">Let starting</a>
                     </div>
                 </div>
             </div>
@@ -121,8 +121,8 @@
             <section class="row section call-to-action">
                 <div class="row-content buffer even">
 
-                    <p>Let start your portfolio</p>
-                    <a class="button red" href="workPortfolio.jsp">Do It</a>
+                    <p>Let do your portfolio</p>
+                    <a class="button red" href="portfolioWork.jsp">Do It</a>
 
                 </div>
             </section>

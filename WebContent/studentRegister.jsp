@@ -26,6 +26,7 @@
 
 <!-- CSS Just for demo purpose, don't include it in your project -->
 <link href="assetsRegister/css/demo.css" rel="stylesheet" />
+<link rel="icon" href="favicon.ico">
 </head>
 
 <body>
