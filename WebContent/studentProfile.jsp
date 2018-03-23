@@ -28,6 +28,7 @@
 
 <!--  CSS for Demo Purpose, don't include it in your project     -->
 <link href="assetsPersonal/css/demo.css" rel="stylesheet" />
+<link rel="icon" href="favicon.ico">
 
 <!--  Fonts and icons     -->
 <link
@@ -36,7 +37,6 @@
 <link href='https://fonts.googleapis.com/css?family=Muli:400,300'
 	rel='stylesheet' type='text/css'>
 <link href="assetsPersonal/css/themify-icons.css" rel="stylesheet">
-<link rel="icon" href="favicon.ico">
 </head>
 <body>
 	<div>
@@ -51,7 +51,8 @@
 							</div>
 							<div class="content">
 								<div class="author">
-									<img class="avatar border-white" src="assetsPersonal/img/faces/face-2.jpg" alt="..." />
+									<img class="avatar border-white"
+										src="assetsPersonal/img/faces/face-2.jpg" alt="..." />
 									<h4 class="title">
 										<br />
 									</h4>
@@ -60,7 +61,7 @@
 							<hr>
 							<div class="text-center">
 								<div class="row">
-								
+
 									<div class="col-md-3 col-md-offset-1">
 										<h5>
 											1<br /> <small>Portfolio</small>
@@ -73,12 +74,13 @@
 									</div>
 									<div class="col-md-3">
 										<h5>
-										<c:forEach items="${listuser}" var="listuser">
-											${listuser.classroom}<br /> <small>Classroom</small>
-										</c:forEach>
+											<c:forEach items="${listuser}" var="listuser">
+											${listuser.classroom}<br />
+												<small>Classroom</small>
+											</c:forEach>
 										</h5>
 									</div>
-								
+
 								</div>
 							</div>
 						</div>
@@ -90,125 +92,123 @@
 								<h4 class="title">Edit Profile</h4>
 							</div>
 							<div class="content">
-								<form:form method="post" action="savePersonal.do" commandName="user">
-								<c:forEach items="${listuser}" var="listuser">
-									<div class="row">
-									
-										<div class="col-md-6">
-											<div class="form-group">
-												<label></label> First Name
-												<form:input type="text"
-													class="form-control border-input" 
-													value="${listuser.firstName}" path="firstName"/>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<label></label> Last Name
-												<form:input type="text"
-													class="form-control border-input" placeholder="Last Name"
-													value="${listuser.surName}" path="surName"/>
-											</div>
-										</div>
-									</div>
+								<form:form method="post" action="savePersonal.do"
+									commandName="user">
+									<c:forEach items="${listuser}" var="listuser">
+										<div class="row">
 
-									<div class="row">
-										<div class="col-md-12">
-											<div class="form-group">
-												<label>Home Address</label> 
-												<form:input type="text"
-													class="form-control border-input"
-													placeholder="" value="${listuser.address}" path="address"/>
+											<div class="col-md-4">
+												<div class="form-group">
+													<label></label> First Name
+													<form:input type="text" class="form-control border-input"
+														value="${listuser.firstName}" path="firstName" />
+												</div>
+											</div>
+											<div class="col-md-5">
+												<div class="form-group">
+													<label></label> Last Name
+													<form:input type="text" class="form-control border-input"
+														placeholder="Last Name" value="${listuser.surName}"
+														path="surName" />
+												</div>
 											</div>
 										</div>
-									</div>
 
-									<div class="row">
-										<div class="col-md-3">
-											<div class="form-group">
-												<label>Email</label> <form:input type="email"
-													class="form-control border-input" placeholder=""
-													value="${listuser.email}" path="email"/>
+										<div class="row">
+											<div class="col-md-9">
+												<div class="form-group">
+													<label>Home Address</label>
+													<form:input type="text" class="form-control border-input"
+														placeholder="" value="${listuser.address}" path="address" />
+												</div>
 											</div>
 										</div>
-										<div class="col-md-3">
-											<div class="form-group">
-												<label>Nicname</label> <form:input type="text"
-													class="form-control border-input" placeholder="Country"
-													value="${listuser.nicName}" path="nicName"/>
-											</div>
-										</div>
-										<div class="col-md-3">
-											<div class="form-group">
-												<label>Phone</label> <form:input type="number"
-													class="form-control border-input" placeholder="ZIP Code" 
-													value="${listuser.phone}" path="phone"/>
-											</div>
-										</div>
-									</div>
 
-									<div class="row">
-										<div class="col-md-3">
-											<div class="form-group">
-												<label>Higth</label> <form:input type="number"
-													class="form-control border-input" 
-													 value="${listuser.hight}" path="hight"/>
+										<div class="row">
+											<div class="col-md-3">
+												<div class="form-group">
+													<label>Email</label>
+													<form:input type="email" class="form-control border-input"
+														placeholder="" value="${listuser.email}" path="email" />
+												</div>
+											</div>
+											<div class="col-md-3">
+												<div class="form-group">
+													<label>Nicname</label>
+													<form:input type="text" class="form-control border-input"
+														placeholder="Country" value="${listuser.nicName}"
+														path="nicName" />
+												</div>
+											</div>
+											<div class="col-md-3">
+												<div class="form-group">
+													<label>Phone</label>
+													<form:input type="number" class="form-control border-input"
+														placeholder="ZIP Code" value="${listuser.phone}"
+														path="phone" />
+												</div>
 											</div>
 										</div>
-									</div>
-									
-									<div class="row">
-										<div class="col-md-3">
-											<div class="form-group">
-												<label>Wigth</label> <form:input type="number"
-													class="form-control border-input" 
-													value="${listuser.wight}" path="wight"/>
+
+										<div class="row">
+											<div class="col-md-3">
+												<div class="form-group">
+													<label>Higth</label>
+													<form:input type="number" class="form-control border-input"
+														value="${listuser.hight}" path="hight" />
+												</div>
+											</div>
+											<div class="col-md-3">
+												<div class="form-group">
+													<label>Wigth</label>
+													<form:input type="number" class="form-control border-input"
+														value="${listuser.wight}" path="wight" />
+												</div>
+											</div>
+											<div class="col-md-3">
+												<div class="form-group">
+													<label>Age</label>
+													<form:input type="number" class="form-control border-input"
+														value="${listuser.age}" path="age" />
+												</div>
 											</div>
 										</div>
-									</div>
-									
-									<div class="row">
-										<div class="col-md-3">
-											<div class="form-group">
-												<label>Age</label> <form:input type="number"
-													class="form-control border-input" value="${listuser.age}" path="age"/>
+										<div class="row">
+											<div class="col-md-3">
+												<div class="form-group">
+													<label>Primary</label>
+													<form:input type="text" class="form-control border-input"
+														value="${listuser.historyEducattionPrimary}"
+														path="historyEducattionPrimary" />
+												</div>
+											</div>																		
+											<div class="col-md-3">
+												<div class="form-group">
+													<label>Education Hihgthschool 1-3 </label>
+													<form:input type="text" class="form-control border-input"
+														placeholder="ZIP Code"
+														value="${listuser.historyEducattionHihgthschool13}"
+														path="historyEducattionHihgthschool13" />
+												</div>
+											</div>															
+											<div class="col-md-3">
+												<div class="form-group">
+													<label>Education Hihgthschool 4-6 </label>
+													<form:input type="text" class="form-control border-input"
+														placeholder="ZIP Code"
+														value="${listuser.historyEducattionHihgthschool46}"
+														path="historyEducattionHihgthschool46" />
+												</div>
 											</div>
 										</div>
-									</div>
-									
-									<div class="row">
-										<div class="col-md-3">
-											<div class="form-group">
-												<label>Primary</label> <form:input type="text"
-													class="form-control border-input" value="${listuser.historyEducattionPrimary}" path="historyEducattionPrimary"/>
-											</div>
+
+										<div class="text-center">
+											<input type="submit" class="btn btn-info btn-fill btn-wd"
+												value="Update Profile" />
 										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-3">
-											<div class="form-group">
-												<label>Education Hihgthschool 1-3 </label> <form:input type="text"
-													class="form-control border-input" placeholder="ZIP Code" 
-													value="${listuser.historyEducattionHihgthschool13}" path="historyEducattionHihgthschool13"/>
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-3">
-											<div class="form-group">
-												<label>Education Hihgthschool 4-6 </label> <form:input type="text"
-													class="form-control border-input" placeholder="ZIP Code" 
-													value="${listuser.historyEducattionHihgthschool46}" path="historyEducattionHihgthschool46"/>
-											</div>
-										</div>
-									</div>
-							
-									<div class="text-center">							
-										<input type="submit" class="btn btn-info btn-fill btn-wd" value="Update Profile"/>
-									</div>
 									</c:forEach>
-									</form:form>
-									<div class="clearfix"></div>
+								</form:form>
+								<div class="clearfix"></div>
 							</div>
 						</div>
 					</div>
@@ -218,12 +218,10 @@
 
 
 		<footer class="footer">
-			<div class="container-fluid">
-				<nav class="pull-left">					
-				</nav>
-				<div class="copyright pull-right">
-				</div>
-			</div>
+		<div class="container-fluid">
+			<nav class="pull-left"> </nav>
+			<div class="copyright pull-right"></div>
+		</div>
 		</footer>
 
 	</div>
