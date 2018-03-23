@@ -26,6 +26,7 @@
 
 <!-- CSS Just for demo purpose, don't include it in your project -->
 <link href="assetsRegister/css/demo.css" rel="stylesheet" />
+<link rel="icon" href="favicon.ico">
 </head>
 
 <body>
@@ -124,7 +125,11 @@
 									</div>
 									<div class="col-sm-5 col-sm-offset-1">
 										<div class="form-group">
+<<<<<<< HEAD
 											<label>Height</label>
+=======
+											<label>Wigth</label>
+>>>>>>> 6cc54c06ccfcd6f0d653619e92fbe122cf01fccd
 											<form:input type="text" class="form-control" placeholder="74"
 												path="wight" />
 										</div>
@@ -150,18 +155,31 @@
 											<form:input type="text" class="form-control"
 												placeholder="Assumption Convent School"
 												path="historyEducattionPrimary" />
+<<<<<<< HEAD
 											<label>Grade 1-3</label>
 											<form:input type="text" class="form-control"
 												placeholder="Triamudom School"
 												path="historyEducattionHihgthschool13" />
 											<label>Grade 4-6</label>
+=======
+											<label>Hihgthschool 1-3</label>
+											<form:input type="text" class="form-control"
+												placeholder="Triamudom School"
+												path="historyEducattionHihgthschool13" />
+											<label>Hihgthschool 4-6</label>
+>>>>>>> 6cc54c06ccfcd6f0d653619e92fbe122cf01fccd
 											<form:input type="text" class="form-control"
 												placeholder="Triamudom School"
 												path="historyEducattionHihgthschool46" />
 										</div>
+<<<<<<< HEAD
 										<input type="submit" class="btn btn-info btn-fill btn-wd" value="Next" />
 									</div>
 
+=======
+									</div>
+									<input type='submit' value="Next" />
+>>>>>>> 6cc54c06ccfcd6f0d653619e92fbe122cf01fccd
 								</form:form>
 							</div>
 						</div>

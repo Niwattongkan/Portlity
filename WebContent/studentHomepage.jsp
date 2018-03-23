@@ -52,7 +52,7 @@
             <div class="nav-inner row-content buffer-left buffer-right even clear-after">
                 <div id="brand">
                     <h1 class="reset">
-                        <!--<img src="img/logo.png" alt="logo">--><a href="studentHomepage.jsp">Portlity</a></h1>
+                        <a href="studentHomepage.jsp">Portlity</a></h1>
                 </div>
                 <!-- brand -->
                 <a id="menu-toggle" href="#"><i class="fa fa-bars fa-lg"></i></a>
@@ -68,7 +68,7 @@
                             <a>Portfolio</a>	
                            <ul class="sub-menu">
                                 <li><a href="portfolioWork.jsp">Work portfolio</a></li>
-                                <li><a href="examplePortfolio.jsp">Example portfolio</a></li>
+                                <li><a href="portfolioExample.jsp">Example portfolio</a></li>
                             </ul>  
                         </li>                    
                         <li class="menu-item"><a href="studentLogin.jsp" onclick="signOut();">Sign off</a></li>
@@ -83,32 +83,32 @@
     <main role="main">
         <div id="intro-wrap">
             <div id="intro" class="preload darken" data-autoplay="5000" data-navigation="true" data-pagination="true" data-transition="fadeUp">
-                <div class="intro-item" style="background-image: url(images/portEx1.jpg);">
+                <div class="intro-item" style="background-image: url(images/cover1.jpg);">
                     <div class="caption">
                         <h2>PORTFOLIO BY MFU GROUP</h2>
-                        <p>Feel the new experience of using portfolio</p> 
-                        <a class="button white transparent" href="examplePortfolio.jsp">Read More</a>            
+                        <p>Feel the new experience of using portfolio.</p> 
+                        <a class="button white transparent" href="#">Read More</a>                               
                     </div>
                 </div>
-                <div class="intro-item" style="background-image: url(images/recordplayer.jpg);">
+                <div class="intro-item" style="background-image: url(images/cover2.jpg);">
                     <div class="caption">
-                        <h2>Lab desk</h2>
-                        <p>Tools are all we need for creating good stuff</p>
-                        <a class="button white transparent" href="#">Read More</a>
+                        <h2>Example portfolio</h2>  
+                        <p>There are many examples of work.</p>                       
+                        <a class="button white transparent" href="portfolioExample.jsp">Example More</a>                  
                     </div>
                 </div>
-                <div class="intro-item" style="background-image: url(images/Wired_SanDiego_Full.jpg);">
+                <div class="intro-item" style="background-image: url(images/cover3.jpg);">
                     <div class="caption">
-                        <h2>Jules &amp; Jim</h2>
-                        <p>A team with over 20 years of realty experience</p>
-                        <a class="button white transparent" href="#">Read More</a>
+                        <h2>Activity portfolio</h2>
+                        <p>You can add an event by yourself.</p>
+                        <a class="button white transparent" href="activityAdd.jsp">Let starting</a>
                     </div>
                 </div>
-                <div class="intro-item" style="background-image: url(images/town-1.jpg);">
+                <div class="intro-item" style="background-image: url(images/cover4.jpg);">
                     <div class="caption">
-                        <h2>Workspace</h2>
-                        <p>We love to work inside dark rooms</p>
-                        <a class="button white transparent" href="#">Read More</a>
+                        <h2>Create portfolio</h2>
+                        <p>Start designing your portfolio.</p>
+                        <a class="button white transparent" href="portfolioWork.jsp">Let starting</a>
                     </div>
                 </div>
             </div>

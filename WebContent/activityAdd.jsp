@@ -14,6 +14,7 @@
 <link
 	href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/css/froala_style.min.css"
 	rel="stylesheet" type="text/css" />
+	<link rel="icon" href="favicon.ico">
 	
 
 <script>
