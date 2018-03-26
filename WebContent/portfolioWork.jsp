@@ -31,13 +31,13 @@
         <h3 class="mb-5">
           <em>your activity can keep in portfolio</em>
         </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">Let start</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#listPortfolio">Let start</a>
       </div>
       <div class="overlay"></div>
     </header>
  <!-- theam -->
     <!-- Services -->
-    <section class="content-section bg-primary text-white text-center" id="services">
+    <section class="masthead d-flex" id="listPortfolio">
       <div class="container">
         <div class="content-section-heading">
           <h3 class="text-secondary mb-0">Tool of portlity</h3>

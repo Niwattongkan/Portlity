@@ -26,12 +26,7 @@ public class ActivityController {
 		UserService userser; 
 	 
 	
-	 @RequestMapping("/addActivity")
-	 public ModelAndView addActivity(HttpServletRequest request){
-		 ModelAndView mv = new ModelAndView("activityAdd.jsp");
-		 String htmlBody = request.getParameter("htmlValue");
-		 return mv;
-	 }
+	
 	 @RequestMapping("/saveActivity")
 	 @ResponseBody
 	 public String saveActivity(@ModelAttribute("activity") activity activity, BindingResult result,
@@ -86,5 +81,5 @@ public class ActivityController {
 				// TODO: handle exception
 			}
 		return mv;
-}
+	 }
 }

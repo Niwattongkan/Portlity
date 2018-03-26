@@ -35,7 +35,7 @@
 <script>
 	function onClickSave() {
 		var htmlValue = $('textarea#froala-editor').val();
-		console.log('Save',htmlValue);
+		console.log('Save ',htmlValue);
 		$.ajax({
 			url : "saveActivity.do",
 			data : {
@@ -44,7 +44,8 @@
 			success : function(result) {
 				console.log('result', result);
 				if (result === 'success') {
-					window.location = "http://localhost:8080/Portlity/activityList.jsp";}
+					window.location = "http://localhost:8080/Portlity/activityList.jsp";
+					}
 			},
 			error : function(xhr, status, error) {
 				console.log('worng')
@@ -76,8 +77,6 @@
 				 -->
 					</ul>
 					<div class="grid-items portfolio-section preload">
-							
-		
 						<article class="item column four" data-groups='["nomal", "icons"]'>
 							<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></figure>
 							<a class="overlay" href="#editerArea" onclick="myFunction()" >
@@ -95,9 +94,11 @@
 				<section  class="container text-center my-auto" id="editerArea">
 				<div id="myDIV" style="display: none;"  class="grid-items portfolio-section preload">
 					<form>
-					<div id="froala-editor">
-					
-					</div>
+					 <textarea  id="froala-editor">
+						<c:forEach items="${temActivityList}" var="temActivityList">
+							${temActivityList.bodyHTML}
+						</c:forEach>
+					</textarea>
 						<input type="button" value="Next" onclick="onClickSave()">
 					</form>
 				</div>
@@ -144,7 +145,7 @@
     </footer>
 		
 	<script>
-	$('div#froala-editor').froalaEditor({
+	$('textarea#froala-editor').froalaEditor({
 		  toolbarInline: true,
 		  charCounterCount: false,
 		  toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', '-', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'indent', 'outdent', '-', 'insertImage', 'insertLink', 'insertFile', 'insertVideo', 'undo', 'redo'],

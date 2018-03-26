@@ -86,7 +86,8 @@
 	<div id="main" class="row">
 		<div class="row-content buffer clear-after">
 			<ul class="inline cats filter-options">
-			<a class="button red" href="#"><i class="icon icon-add"></i>Activity</a>							
+			
+			<a class="button red" href="listTemplateActivity.do"><i class="icon icon-add"></i>Activity</a>							
 			</ul>
 		</div>
 		<!-- row-content -->
