@@ -12,7 +12,7 @@
 	width: device-width;
 }
 </style>
-<title>Beetle - Works 3 Columns</title>
+<title>Portlity - Activity</title>
 <link rel="stylesheet" href="css/layers.min.css" media="screen">
 <link rel="stylesheet" href="css/font-awesome.min.css" media="screen">
 <link rel="stylesheet" href="style.css" media="screen">
@@ -56,7 +56,7 @@
 						<li class="menu-item"><a>Portfolio</a>
 							<ul class="sub-menu">
 								<li><a href="portfolioWork.jsp">Work portfolio</a></li>
-								<li><a href="examplePortfolio.jsp">Example portfolio</a></li>
+								<li><a href="portfolioExample.jsp">Example portfolio</a></li>
 							</ul></li>
 						<li class="menu-item"><a href="studentLogin.jsp"
 							onclick="signOut();">Sign off</a></li>
@@ -86,8 +86,10 @@
 	<div id="main" class="row">
 		<div class="row-content buffer clear-after">
 			<ul class="inline cats filter-options">
+
 			
-			<a class="button red" href="listTemplateActivity.do"><i class="icon icon-add"></i>Activity</a>							
+			<a class="button red" href="listTemplateActivity.do"><i class="icon icon-add"></i>Add yours activity</a>							
+
 			</ul>
 		</div>
 		<!-- row-content -->
