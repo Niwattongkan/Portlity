@@ -76,15 +76,15 @@
         </div>
       </div>
     </section>
-    <section class="content-section bg-light" id="templateOfIt">  
-    <div class="container" style="display: none;" id="myDIV">
+     <div class="container" id="myDIV" style="display: none;">
+    <section  id="templateOfIt" >  
         <div class="content-section-heading text-center">
           <h3 class="text-secondary mb-0">Portfolio</h3>
           <h2 class="mb-5">template</h2>
         </div>
         <div class="row no-gutters">
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
+            <a class="portfolio-item" href="listActivityForPortfolio.do">
               <span class="caption">
                 <span class="caption-content">
                   <h2>Stationary</h2>
@@ -95,7 +95,7 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
+            <a class="portfolio-item" href="listActivityForPortfolio.do">
               <span class="caption">
                 <span class="caption-content">
                   <h2>Ice Cream</h2>
@@ -106,7 +106,7 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
+            <a class="portfolio-item" href="listActivityForPortfolio.do">
               <span class="caption">
                 <span class="caption-content">
                   <h2>Strawberries</h2>
@@ -117,7 +117,7 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
+            <a class="portfolio-item" href="listActivityForPortfolio.do">
               <span class="caption">
                 <span class="caption-content">
                   <h2>Workspace</h2>
@@ -128,8 +128,10 @@
             </a>
           </div>
         </div>
+        </section>
       </div>
-    </section>
+    
+    
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">

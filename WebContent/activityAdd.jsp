@@ -152,7 +152,7 @@
 		  toolbarVisibleWithoutSelection: true
 		})
 	</script>
-			<script>
+	<script>
 		function myFunction() {
 		    var x = document.getElementById("myDIV");
 		    if (x.style.display === "none") {
@@ -161,7 +161,7 @@
 		        x.style.display = "none";
 		    }
 		}
-		</script>
+	</script>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
 	<script src="js/plugins.js"></script>

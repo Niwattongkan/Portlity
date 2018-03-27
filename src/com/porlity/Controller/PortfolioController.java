@@ -25,11 +25,12 @@ public class PortfolioController {
 	 ActivitySerice activitySer;
 	 @EJB(mappedName = "ejb:/Portlity//UserServiecBean!com.porlity.Service.UserService")
 		UserService userser; 
+	 @EJB(mappedName = "ejb:/Portlity//PortfolioServiceBean!com.porlity.Service.PortfolioService")
+	 	PortfolioService portser;
 	 
-	  
-	 @RequestMapping("/listActivity")
+	 @RequestMapping("/listActivityForPortfolio")
 	 public ModelAndView listActivity(HttpServletRequest request){
-		 ModelAndView mv = new ModelAndView("portfolioAdd.jsp");
+		 ModelAndView mv = new ModelAndView("portfolioPrint.jsp");
 			HttpSession session=request.getSession(false);
 			String userId = null;
 			 if(session!=null){  

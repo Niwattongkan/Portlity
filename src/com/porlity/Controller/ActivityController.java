@@ -63,6 +63,7 @@ public class ActivityController {
 			}
 		 return "listActivity.do";
 	 }
+	 
 	 @RequestMapping("/listActivity")
 	 public ModelAndView listActivity(HttpServletRequest request){
 		 ModelAndView mv = new ModelAndView("portfolioAdd.jsp");

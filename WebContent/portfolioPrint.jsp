@@ -8,24 +8,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<c:forEach items="${listuser}" var="listuser">
-				<div class="div4" style="font-size: 20px;">Firstname:
-					&nbsp;&nbsp;&nbsp;&nbsp;${listuser.name}</div>
-				<br>
-				<div class="div5" style="font-size: 20px;">Lastname:
-					&nbsp;&nbsp;&nbsp;&nbsp;${listuser.surname}</div>
-				<br>
-				<div class="div5" style="font-size: 20px;">Nickname:
-					&nbsp;&nbsp;&nbsp;&nbsp;${listuser.nicname}</div>
-				<br>
-				<div class="div8" style="font-size: 20px;">Email:
-					&nbsp;&nbsp;&nbsp;&nbsp;${listuser.email}</div>
-				<br>
-				<br>
-				<form action="#" method="POST" enctype="multipart/form-data">
-					<input type="file" name="file1"> <br>
-				</form> 
-				</a>
-			</c:forEach>
+	<c:forEach items="${listActivity}" var="listActivity">
+		${listActivity.page}
+	</c:forEach>
 </body>
 </html>
