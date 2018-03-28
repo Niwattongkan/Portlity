@@ -14,13 +14,18 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.porlity.Service.templateActivityService;
+import com.porlity.Service.templatePortfolioService;
 import com.porlity.entity.activity;
 import com.porlity.entity.templateActivity;
+import com.porlity.entity.templatePortfolio;
 
 @Controller
 public class AddTemplateController {
 	 @EJB(mappedName = "ejb:/Portlity//templateActivityServiceBean!com.porlity.Service.templateActivityService")
 	 templateActivityService temActivity;
+	 
+	 @EJB(mappedName = "ejb:/Portlity//templatePortfolioServiceBean!com.porlity.Service.templatePortfolioService")
+	 templatePortfolioService temPortfolio;
 
 	 @RequestMapping("/addTemplateActivity")
 	 public ModelAndView addTemplateActivity(HttpServletRequest request){
@@ -68,5 +73,28 @@ public class AddTemplateController {
 		}
 		 return mv;
 		 
+	 }
+	 @RequestMapping("/saveTemplatePortfolio")
+	 @ResponseBody
+	 public String saveTemplatePortfolio(@ModelAttribute("templatePortfolio") templatePortfolio templatePortfolio, BindingResult result,
+				HttpServletRequest request) {	 
+		 		String htmlBody = request.getParameter("htmlBody");
+		 		System.out.println("htmlBody"+htmlBody);
+		 	try{
+		 		if( templatePortfolio.getTemplatePortfolioId() != 0 )
+		 		{	templatePortfolio.setBodyHTML(htmlBody);
+		 			temPortfolio.update(templatePortfolio);
+		 			return "success";
+		 		}else{
+		 			templatePortfolio.setBodyHTML(htmlBody);
+		 			temPortfolio.insert(templatePortfolio);
+		 			return "success";
+		 		}
+		 	}catch (Exception e) {
+				// TODO: handle exception
+		 		System.out.println("try agarin");
+		 		e.printStackTrace();
+			}
+		 return "";
 	 }
 }

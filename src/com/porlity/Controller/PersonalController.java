@@ -109,7 +109,6 @@ public class PersonalController {
 			String familyName = (String) payload.get("family_name");
 			String givenName = (String) payload.get("given_name");
 			List<user> listuserGoogle = userser.getfindbyGoogle(userGoogleId);
-			System.out.println("toden is have");
 			if (listuserGoogle.size() == 0) {			
 				userr.setUserGoogle(userGoogleId);
 				userser.insert(userr);
