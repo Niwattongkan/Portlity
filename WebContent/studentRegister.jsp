@@ -120,11 +120,12 @@
 										<div class="form-group">
 											<label>Weight</label>
 											<form:input type="text" class="form-control"
-												placeholder="184" path="hight" />
+												placeholder="64" path="wight" />
 										</div>
 									</div>
 									<div class="col-sm-5 col-sm-offset-1">
 										<div class="form-group">
+<<<<<<< HEAD
 <<<<<<< HEAD
 											<label>Height</label>
 =======
@@ -132,6 +133,11 @@
 >>>>>>> 6cc54c06ccfcd6f0d653619e92fbe122cf01fccd
 											<form:input type="text" class="form-control" placeholder="74"
 												path="wight" />
+=======
+											<label>Wigth</label>
+											<form:input type="text" class="form-control" placeholder="184"
+												path="hight" />
+>>>>>>> 04ea891e06abdfb84313998b55e315172b39f461
 										</div>
 									</div>
 									<div class="col-sm-5">
@@ -156,11 +162,15 @@
 												placeholder="Assumption Convent School"
 												path="historyEducattionPrimary" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 04ea891e06abdfb84313998b55e315172b39f461
 											<label>Grade 1-3</label>
 											<form:input type="text" class="form-control"
 												placeholder="Triamudom School"
 												path="historyEducattionHihgthschool13" />
 											<label>Grade 4-6</label>
+<<<<<<< HEAD
 =======
 											<label>Hihgthschool 1-3</label>
 											<form:input type="text" class="form-control"
@@ -168,10 +178,13 @@
 												path="historyEducattionHihgthschool13" />
 											<label>Hihgthschool 4-6</label>
 >>>>>>> 6cc54c06ccfcd6f0d653619e92fbe122cf01fccd
+=======
+>>>>>>> 04ea891e06abdfb84313998b55e315172b39f461
 											<form:input type="text" class="form-control"
 												placeholder="Triamudom School"
 												path="historyEducattionHihgthschool46" />
 										</div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 										<input type="submit" class="btn btn-info btn-fill btn-wd" value="Next" />
 									</div>
@@ -180,6 +193,10 @@
 									</div>
 									<input type='submit' value="Next" />
 >>>>>>> 6cc54c06ccfcd6f0d653619e92fbe122cf01fccd
+=======
+										<input type="submit" class="btn btn-info btn-fill btn-wd" value="Next" />
+									</div>
+>>>>>>> 04ea891e06abdfb84313998b55e315172b39f461
 								</form:form>
 							</div>
 						</div>

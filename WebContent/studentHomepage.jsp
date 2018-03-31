@@ -62,7 +62,7 @@
                         </li>
                         <li class="menu-item"><a href="editDataSutent.do">Personal</a>                           
                         </li>
-                         <li class="menu-item"><a href="activityList.jsp">Activity</a>                           
+                         <li class="menu-item"><a href="listActivityList.do">Activity</a>                           
                         </li>
                         <li class="menu-item">
                             <a>Portfolio</a>	
@@ -120,8 +120,10 @@
 
             <section class="row section call-to-action">
                 <div class="row-content buffer even">
+
                     <p>Let do your portfolio</p>
                     <a class="button red" href="portfolioWork.jsp">Do It</a>
+
                 </div>
             </section>
             
@@ -312,7 +314,7 @@
                 <!-- top-footer -->
                 <section id="bottom-footer">
                     <p class="keep-left">&copy; 2018 <a href="" alt="Mokaine Lab">Portlity</a>.</p>
-                </section>
+                </section>s
                 <!-- bottom-footer -->
             </div>
             <!-- row-content -->

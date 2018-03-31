@@ -24,14 +24,7 @@ public class ActivityController {
 	 ActivitySerice activitySer;
 	 @EJB(mappedName = "ejb:/Portlity//UserServiecBean!com.porlity.Service.UserService")
 		UserService userser; 
-	 
-	
-	 @RequestMapping("/addActivity")
-	 public ModelAndView addActivity(HttpServletRequest request){
-		 ModelAndView mv = new ModelAndView("activityAdd.jsp");
-		 String htmlBody = request.getParameter("htmlValue");
-		 return mv;
-	 }
+
 	 @RequestMapping("/saveActivity")
 	 @ResponseBody
 	 public String saveActivity(@ModelAttribute("activity") activity activity, BindingResult result,
@@ -66,18 +59,18 @@ public class ActivityController {
 		 		System.out.println("try agarin");
 		 		e.printStackTrace();
 			}
-		 return "listActivity.do";
+		 return "";
 	 }
-	 @RequestMapping("/listActivity")
-	 public ModelAndView listActivity(HttpServletRequest request){
-		 ModelAndView mv = new ModelAndView("portfolioAdd.jsp");
+	 @RequestMapping("/listActivityList")
+	 public ModelAndView listActivityList(HttpServletRequest request){
+		 ModelAndView mv = new ModelAndView("activityList.jsp");
 			HttpSession session=request.getSession(false);
 			String userId = null;
-			 if(session!=null){  
-		        	userId = (String)session.getAttribute("userId"); 
-		        	System.out.println("userId" + userId);
-		     
-		        }
+            if(session!=null){  
+                userId = (String)session.getAttribute("userId"); 
+                System.out.println("userId" + userId);
+            }
+
 			List<activity> listActivity;
 			try{
 				listActivity = activitySer.getfindbyuserID(Long.parseLong(userId));
@@ -86,5 +79,5 @@ public class ActivityController {
 				// TODO: handle exception
 			}
 		return mv;
-}
+	 }
 }

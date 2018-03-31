@@ -95,6 +95,7 @@
 								<form:form method="post" action="savePersonal.do"
 									commandName="user">
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 									<div class="row">
 
@@ -120,6 +121,8 @@
 													placeholder="Nickname" value="${listuser.nicName}"
 													path="surName" />
 =======
+=======
+>>>>>>> 04ea891e06abdfb84313998b55e315172b39f461
 									<c:forEach items="${listuser}" var="listuser">
 										<div class="row">
 
@@ -137,6 +140,7 @@
 														placeholder="Last Name" value="${listuser.surName}"
 														path="surName" />
 												</div>
+<<<<<<< HEAD
 >>>>>>> 6cc54c06ccfcd6f0d653619e92fbe122cf01fccd
 											</div>
 										</div>
@@ -149,6 +153,11 @@
 												<form:input type="text" class="form-control border-input"
 													placeholder="" value="${listuser.address}" path="address" />
 =======
+=======
+											</div>
+										</div>
+
+>>>>>>> 04ea891e06abdfb84313998b55e315172b39f461
 										<div class="row">
 											<div class="col-md-9">
 												<div class="form-group">
@@ -156,6 +165,7 @@
 													<form:input type="text" class="form-control border-input"
 														placeholder="" value="${listuser.address}" path="address" />
 												</div>
+<<<<<<< HEAD
 >>>>>>> 6cc54c06ccfcd6f0d653619e92fbe122cf01fccd
 											</div>
 										</div>
@@ -184,6 +194,11 @@
 													placeholder="ZIP Code" value="${listuser.phone}"
 													path="phone" />
 =======
+=======
+											</div>
+										</div>
+
+>>>>>>> 04ea891e06abdfb84313998b55e315172b39f461
 										<div class="row">
 											<div class="col-md-3">
 												<div class="form-group">
@@ -207,6 +222,7 @@
 														placeholder="ZIP Code" value="${listuser.phone}"
 														path="phone" />
 												</div>
+<<<<<<< HEAD
 >>>>>>> 6cc54c06ccfcd6f0d653619e92fbe122cf01fccd
 											</div>
 										</div>
@@ -275,6 +291,11 @@
 									</div>
 
 =======
+=======
+											</div>
+										</div>
+
+>>>>>>> 04ea891e06abdfb84313998b55e315172b39f461
 										<div class="row">
 											<div class="col-md-3">
 												<div class="form-group">
@@ -332,7 +353,10 @@
 												value="Update Profile" />
 										</div>
 									</c:forEach>
+<<<<<<< HEAD
 >>>>>>> 6cc54c06ccfcd6f0d653619e92fbe122cf01fccd
+=======
+>>>>>>> 04ea891e06abdfb84313998b55e315172b39f461
 								</form:form>
 								<div class="clearfix"></div>
 							</div>

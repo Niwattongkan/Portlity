@@ -7,7 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+	<script>
+		function OpenTemplate() {
+		    var x = document.getElementById("myDIV");
+		    if (x.style.display === "none") {
+		        x.style.display = "block";
+		    } else {
+		        x.style.display = "none";
+		    }
+		}
+	</script>
     <title>Work portfolio</title>
 
     <!-- Bootstrap Core CSS -->
@@ -31,68 +40,98 @@
         <h3 class="mb-5">
           <em>your activity can keep in portfolio</em>
         </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">Let start</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#listPortfolio">Let start</a>
       </div>
       <div class="overlay"></div>
     </header>
- <!-- theam -->
-    <!-- Services -->
-    <section class="content-section bg-primary text-white text-center" id="services">
-      <div class="container">
-        <div class="content-section-heading">
-          <h3 class="text-secondary mb-0">Tool of portlity</h3>
-          <h2 class="mb-5">Choose item of portfolio</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-screen-smartphone"></i>
-            </span>
-            <h4>
-              <strong>Activity</strong>
-            </h4>
-            <p class="text-faded mb-0">you activity in portfolio</p>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-pencil"></i>
-            </span>
-            <h4>
-              <strong>Font</strong>
-            </h4>
-            <p class="text-faded mb-0"></p>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-like"></i>
-            </span>
-            <h4>
-              <strong>Edit profile-page</strong>
-            </h4>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-mustache"></i>
-            </span>
-            <h4>
-              <strong>Add fontpage</strong>
-            </h4>
-          </div>
-        </div>
+    <section  class="content-section bg-primary text-white text-center" id="listPortfolio">     
+    	<div class="container text-center my-auto">
+	        <h1 class="mb-1">list of Portfolio </h1>
+		        <h3 class="mb-5">
+		          <em></em>
+		        </h3>
+	        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#SchoolOf">Let start</a>
       </div>
-    </section>
+      <div class="overlay"></div>
+    </section>   
     
-   
-    <!-- dowload -->
-    <section class="callout">
-      <div class="container text-center">
-        <h2 class="mx-auto mb-5">Next to print
-          <em>your</em>
-          Portfolio</h2>
-        <a class="btn btn-primary btn-xl" href="printPortfolio.jsp">Print Now</a>
+  	<section class="content-section" id="SchoolOf">    
+  		<div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Choose</h3>
+          <h2 class="mb-5">School of</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#templateOfIt" onclick="OpenTemplate()">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>IT</h2>
+                  <p class="mb-0">Informations </p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+            </a>
+          </div>
+        </div>
       </div>
     </section>
-  
+     <div class="container" id="myDIV" style="display: none;">
+    <section  id="templateOfIt" >  
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Portfolio</h3>
+          <h2 class="mb-5">template</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="listActivityForPortfolio.do">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Stationary</h2>
+                  <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="listActivityForPortfolio.do">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Ice Cream</h2>
+                  <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="listActivityForPortfolio.do">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Strawberries</h2>
+                  <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="listActivityForPortfolio.do">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Workspace</h2>
+                  <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        </section>
+      </div>
+    
+    
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">
