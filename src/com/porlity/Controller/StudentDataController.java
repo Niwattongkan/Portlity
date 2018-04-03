@@ -22,7 +22,7 @@ public class StudentDataController {
 	
 	@RequestMapping("/listDataOfStudent.do")
 	public ModelAndView listDataOfStudent (HttpServletRequest request) {
-		ModelAndView mv = new ModelAndView("studentProfile.jsp");
+		ModelAndView mv = new ModelAndView("studentProfile.do");
 		HttpSession session=request.getSession(false);
 		String userId = null;
 		 if(session!=null){  

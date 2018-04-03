@@ -33,14 +33,17 @@ public class PortfolioController {
 		 ModelAndView mv = new ModelAndView("portfolioPrint.jsp");
 			HttpSession session=request.getSession(false);
 			String userId = null;
-			 if(session!=null){  
+			activity activi = new activity();
+			if(session!=null){  
 		        	userId = (String)session.getAttribute("userId"); 
 		        	System.out.println("userId" + userId);
 		     
 		        }
 			List<activity> listActivity;
+			
 			try{
 				listActivity = activitySer.getfindbyuserID(Long.parseLong(userId));
+				System.out.println("id activity"+activi.getActivityId());
 				mv.addObject("listActivity",listActivity);
 			}catch (Exception e) {
 				// TODO: handle exception

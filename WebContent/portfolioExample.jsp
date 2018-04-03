@@ -37,7 +37,7 @@
 	<div class="container">
 		<div class="content-section-heading text-center">
 			<h2 class="text-secondary mb-0">
-				<a href="studentHomepage.jsp"> Portfolio </a>
+				<a href="studentHomepage.do"> Portfolio </a>
 			</h2>
 			<h3 class="mb-5">Recent Projects</h3>
 		</div>

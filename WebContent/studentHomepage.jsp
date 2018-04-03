@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
 <!DOCTYPE html>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <html lang="en">
 
 <head>
@@ -58,7 +59,7 @@
                 <a id="menu-toggle" href="#"><i class="fa fa-bars fa-lg"></i></a>
                 <nav>
                     <ul class="reset" role="navigation">
-                        <li class="menu-item"><a href="studentHomepage.jsp">Home</a>
+                        <li class="menu-item"><a href="studentHomepage.do">Home</a>
                         </li>
                         <li class="menu-item"><a href="editDataSutent.do">Personal</a>                           
                         </li>
@@ -133,88 +134,22 @@
                         <h3>Latest News</h3>
                     </div>
                     <div class="grid-items blog-section masonry-style preload">
-                        <article class="item column six">
-                            <a href="#">
-                                <figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""><span class="blog-overlay"><i class="icon icon-doc"></i></span></figure>
-                                <div class="blog-excerpt">
-                                    <div class="blog-excerpt-inner">
-                                        <h5 class="meta-post">Interior design</h5>
-                                        <h2>A confortable desk</h2>
-                                    </div>
-                                    <!-- blog-excerpt -->
-                                </div>
-                                <!-- blog-excerpt-inner -->
-                            </a>
-                        </article>
+                        
+                      <c:forEach items="${listInformation}" var="list">
                         <article class="item column three">
                             <a href="#">
                                 <figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""><span class="blog-overlay"><i class="icon icon-doc"></i></span></figure>
                                 <div class="blog-excerpt">
                                     <div class="blog-excerpt-inner">
-                                        <h5 class="meta-post">Relax, Hobbies</h5>
-                                        <h2>How I spend my time</h2>
-                                        <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    </div>
-                                    <!-- blog-excerpt-inner -->
-                                </div>
-                                <!-- blog-excerpt -->
-                            </a>
-                        </article>
-                        <article class="item column three">
-                            <a href="#">
-                                <figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""><span class="blog-overlay"><i class="icon icon-doc"></i></span></figure>
-                                <div class="blog-excerpt">
-                                    <div class="blog-excerpt-inner">
-                                        <h5 class="meta-post">Holidays</h5>
-                                        <h2>Snow &amp; silence</h2>
-                                        <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <h5 class="meta-post">News</h5>
+                                        <h2>${list.body}</h2>
                                     </div>
                                     <!-- blog-excerpt -->
                                 </div>
                                 <!-- blog-excerpt-inner -->
                             </a>
                         </article>
-                        <article class="item column three">
-                            <a href="#">
-                                <figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""><span class="blog-overlay"><i class="icon icon-doc"></i></span></figure>
-                                <div class="blog-excerpt">
-                                    <div class="blog-excerpt-inner">
-                                        <h5 class="meta-post">Music, Headphones</h5>
-                                        <h2>5 Hi-Fi headphones</h2>
-                                        <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    </div>
-                                    <!-- blog-excerpt -->
-                                </div>
-                                <!-- blog-excerpt-inner -->
-                            </a>
-                        </article>
-                        <article class="item column three">
-                            <a href="#">
-                                <figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""><span class="blog-overlay"><i class="icon icon-doc"></i></span></figure>
-                                <div class="blog-excerpt">
-                                    <div class="blog-excerpt-inner">
-                                        <h5 class="meta-post">Web Design</h5>
-                                        <h2>Build awesome layouts</h2>
-                                        <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    </div>
-                                    <!-- blog-excerpt -->
-                                </div>
-                                <!-- blog-excerpt-inner -->
-                            </a>
-                        </article>
-                        <article class="item column six">
-                            <a href="#">
-                                <figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""><span class="blog-overlay"><i class="icon icon-doc"></i></span></figure>
-                                <div class="blog-excerpt">
-                                    <div class="blog-excerpt-inner">
-                                        <h5 class="meta-post">Photography, Instagram</h5>
-                                        <h2>We are all made of stars</h2>
-                                    </div>
-                                    <!-- blog-excerpt -->
-                                </div>
-                                <!-- blog-excerpt-inner -->
-                            </a>
-                        </article>
+                    	</c:forEach>
                         <div class="shuffle-sizer three"></div>
                     </div>
                     <!-- grid-items -->

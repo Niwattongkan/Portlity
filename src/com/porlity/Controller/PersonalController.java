@@ -65,7 +65,7 @@ public class PersonalController {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-		return "redirect:studentHomepage.jsp";
+		return "redirect:studentHomepage.do";
 	}
 	
 	@RequestMapping("/newPersonal")

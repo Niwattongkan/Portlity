@@ -19,9 +19,7 @@
 		<link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.png">
 		<link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png">	
 		
-<link
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"
-	rel="stylesheet" type="text/css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/js/plugins/image.min.js"></script>
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
 <link
@@ -30,7 +28,11 @@
 <link
 	href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/css/froala_style.min.css"
 	rel="stylesheet" type="text/css" />
-	<link rel="icon" href="favicon.ico">
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/js/plugins/image.min.js"
+	rel="stylesheet" type="text/css" />
+		
+<link rel="icon" href="favicon.ico">
 	
 <script>
 	function onClickSave() {
