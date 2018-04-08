@@ -1,4 +1,4 @@
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,27 +32,30 @@
 	href="img/apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" sizes="152x152"
 	href="img/apple-touch-icon-152x152.png">
-	
-	<meta name="google-signin-client_id" content="322812928410-ru9dr6in3oa9gcqbu6tefptb61fd1pt9.apps.googleusercontent.com">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://apis.google.com/js/platform.js" async defer></script>
- 	<script src="https://apis.google.com/js/platform.js?onload=init" async
-	defer></script>
-	<script>
-    function signOut() {
-        var auth2 = gapi.auth2.getAuthInstance();
-        auth2.signOut().then(function () {
-          console.log('User signed out.');
-        });
-      }
 
-      function onLoad() {
-        gapi.load('auth2', function() {
-          gapi.auth2.init();
-        });
-      }
-	</script>
-	<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+<meta name="google-signin-client_id"
+	content="322812928410-ru9dr6in3oa9gcqbu6tefptb61fd1pt9.apps.googleusercontent.com">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://apis.google.com/js/platform.js?onload=init" async
+	defer></script>
+<script>
+	function signOut() {
+		var auth2 = gapi.auth2.getAuthInstance();
+		auth2.signOut().then(function() {
+			console.log('User signed out.');
+		});
+	}
+
+	function onLoad() {
+		gapi.load('auth2', function() {
+			gapi.auth2.init();
+		});
+	}
+</script>
+<script src="https://apis.google.com/js/platform.js?onload=onLoad" async
+	defer></script>
 </head>
 
 <body class="portfolio">
@@ -98,6 +101,10 @@
 				<div class="caption">
 					<h2>Activity portfolio</h2>
 					<p>You can add an event by yourself.</p>
+					<center>
+						<a class="button red" href="listTemplateActivity.do"><i
+							class="icon icon-add"></i>Add yours activity</a>
+					</center>
 				</div>
 				<!-- caption -->
 			</div>
@@ -106,28 +113,6 @@
 	</div>
 	<!-- intro-wrap -->
 	<div id="main" class="row">
-	<center><a class="button red" href="listTemplateActivity.do"><i class="icon icon-add"></i>Add yours activity</a></center>
-		<div class="row-content buffer clear-after">
-			<div class="grid-items portfolio-section preload">
-				<ul class="inline cats filter-options">
-					<c:forEach items="${listActivity}" var="list">
-								<article class="item column four" >
-									<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></figure>
-											<a class="overlay" href="#editerArea"  >
-												<div class="overlay-content">
-													<div class="post-type"><i class="icon icon-picture"></i></div>
-													<h2>${list.activityId}</h2>
-													<p>${list.page}</p>
-												</div><!-- overlay-content -->
-											</a><!-- overlay -->
-								</article>
-					</c:forEach>
-				</ul>
-								
-			
-		</div>
-		
-		</div>
 		<!-- row-content -->
 	</div>
 	<!-- row --> </main>
