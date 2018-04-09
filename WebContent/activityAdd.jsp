@@ -65,8 +65,8 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/js/froala_editor.pkgd.min.js"></script>
 
 	<div id="main" class="row">
+				
 				<div class="row-content buffer clear-after">
-				<!-- ใช่ forloop list template -->
 					<ul class="inline cats filter-options">
 						<li data-group="advertising">All template</li>
 						<li data-group="nomal">Nomal</li>
@@ -81,6 +81,7 @@
 					<div class="grid-items portfolio-section preload">
 					<c:forEach items="${temActivityList}" var="temActivityList">
 						<article class="item column four" data-groups='["nomal", "icons"]'>
+							<c:set var = "idTemplateActivty" scope = "session" value = "${temActivityList.templateActivityId}"/>
 							<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></figure>
 							<a class="overlay" href="#editerArea" onclick="myFunction()" >
 								<div class="overlay-content">
@@ -96,6 +97,7 @@
 			</div><!-- row -->
 				<section  class="container text-center my-auto" id="editerArea">
 				<div id="myDIV" style="display: none;"  class="grid-items portfolio-section preload">
+				
 					<form>
 					
 					</form>
