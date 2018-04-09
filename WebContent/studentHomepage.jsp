@@ -63,7 +63,7 @@
                         </li>
                         <li class="menu-item"><a href="editDataSutent.do">Personal</a>                           
                         </li>
-                         <li class="menu-item"><a href="listActivityList.do">Activity</a>                           
+                         <li class="menu-item"><a href="listTemplateActivity.do">Activity</a>                           
                         </li>
                         <li class="menu-item">
                             <a>Portfolio</a>	
@@ -86,9 +86,9 @@
             <div id="intro" class="preload darken" data-autoplay="5000" data-navigation="true" data-pagination="true" data-transition="fadeUp">
                 <div class="intro-item" style="background-image: url(images/cover1.jpg);">
                     <div class="caption">
-                        <h2>PORTFOLIO BY MFU GROUP</h2>
+                        <h2>PORTFOLIO CREATE BY PORTLITY</h2>
                         <p>Feel the new experience of using portfolio.</p> 
-                        <a class="button white transparent" href="#">Read More</a>                               
+                                                     
                     </div>
                 </div>
                 <div class="intro-item" style="background-image: url(images/cover2.jpg);">

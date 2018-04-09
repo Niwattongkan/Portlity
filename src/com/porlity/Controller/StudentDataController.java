@@ -20,9 +20,9 @@ public class StudentDataController {
 	@EJB(mappedName = "ejb:/Portlity//UserServiecBean!com.porlity.Service.UserService")
 	UserService userser;
 	
-	@RequestMapping("/listDataOfStudent.do")
+	@RequestMapping("/listDataOfStudent")
 	public ModelAndView listDataOfStudent (HttpServletRequest request) {
-		ModelAndView mv = new ModelAndView("studentProfile.do");
+		ModelAndView mv = new ModelAndView("studentProfile.jsp");
 		HttpSession session=request.getSession(false);
 		String userId = null;
 		 if(session!=null){  

@@ -8,8 +8,8 @@ function HTMLtoPDF() {
 		}
 	}
 	margins = {
-		top : 50,
-		left : 60,
+		top : 0,
+		left : 0,
 		width : 545
 	};
 	pdf.fromHTML(source // HTML string or DOM elem ref.

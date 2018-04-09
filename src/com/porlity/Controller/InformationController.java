@@ -22,7 +22,7 @@ public class InformationController {
 		 ModelAndView mv = new ModelAndView("studentHomepage.jsp");
 		 List<information> listinformation;
 		 try{
-			 listinformation = informationSer.getAllInformation();
+			 listinformation = informationSer.getAll();
 			 mv.addObject("listInformation",listinformation);
 		 }catch (Exception e) {
 			// TODO: handle exception

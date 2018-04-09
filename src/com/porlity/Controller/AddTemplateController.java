@@ -33,6 +33,7 @@ public class AddTemplateController {
 		 String htmlBody = request.getParameter("htmlBody");
 		 return mv;
 	 }
+	 
 	 @RequestMapping("/saveTemplateActivity")
 	 @ResponseBody
 	 public String saveTemplateActivity(@ModelAttribute("templateActivity") templateActivity templateActivity, BindingResult result,
@@ -57,23 +58,42 @@ public class AddTemplateController {
 		 return "";
 	 }
 	
-	 @RequestMapping("/listTemplateActivity.do")
+	 @RequestMapping("/listTemplateActivity")
 	 public ModelAndView listTemplateActivity (HttpServletRequest request) {
 		 ModelAndView mv = new ModelAndView("activityAdd.jsp");
 		 templateActivity tem = new templateActivity();
-		 if(tem.getTemplateActivityId() != 0){
-			 System.out.println(tem.getTemplateActivityId());
-		 }
 		 List<templateActivity> temActivityList;
 		 try{
-			 temActivityList = temActivity.gettemplateActivty(tem.getTemplateActivityId());
+			 temActivityList = temActivity.getAll();
 			 mv.addObject("temActivityList",temActivityList);
 			 }catch (Exception e) {
 			// TODO: handle exception
 		}
-		 return mv;
-		 
+		 return mv; 
 	 }
+	 
+
+	 
+//	 
+//	 @RequestMapping("/listTemplateActivityToSubperAdmin")
+//	 public ModelAndView listTemplateActivityToSubperAdmin (HttpServletRequest request) {
+//		 ModelAndView mv = new ModelAndView("addTemplateActivity.jsp");
+//		 templateActivity tem = new templateActivity();
+//		 if(tem.getTemplateActivityId() != 0){
+//			 System.out.println(tem.getTemplateActivityId());
+//		 }
+//		 List<templateActivity> temActivityList;
+//		 try{
+//			 temActivityList = temActivity.gettemplateActivty(tem.getTemplateActivityId());
+//			 mv.addObject("temActivityList",temActivityList);
+//			 }catch (Exception e) {
+//			// TODO: handle exception
+//		}
+//		 return mv; 
+//	 }
+	 
+
+	 
 	 @RequestMapping("/saveTemplatePortfolio")
 	 @ResponseBody
 	 public String saveTemplatePortfolio(@ModelAttribute("templatePortfolio") templatePortfolio templatePortfolio, BindingResult result,

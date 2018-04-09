@@ -7,6 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<c:forEach items="${listActivity}" var="listActivity">
+		${listActivity.page}
+	</c:forEach>
+<input type="button" value="Submit" onclick="printPDF();"/>
 
+<script src="pdfFromHTML.js"></script>
 </body>
 </html>

@@ -93,9 +93,11 @@ public class PersonalController {
 		try {
 			idToken = verifier.verify(idTokenString);
 		} catch (GeneralSecurityException e) {
+			System.out.println("error 1");
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
+			System.out.println("error 2");
 		}
 
 		if (idToken != null) {

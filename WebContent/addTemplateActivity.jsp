@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
 <meta charset="utf-8">
@@ -29,7 +30,7 @@
 			success : function(result) {
 				console.log('result', result);
 				if (result === 'success') {
-					//window.location = "";}
+					window.location = "http://localhost:8080/Portlity/listTemplateActivityOfSuperAdmin.do";
 					console.log('success');}
 			},
 			error : function(xhr, status, error) {
@@ -49,13 +50,21 @@
 	<script type="text/javascript"
 		src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/js/froala_editor.pkgd.min.js"></script>
 	
-	<form:form>
-	</form:form>
 	<form>
 		<textarea id="froala-editor"></textarea>
 		<input type="button" value="Next" onclick="onClickSave();">
 	</form>
 	
+	<c:forEach items="${temActivityList}" var="temActivityList">
+	<table border="1">
+	<tr>
+		<td>${temActivityList.templateActivityId}</td>
+		<td>${temActivityList.bodyHTML}</td>
+		<td><a href="deleteTemplateActivity.do?id=${temActivityList.templateActivityId}">delete</a></td>
+	</tr>
+		</table>
+	</c:forEach>
+
 	<script>
 		$('textarea#froala-editor').froalaEditor(
 				{
@@ -69,8 +78,10 @@
 							'redo' ],
 					toolbarVisibleWithoutSelection : true
 				})
+				.on('froalaEditor.contentChanged', function(e, editor) {
+							$('#preview').html(editor.html.get());
+						})
 	</script>
-
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script src="js/plugins.js"></script>

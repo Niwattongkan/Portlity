@@ -79,29 +79,25 @@
 				 -->
 					</ul>
 					<div class="grid-items portfolio-section preload">
+					<c:forEach items="${temActivityList}" var="temActivityList">
 						<article class="item column four" data-groups='["nomal", "icons"]'>
 							<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></figure>
 							<a class="overlay" href="#editerArea" onclick="myFunction()" >
 								<div class="overlay-content">
 									<div class="post-type"><i class="icon icon-picture"></i></div>
-									<h2>Taj Mahal</h2>
-									<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<h2>${temActivityList.templateActivityId}</h2>
+									<p>${temActivityList.bodyHTML}</p>
 								</div><!-- overlay-content -->
 							</a><!-- overlay -->
 						</article>
-						
+					</c:forEach>	
 					</div><!-- grid-items -->	
 				</div><!-- row-content -->
 			</div><!-- row -->
 				<section  class="container text-center my-auto" id="editerArea">
 				<div id="myDIV" style="display: none;"  class="grid-items portfolio-section preload">
 					<form>
-					 <textarea  id="froala-editor">
-						<c:forEach items="${temActivityList}" var="temActivityList">
-							${temActivityList.bodyHTML}
-						</c:forEach>
-					</textarea>
-						<input type="button" value="Next" onclick="onClickSave()">
+					
 					</form>
 				</div>
 				</section>
