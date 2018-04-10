@@ -46,7 +46,7 @@
     </header>
     <section  class="content-section bg-primary text-white text-center" id="listPortfolio">     
     	<div class="container text-center my-auto">
-	        <h1 class="mb-1">Select of Portfolio </h1>
+	        <h1 class="mb-1">Select Portfolio </h1>
 		        <h3 class="mb-5">
 		          <em></em>
 		        </h3>

@@ -51,10 +51,24 @@
 					<a class="portfolio-item" href="#templateOfIt"
 						onclick="OpenTemplate()"> <span class="caption"> <span
 							class="caption-content">
-								<h2>Faculty of Humanities</h2>
+								<h2>Faculty of Agro-Industry</h2>
 
 						</span>
-					</span> <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+					</span> <img class="img-fluid"
+						src="images/pictures/AgroIndustry/portfolio.jpg" alt=""
+						width="700" height="467">
+					</a>
+				</div>
+				<div class="col-lg-6">
+					<a class="portfolio-item" href="#templateOfIt"
+						onclick="OpenTemplate()"> <span class="caption"> <span
+							class="caption-content">
+								<h2>Faculty of Humanities </h2>
+
+						</span>
+					</span> <img class="img-fluid"
+						src="images/pictures/ChineseStudies/portfolio.jpg" alt=""
+						width="700" height="467">
 					</a>
 				</div>
 				<div class="col-lg-6">
@@ -64,17 +78,63 @@
 								<h2>Faculty of Science</h2>
 
 						</span>
-					</span> <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+					</span> <img class="img-fluid"
+						src="images/pictures/CosmeticScience/portfolio.jpg" alt="">
 					</a>
 				</div>
 				<div class="col-lg-6">
 					<a class="portfolio-item" href="#templateOfIt"
 						onclick="OpenTemplate()"> <span class="caption"> <span
 							class="caption-content">
-								<h2>Faculty of Engineering</h2>
+								<h2>Faculty of Dentistry </h2>
 
 						</span>
-					</span> <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+					</span> <img class="img-fluid"
+						src="images/pictures/Dentistry/portfolio.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-6">
+					<a class="portfolio-item" href="#templateOfIt"
+						onclick="OpenTemplate()"> <span class="caption"> <span
+							class="caption-content">
+								<h2>Faculty of Political Science and Public Administration </h2>
+
+						</span>
+					</span> <img class="img-fluid"
+						src="images/pictures/HealthSciences/portfolio.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-6">
+					<a class="portfolio-item" href="#templateOfIt"
+						onclick="OpenTemplate()"> <span class="caption"> <span
+							class="caption-content">
+								<h2>Media and Technology </h2>
+
+						</span>
+					</span> <img class="img-fluid"
+						src="images/pictures/InformationTechnology/portfolio.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-6">
+					<a class="portfolio-item" href="#templateOfIt"
+						onclick="OpenTemplate()"> <span class="caption"> <span
+							class="caption-content">
+								<h2>Faculty of Law</h2>
+
+						</span>
+					</span> <img class="img-fluid" src="images/pictures/Law/portfolio.jpg"
+						alt="">
+					</a>
+				</div>
+				<div class="col-lg-6">
+					<a class="portfolio-item" href="#templateOfIt"
+						onclick="OpenTemplate()"> <span class="caption"> <span
+							class="caption-content">
+								<h2>Faculty of Education</h2>
+
+						</span>
+					</span> <img class="img-fluid"
+						src="images/pictures/LiberalArts/portfolio.jpg" alt="">
 					</a>
 				</div>
 				<div class="col-lg-6">
@@ -84,27 +144,30 @@
 								<h2>Faculty of Medicine</h2>
 
 						</span>
-					</span> <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+					</span> <img class="img-fluid"
+						src="images/pictures/Medicine/portfolio.jpg" alt="">
 					</a>
 				</div>
 				<div class="col-lg-6">
 					<a class="portfolio-item" href="#templateOfIt"
 						onclick="OpenTemplate()"> <span class="caption"> <span
 							class="caption-content">
-								<h2>Faculty of Dentistry</h2>
+								<h2>Faculty of Nursing</h2>
 
 						</span>
-					</span> <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+					</span> <img class="img-fluid" src="images/pictures/Nurse/portfolio.jpg"
+						alt="">
 					</a>
 				</div>
 				<div class="col-lg-6">
 					<a class="portfolio-item" href="#templateOfIt"
 						onclick="OpenTemplate()"> <span class="caption"> <span
 							class="caption-content">
-								<h2>Faculty of Agriculture</h2>
+								<h2>Faculty of Social Sciences</h2>
 
 						</span>
-					</span> <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+					</span> <img class="img-fluid"
+						src="images/pictures/SocialInnovation/portfolio.jpg" alt="">
 					</a>
 				</div>
 			</div>
@@ -114,13 +177,13 @@
 		<section id="templateOfIt">
 			<div class="content-section-heading text-center">
 				<h3 class="text-secondary mb-0">Portfolio</h3>
-				<h2 class="mb-5">template Faculty of Humanities</h2>
+				<h2 class="mb-5">template Faculty of Agro-Industry</h2>
 			</div>
 			<div class="row no-gutters">
 				<div class="col-lg-6">
 					<a class="portfolio-item" href="listActivityForPortfolio.do"> <span
 						class="caption"> <span class="caption-content">
-								<h2>English B.A.</h2>
+								<h2>Food Science and Technology</h2>
 						</span>
 					</span> <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
 					</a>
@@ -128,8 +191,8 @@
 				<div class="col-lg-6">
 					<a class="portfolio-item" href="listActivityForPortfolio.do"> <span
 						class="caption"> <span class="caption-content">
-								<h2>French B.A.</h2>
-							
+								<h2>Agro-Industrial Biotechnology</h2>
+
 						</span>
 					</span> <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
 					</a>
@@ -137,8 +200,8 @@
 				<div class="col-lg-6">
 					<a class="portfolio-item" href="listActivityForPortfolio.do"> <span
 						class="caption"> <span class="caption-content">
-								<h2>Thai B.A.</h2>
-								
+								<h2>Food Process Engineering</h2>
+
 						</span>
 					</span> <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
 					</a>
@@ -146,8 +209,26 @@
 				<div class="col-lg-6">
 					<a class="portfolio-item" href="listActivityForPortfolio.do"> <span
 						class="caption"> <span class="caption-content">
-								<h2>German B.A.</h2>
-								
+								<h2>Product Development Technology</h2>
+
+						</span>
+					</span> <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-6">
+					<a class="portfolio-item" href="listActivityForPortfolio.do"> <span
+						class="caption"> <span class="caption-content">
+								<h2>Packaging Technology</h2>
+
+						</span>
+					</span> <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-6">
+					<a class="portfolio-item" href="listActivityForPortfolio.do"> <span
+						class="caption"> <span class="caption-content">
+								<h2>Marine Product Technology</h2>
+
 						</span>
 					</span> <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
 					</a>

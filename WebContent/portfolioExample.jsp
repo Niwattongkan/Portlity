@@ -46,8 +46,7 @@
 				<a class="portfolio-item" href="#"> <span class="caption">
 						<span class="caption-content">
 							<h2>Agro Industry</h2>
-							<p class="mb-0">A yellow pencil with envelopes on a clean,
-								blue backdrop!</p>
+					
 					</span>
 				</span> <img id="myImg" class="img-fluid" src="images/pictures/AgroIndustry/cover.jpg"
 					alt="">
@@ -62,8 +61,7 @@
 				<a class="portfolio-item" href="#"> <span class="caption">
 						<span class="caption-content">
 							<h2>Chinese Studies</h2>
-							<p class="mb-0">A dark blue background with a colored pencil,
-								a clip, and a tiny ice cream cone!</p>
+							
 					</span>
 				</span> <img class="img-fluid"
 					src="images/pictures/ChineseStudies/cover.jpg" alt="">
@@ -73,8 +71,7 @@
 				<a class="portfolio-item" href="#"> <span class="caption">
 						<span class="caption-content">
 							<h2>Cosmetic Science</h2>
-							<p class="mb-0">Strawberries are such a tasty snack,
-								especially with a little sugar on top!</p>
+							
 					</span>
 				</span> <img class="img-fluid"
 					src="images/pictures/CosmeticScience/cover.jpg" alt="">
@@ -84,8 +81,7 @@
 				<a class="portfolio-item" href="#"> <span class="caption">
 						<span class="caption-content">
 							<h2>Dentistry</h2>
-							<p class="mb-0">A yellow workspace with some scissors,
-								pencils, and other objects.</p>
+							
 					</span>
 				</span> <img class="img-fluid" src="images/pictures/Dentistry/cover.jpg"
 					alt="">
@@ -95,8 +91,7 @@
 				<a class="portfolio-item" href="#"> <span class="caption">
 						<span class="caption-content">
 							<h2>Health Sciences</h2>
-							<p class="mb-0">Strawberries are such a tasty snack,
-								especially with a little sugar on top!</p>
+							
 					</span>
 				</span> <img class="img-fluid"
 					src="images/pictures/HealthSciences/cover.jpg" alt="">
@@ -106,8 +101,7 @@
 				<a class="portfolio-item" href="#"> <span class="caption">
 						<span class="caption-content">
 							<h2>Information Technology</h2>
-							<p class="mb-0">Strawberries are such a tasty snack,
-								especially with a little sugar on top!</p>
+							
 					</span>
 				</span> <img class="img-fluid"
 					src="images/pictures/InformationTechnology/cover.jpg" alt="">
@@ -117,8 +111,7 @@
 				<a class="portfolio-item" href="#"> <span class="caption">
 						<span class="caption-content">
 							<h2>Law</h2>
-							<p class="mb-0">Strawberries are such a tasty snack,
-								especially with a little sugar on top!</p>
+							
 					</span>
 				</span> <img class="img-fluid" src="images/pictures/Law/cover.jpg" alt="">
 				</a>
@@ -127,8 +120,7 @@
 				<a class="portfolio-item" href="#"> <span class="caption">
 						<span class="caption-content">
 							<h2>Liberal Arts</h2>
-							<p class="mb-0">Strawberries are such a tasty snack,
-								especially with a little sugar on top!</p>
+							
 					</span>
 				</span> <img class="img-fluid" src="images/pictures/LiberalArts/cover.jpg"
 					alt="">
@@ -138,8 +130,7 @@
 				<a class="portfolio-item" href="#"> <span class="caption">
 						<span class="caption-content">
 							<h2>Management</h2>
-							<p class="mb-0">Strawberries are such a tasty snack,
-								especially with a little sugar on top!</p>
+							
 					</span>
 				</span> <img class="img-fluid" src="images/pictures/Management/cover.jpg"
 					alt="">
@@ -149,8 +140,7 @@
 				<a class="portfolio-item" href="#"> <span class="caption">
 						<span class="caption-content">
 							<h2>Medicine</h2>
-							<p class="mb-0">Strawberries are such a tasty snack,
-								especially with a little sugar on top!</p>
+							
 					</span>
 				</span> <img class="img-fluid" src="images/pictures/Medicine/cover.jpg"
 					alt="">
@@ -160,8 +150,7 @@
 				<a class="portfolio-item" href="#"> <span class="caption">
 						<span class="caption-content">
 							<h2>Nurse</h2>
-							<p class="mb-0">Strawberries are such a tasty snack,
-								especially with a little sugar on top!</p>
+							
 					</span>
 				</span> <img class="img-fluid" src="images/pictures/Nurse/cover.jpg" alt="">
 				</a>
@@ -170,8 +159,7 @@
 				<a class="portfolio-item" href="#"> <span class="caption">
 						<span class="caption-content">
 							<h2>Science</h2>
-							<p class="mb-0">Strawberries are such a tasty snack,
-								especially with a little sugar on top!</p>
+							
 					</span>
 				</span> <img class="img-fluid" src="images/pictures/Science/cover.jpg"
 					alt="">
@@ -181,8 +169,7 @@
 				<a class="portfolio-item" href="#"> <span class="caption">
 						<span class="caption-content">
 							<h2>Social Innovation</h2>
-							<p class="mb-0">Strawberries are such a tasty snack,
-								especially with a little sugar on top!</p>
+							
 					</span>
 				</span> <img class="img-fluid"
 					src="images/pictures/SocialInnovation/cover.jpg" alt="">
