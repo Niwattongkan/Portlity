@@ -63,7 +63,7 @@
                         </li>
                         <li class="menu-item"><a href="editDataSutent.do">Personal</a>                           
                         </li>
-                         <li class="menu-item"><a href="listTemplateActivity.do">Activity</a>                           
+                         <li class="menu-item"><a href="listActivity.do">Activity</a>                           
                         </li>
                         <li class="menu-item">
                             <a>Portfolio</a>	

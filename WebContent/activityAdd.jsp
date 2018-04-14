@@ -46,7 +46,7 @@
 			success : function(result) {
 				console.log('result', result);
 				if (result === 'success') {
-					window.location = "http://localhost:8080/Portlity/activityList.jsp";
+					window.location = "http://localhost:8080/Portlity/listActivity.do";
 					}
 			},
 			error : function(xhr, status, error) {
@@ -69,8 +69,9 @@
 				<div class="row-content buffer clear-after">
 					<ul class="inline cats filter-options">
 						<li data-group="advertising">All template</li>
-						<li data-group="nomal">Nomal</li>
 						<li data-group="icons"></li>
+				<!-- 	<li data-group="nomal">Nomal</li>
+						
 				<!--    <li data-group="infographics">Infographics</li>
 						<li data-group="lightbox">Lightbox</li>
 						<li data-group="minimal">Minimal</li>
@@ -97,9 +98,13 @@
 			</div><!-- row -->
 				<section  class="container text-center my-auto" id="editerArea">
 				<div id="myDIV" style="display: none;"  class="grid-items portfolio-section preload">
-				
-					<form>
-					
+					<form >
+						<textarea id="froala-editor">
+						<c:forEach items="${temActivityList}" var="temActivityList">
+						${temActivityList.bodyHTML}
+						</c:forEach>	
+						</textarea>
+						<input type="button" value="Next" onclick="onClickSave();">
 					</form>
 				</div>
 				</section>
@@ -109,7 +114,7 @@
             <div class="row-content buffer clear-after">
                 <section id="top-footer">
                     <div class="widget column three">
-                        <!-- la class="widget" Ã¨ forse generata utomaticamente da wp -->
+                        <!-- la class="widget" è forse generata utomaticamente da wp -->
                         <h4>Menu</h4>
                         <ul class="plain">
                             <li><a href="home-01.html">Home</a></li>

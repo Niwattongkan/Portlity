@@ -62,4 +62,26 @@ public class ActivityController {
 		 return "";
 	 }
 	 
+	 @RequestMapping("/listActivity")
+	 public ModelAndView listPhone(HttpServletRequest request) {
+		 HttpSession session=request.getSession(false);
+		 String userId = null;
+	        if(session!=null){  
+	        	userId = (String)session.getAttribute("userId"); 
+	        }else{
+	        	System.out.println("userId is null");
+	        }
+	        ModelAndView mv = new ModelAndView("activityList.jsp");
+	        List<activity> listActivity;
+	        try {
+	        	listActivity = activitySer.getfindbyuserID(Long.parseLong(userId));
+	        	mv.addObject("listActivity",listActivity);
+	        	
+	        }catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				System.out.println("error list activty");
+	        }
+	        return mv;
+	 }
 }
