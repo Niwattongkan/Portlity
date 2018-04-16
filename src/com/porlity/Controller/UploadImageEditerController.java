@@ -1,8 +1,5 @@
 package com.porlity.Controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -16,10 +13,11 @@ import javax.servlet.http.HttpServletResponse;
  
 import com.froala.editor.Image;
 import com.google.gson.Gson;
+ 
 
 @WebServlet("/upload_image")
 @MultipartConfig
-public class UploadImageEditerController {
+public class UploadImageEditerController extends HttpServlet{
 	 private static final long serialVersionUID = 1L;
 	
 	 public UploadImageEditerController() {
@@ -27,10 +25,10 @@ public class UploadImageEditerController {
 	    }
 	 protected void doPost(HttpServletRequest request, HttpServletResponse response)
 	            throws ServletException, IOException {
-		 String fileRoute = "/public/";
+		 String fileRoute = "/public/"; //
 		 
 	 }
-	 Map<Object, Object> responseData;
+	 Map<Object,Object> responseData;
 	 
      try {
          responseData = Image.upload(request, fileRoute); // Use default

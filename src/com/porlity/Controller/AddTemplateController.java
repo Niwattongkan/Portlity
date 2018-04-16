@@ -74,23 +74,23 @@ public class AddTemplateController {
 	 
 
 	 
-//	 
-//	 @RequestMapping("/listTemplateActivityToSubperAdmin")
-//	 public ModelAndView listTemplateActivityToSubperAdmin (HttpServletRequest request) {
-//		 ModelAndView mv = new ModelAndView("addTemplateActivity.jsp");
-//		 templateActivity tem = new templateActivity();
-//		 if(tem.getTemplateActivityId() != 0){
-//			 System.out.println(tem.getTemplateActivityId());
-//		 }
-//		 List<templateActivity> temActivityList;
-//		 try{
-//			 temActivityList = temActivity.gettemplateActivty(tem.getTemplateActivityId());
-//			 mv.addObject("temActivityList",temActivityList);
-//			 }catch (Exception e) {
-//			// TODO: handle exception
-//		}
-//		 return mv; 
-//	 }
+	 
+	 @RequestMapping("/listTemplateActivityToSubperAdmin")
+	 public ModelAndView listTemplateActivityToSubperAdmin (HttpServletRequest request) {
+		 ModelAndView mv = new ModelAndView("addTemplateActivity.jsp");
+		 templateActivity tem = new templateActivity();
+		 if(tem.getTemplateActivityId() != 0){
+			 System.out.println(tem.getTemplateActivityId());
+		 }
+		 List<templateActivity> temActivityList;
+		 try{
+			 temActivityList = temActivity.gettemplateActivty(tem.getTemplateActivityId());
+			 mv.addObject("temActivityList",temActivityList);
+			 }catch (Exception e) {
+			// TODO: handle exception
+		}
+		 return mv; 
+	 }
 	 
 
 	 
