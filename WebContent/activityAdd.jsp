@@ -83,9 +83,7 @@
 							<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></figure>
 							<a class="overlay" href="#editerArea" onclick="myFunction()" >
 								<div class="overlay-content">
-									<div class="post-type"><i class="icon icon-picture"></i></div>
-									<h2>Taj Mahal</h2>
-									<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<div class="post-type"><i class="icon icon-picture"></i></di>
 								</div><!-- overlay-content -->
 							</a><!-- overlay -->
 						</article>

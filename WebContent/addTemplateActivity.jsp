@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <html>
 <head>
 <meta charset="utf-8">
@@ -49,12 +50,18 @@
 	<script type="text/javascript"
 		src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/js/froala_editor.pkgd.min.js"></script>
 	
-	<form:form>
-	</form:form>
+	
 	<form>
 		<textarea id="froala-editor"></textarea>
 		<input type="button" value="Next" onclick="onClickSave();">
 	</form>
+	<table border="1">
+		<c:forEach items="${temActivityList}" var="temActivityList">
+			<tr>
+				<td>${temActivityList.bodyHTML}</td>
+			</tr>
+		</c:forEach>
+	</table>
 	
 	<script>
 		$('textarea#froala-editor').froalaEditor(

@@ -50,6 +50,26 @@ public class PortfolioController {
 			}
 		return mv;
 	 }
-	 
+	 @RequestMapping("/printPortfolio")
+	 public ModelAndView listDataofUser(HttpServletRequest request){
+		 ModelAndView mv = new ModelAndView("listActivityForPortfolio.do");
+		 HttpSession session=request.getSession(false);
+			String userId = null;
+			 if(session!=null){  
+		        	userId = (String)session.getAttribute("userId"); 
+		        	System.out.println("userId" + userId);
+		     
+		        }
+			List<user> listuser;
+			try{
+				listuser = userser.getfindbyID(Long.parseLong(userId));
+				mv.addObject("listuser",listuser);
+			}catch (Exception e) {
+				// TODO: handle exception
+			}
+		
+			return mv;
+			
+	 }
 	 
 }

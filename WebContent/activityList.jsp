@@ -110,7 +110,7 @@
 		<div class="row-content buffer clear-after">
 			<div class="grid-items portfolio-section preload">
 				<ul class="inline cats filter-options">
-					<c:forEach items="${listActivity}" var="list">
+					<c:forEach items="${listActivity}" var="listActivity">
 								<article class="item column four" >
 									<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></figure>
 											<a class="overlay" href="#editerArea"  >

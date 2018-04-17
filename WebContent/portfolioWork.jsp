@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 	<script>
-		function OpenTemplate() {
+		function OpenTemplateIT() {
 		    var x = document.getElementById("templateIT");
 		    if (x.style.display === "none") {
 		        x.style.display = "block";
@@ -190,7 +190,7 @@
         
         <div class="row no-gutters">
           <div class="col-lg-6">
-            <a class="portfolio-item" href="listActivityForPortfolio.do">
+            <a class="portfolio-item" href="printPortfolio.do">
               <span class="caption">
                 <span class="caption-content">
 
