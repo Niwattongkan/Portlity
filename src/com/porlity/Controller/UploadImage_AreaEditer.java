@@ -1,3 +1,4 @@
+package com.porlity.Controller;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -17,13 +18,13 @@ import com.google.gson.Gson;
  */
 @WebServlet("/upload_image")
 @MultipartConfig
-public class UploadImage extends HttpServlet {
+public class UploadImage_AreaEditer extends HttpServlet {
     private static final long serialVersionUID = 1L;
  
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public UploadImage() {
+    public UploadImage_AreaEditer() {
         super();
     }
  

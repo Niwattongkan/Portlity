@@ -74,7 +74,8 @@
 							'indent', 'outdent', '-', 'insertImage',
 							'insertLink', 'insertFile', 'insertVideo', 'undo',
 							'redo' ],
-					toolbarVisibleWithoutSelection : true
+					toolbarVisibleWithoutSelection : true,
+					imageUploadURL: '/upload_image'
 				})
 	</script>
 
