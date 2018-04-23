@@ -38,7 +38,7 @@ public class AddTemplateController {
 	 public String saveTemplateActivity(@ModelAttribute("templateActivity") templateActivity templateActivity, BindingResult result,
 				HttpServletRequest request) {	 
 		 		String htmlBody = request.getParameter("htmlBody");
-		 		System.out.println("htmlBody"+htmlBody);
+		 		System.out.println("htmlBody "+htmlBody);
 		 	try{
 		 		if( templateActivity.getTemplateActivityId() != 0 )
 		 		{	templateActivity.setBodyHTML(htmlBody);
@@ -109,4 +109,12 @@ public class AddTemplateController {
 			}
 		 return "";
 	 }
+	 @RequestMapping("/deleteTemplate")
+		public String removeTemplate(HttpServletRequest request) {
+		 	
+			long phoneid = Long.parseLong(request.getParameter("id"));
+			temActivity.delete(phoneid);
+			return "redirect:listTemplateActivityAdmin.do";
+		}
+	
 }

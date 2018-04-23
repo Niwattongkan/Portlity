@@ -53,7 +53,7 @@
         
         <div class="row no-gutters">
           <div class="col-lg-4">
-            <a class="portfolio-item" href="#templateIT" onclick="OpenTemplate()">
+            <a class="portfolio-item" href="#templateIT" onclick="OpenTemplateIT()">
               <span class="caption">
                 <span class="caption-content">
                 </span>
