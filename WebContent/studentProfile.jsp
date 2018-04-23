@@ -181,7 +181,7 @@
 														value="${listuser.historyEducattionPrimary}"
 														path="historyEducattionPrimary" />
 												</div>
-											</div>																		
+											</div>
 											<div class="col-md-3">
 												<div class="form-group">
 													<label>Education Hihgthschool 1-3 </label>
@@ -190,7 +190,7 @@
 														value="${listuser.historyEducattionHihgthschool13}"
 														path="historyEducattionHihgthschool13" />
 												</div>
-											</div>															
+											</div>
 											<div class="col-md-3">
 												<div class="form-group">
 													<label>Education Hihgthschool 4-6 </label>
