@@ -5,13 +5,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<link rel="icon" href="favicon.ico">
+<title>SocialInnovation</title>
 </head>
 <body>
 	<center>
-		<img alt="" src="images/pictures/SocialInnovation/cover.jpg">
-		<img alt="" src="images/pictures/SocialInnovation/preface.jpg">
-			<img alt="" src="images/pictures/SocialInnovation/personal.jpg">
+		<img alt="" src="images/pictures/SocialInnovation/cover.jpg" width="500"  height="650">
+		<br>
+		<br>
+		<img alt="" src="images/pictures/SocialInnovation/preface.jpg" width="500"  height="650">
+		<br>
+		<br>
+			<img alt="" src="images/pictures/SocialInnovation/personal.jpg" width="500"  height="650">
+			<br>
+		<br>
 
 		<div></div>
 		<div id="htmlbody">

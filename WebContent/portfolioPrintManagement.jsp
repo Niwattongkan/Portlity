@@ -5,13 +5,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<link rel="icon" href="favicon.ico">
+<title>Managemaent</title>
 </head>
 <body>
 	<center>
-		<img alt="" src="images/pictures/Management/cover.jpg">
-		<img alt="" src="images/pictures/Management/preface.jpg">
-		<img alt="" src="images/pictures/Management/personal.jpg">
+		<img alt="" src="images/pictures/Management/cover.jpg" width="500"  height="650">
+		<br>
+		<br>
+		<img alt="" src="images/pictures/Management/preface.jpg" width="500"  height="650">
+		<br>
+		<br>
+		<img alt="" src="images/pictures/Management/personal.jpg" width="500"  height="650">
+		<br>
+		<br>
 
 		<div></div>
 		<div id="htmlbody">

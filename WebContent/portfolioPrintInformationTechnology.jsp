@@ -5,13 +5,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<link rel="icon" href="favicon.ico">
+<title>InfoemationTechnology</title>
 </head>
 <body>
 	<center>
-		<img alt="" src="images/pictures/InformationTechnology/cover.jpg">
-		<img alt="" src="images/pictures/InformationTechnology/preface.jpg">
-		<img alt="" src="images/pictures/InformationTechnology/personal.jpg">
+		<img alt="" src="images/pictures/InformationTechnology/cover.jpg" width="500"  height="650">
+		<br>
+		<br>
+		<img alt="" src="images/pictures/InformationTechnology/preface.jpg" width="500"  height="650">
+		<br>
+		<br>
+		<img alt="" src="images/pictures/InformationTechnology/personal.jpg" width="500"  height="650">
+		<br>
+		<br>
 
 		<div></div>
 		<div id="htmlbody">
@@ -22,7 +29,7 @@
 		</div>
 		<input type="submit" onclick="clickPrint();" value="Submit">
 	</center>
-	<div style="display: none;">
+	<div>
 		<c:forEach items="${listuser}" var="listuser">
 			<input type="text" id="FirstName" value="${listuser.firstName}">
 			<input type="text" id="LastName" value="${listuser.surName}">
@@ -54,9 +61,6 @@
 			doc.text(14, 390, 'Email @ :');
 			doc.text(37, 390, Email);
 			doc.addPage();
-			doc.addImage(portfolio, 'JPEG', 0, 0, 209.4, 296.7);
-			doc.addPage();
-			doc.addImage(perface, 'JPEG', 0, 0, 209.4, 296.7);
 			doc.addPage();
 			doc.fromHTML($('#htmlbody').get(0), 20, 20, {
 				'width' : 500

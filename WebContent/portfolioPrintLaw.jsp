@@ -5,13 +5,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<link rel="icon" href="favicon.ico">
+<title>Law</title>
 </head>
 <body>
 	<center>
-		<img alt="" src="images/pictures/Law/cover.jpg">
-		<img alt="" src="images/pictures/Law/preface.jpg">
-		<img alt="" src="images/pictures/Law/personal.jpg">
+		<img alt="" src="images/pictures/Law/cover.jpg" width="500"  height="650">
+		<br>
+		<br>
+		<img alt="" src="images/pictures/Law/preface.jpg" width="500"  height="650">
+		<br>
+		<br>
+		<img alt="" src="images/pictures/Law/personal.jpg" width="500"  height="650">
+		<br>
+		<br>
 
 		<div></div>
 		<div id="htmlbody">

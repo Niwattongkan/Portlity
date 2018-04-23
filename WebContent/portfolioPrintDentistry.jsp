@@ -5,13 +5,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<link rel="icon" href="favicon.ico">
+<title>Dentistry</title>
 </head>
 <body>
 	<center>
-		<img alt="" src="images/pictures/Dentistry/cover.jpg">
-		<img alt="" src="images/pictures/Dentistry/preface.jpg">
-		<img alt="" src="images/pictures/Dentistry/personal.jpg">
+		<img alt="" src="images/pictures/Dentistry/cover.jpg" width="500"  height="650">
+		<br>
+		<br>
+		<img alt="" src="images/pictures/Dentistry/preface.jpg" width="500"  height="650">
+		<br>
+		<br>
+		<img alt="" src="images/pictures/Dentistry/personal.jpg" width="500"  height="650">
+		<br>
+		<br>
 
 		<div></div>
 		<div id="htmlbody">
