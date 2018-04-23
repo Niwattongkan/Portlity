@@ -35,26 +35,30 @@
 <link rel="icon" href="favicon.ico">
 	
 <script>
-	function onClickSave() {
-		var htmlValue = $('textarea#froala-editor').val();
-		console.log('Save ',htmlValue);
-		$.ajax({
-			url : "saveActivity.do",
-			data : {
-				htmlValue : htmlValue
-			},
-			success : function(result) {
-				console.log('result', result);
-				if (result === 'success') {
-					window.location = "http://localhost:8080/Portlity/activityList.jsp";
-					}
-			},
-			error : function(xhr, status, error) {
-				console.log('worng')
-				console.log(error);
-			}
-		});
-	}
+		function onClickSave() {
+			var htmlBody = $('textarea#froala-editor').val();
+			console.log('Save ',htmlBody);
+			$.ajax({
+				url : "saveActivity.do",
+				data : {
+					htmlBody : htmlBody
+				},
+				type:"post",
+				success : function(result) {
+					console.log('result', result);
+					if (result === 'success') {
+						window.location = "listActivityList.do";
+						console.log('success');}
+				},
+				error : function(xhr, status, error) {
+					console.log('worng')
+					console.log(error);
+				},
+				complete:function(){
+		            console.log("Request finished.");
+		        }
+			});
+		}
 </script>
 </head>
 <body class="portfolio">
@@ -151,6 +155,58 @@
 		  toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', '-', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'indent', 'outdent', '-', 'insertImage', 'insertLink', 'insertFile', 'insertVideo', 'undo', 'redo'],
 		  toolbarVisibleWithoutSelection: true
 		})
+		 .on('froalaEditor.image.beforeUpload', function (e, editor, files) {
+					    if (files.length) {
+					      // Create a File Reader.
+					      var reader = new FileReader();
+					 
+					      // Set the reader to insert images when they are loaded.
+					      reader.onload = function (e) {
+					        var result = e.target.result;
+					        editor.image.insert(result, null, null, editor.image.get());
+					      };
+					      
+					      // Read image as base64.
+					      reader.readAsDataURL(files[0]);
+					    }
+					
+					    editor.popups.hideAll();
+					
+					    // Stop default upload chain.
+					    return false;
+					  })
+     			 .on('froalaEditor.image.uploaded', function (e, editor, response) {
+     			   // Image was uploaded to the server.
+   			   		})
+     			 .on('froalaEditor.image.inserted', function (e, editor, $img, response) {
+        			// Image was inserted in the editor.
+    			  })
+     			 .on('froalaEditor.image.replaced', function (e, editor, $img, response) {
+     			   // Image was replaced in the editor.
+     				})
+     			   .on('froalaEditor.image.error', function (e, editor, error, response) {
+     			 if (error.code == 1) {
+						console.log('Bad link.');
+     			 	}
+
+			        // No link in upload response.
+			        else if (error.code == 2) {console.log('No link in upload response.'); }
+			 
+			        // Error during image upload.
+			        else if (error.code == 3) {console.log('Error during image upload.'); }
+			 
+			        // Parsing response failed.
+			        else if (error.code == 4) {console.log(' Parsing response failed.'); }
+			 
+			        // Image too text-large.
+			        else if (error.code == 5) {console.log('Image too text-large.');}
+			 
+			        // Invalid image type.
+			        else if (error.code == 6) { console.log(' Invalid image type.'); }
+			 
+			        // Image can be uploaded only to same domain in IE 8 and IE 9.
+			        else if (error.code == 7) { console.log(' Image can be uploaded only to same domain in IE 8 and IE 9.'); }
+     			  });
 	</script>
 	<script>
 		function myFunction() {

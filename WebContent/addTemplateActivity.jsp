@@ -16,6 +16,7 @@
 	rel="stylesheet" type="text/css" />
 <link rel="icon" href="favicon.ico">
 
+
 </head>
 <body>
 	<script>
@@ -27,16 +28,20 @@
 			data : {
 				htmlBody : htmlBody
 			},
+			type:"post",
 			success : function(result) {
 				console.log('result', result);
 				if (result === 'success') {
-					//window.location = "";}
+					window.location = "listTemplateActivityAdmin.do";
 					console.log('success');}
 			},
 			error : function(xhr, status, error) {
 				console.log('worng')
 				console.log(error);
-			}
+			},
+			complete:function(){
+                console.log("Request finished.");
+            }
 		});
 	}
 	</script>
@@ -59,13 +64,14 @@
 		<c:forEach items="${temActivityList}" var="temActivityList">
 			<tr>
 				<td>${temActivityList.bodyHTML}</td>
+				<td><a href="deleteTemplate.do?id=${temActivityList.templateActivityId}">delelet</a></td>
 			</tr>
 		</c:forEach>
 	</table>
 	
 	<script>
-		$('textarea#froala-editor').froalaEditor(
-				{
+		$('textarea#froala-editor')
+				.froalaEditor({
 					toolbarInline : true,
 					charCounterCount : false,
 					toolbarButtons : [ 'bold', 'italic', 'underline',
@@ -75,13 +81,79 @@
 							'insertLink', 'insertFile', 'insertVideo', 'undo',
 							'redo' ],
 					toolbarVisibleWithoutSelection : true,
-					imageUploadURL: '/upload_image'
-				})
+					// Set the image upload parameter.
+			        			 
+			        // Set max image size to 5MB.
+			        imageMaxSize: 5 * 1024 * 1024,
+			 
+			        // Allow to upload PNG and JPG.
+			        imageAllowedTypes: ['jpeg', 'jpg', 'png']
+			        
+			      })
+			       .on('froalaEditor.image.beforeUpload', function (e, editor, files) {
+					    if (files.length) {
+					      // Create a File Reader.
+					      var reader = new FileReader();
+					 
+					      // Set the reader to insert images when they are loaded.
+					      reader.onload = function (e) {
+					        var result = e.target.result;
+					        editor.image.insert(result, null, null, editor.image.get());
+					      };
+					      
+					      // Read image as base64.
+					      reader.readAsDataURL(files[0]);
+					    }
+					
+					    editor.popups.hideAll();
+					
+					    // Stop default upload chain.
+					    return false;
+					  })
+     			 .on('froalaEditor.image.uploaded', function (e, editor, response) {
+     			   // Image was uploaded to the server.
+   			   		})
+     			 .on('froalaEditor.image.inserted', function (e, editor, $img, response) {
+        			// Image was inserted in the editor.
+    			  })
+     			 .on('froalaEditor.image.replaced', function (e, editor, $img, response) {
+     			   // Image was replaced in the editor.
+     				})
+     			   .on('froalaEditor.image.error', function (e, editor, error, response) {
+     			 if (error.code == 1) {
+						console.log('Bad link.');
+     			 	}
+
+			        // No link in upload response.
+			        else if (error.code == 2) {console.log('No link in upload response.'); }
+			 
+			        // Error during image upload.
+			        else if (error.code == 3) {console.log('Error during image upload.'); }
+			 
+			        // Parsing response failed.
+			        else if (error.code == 4) {console.log(' Parsing response failed.'); }
+			 
+			        // Image too text-large.
+			        else if (error.code == 5) {console.log('Image too text-large.');}
+			 
+			        // Invalid image type.
+			        else if (error.code == 6) { console.log(' Invalid image type.'); }
+			 
+			        // Image can be uploaded only to same domain in IE 8 and IE 9.
+			        else if (error.code == 7) { console.log(' Image can be uploaded only to same domain in IE 8 and IE 9.'); }
+     			  });
+
+
+
+
+    
 	</script>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/beetle.js"></script>
+	<script src="js/image.min.js"></script>
+
 </body>
 </html>

@@ -111,7 +111,8 @@
 			<div class="grid-items portfolio-section preload">
 				<ul class="inline cats filter-options">
 					<c:forEach items="${listActivity}" var="listActivity">
-								<article class="item column four" >
+					<tr>
+								<td><article class="item column four" >
 									<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></figure>
 											<a class="overlay" href="#editerArea"  >
 												<div class="overlay-content">
@@ -120,14 +121,13 @@
 													<p>${list.page}</p>
 												</div><!-- overlay-content -->
 											</a><!-- overlay -->
-								</article>
+								</article></td>
+								<td><a href="deleteActivity.do?id=${listActivity.activityId}">delelet</a></td>
+					</tr>
 					</c:forEach>
 				</ul>
-								
-			
 		</div>
-		
-		</div>
+	</div>
 		<!-- row-content -->
 	</div>
 	<!-- row --> </main>

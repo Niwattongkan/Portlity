@@ -73,9 +73,9 @@ function renderButton() {
 					success : function(result) {
 						console.log('result', result);
 						if (result === 'login') {
-							window.location = "http://localhost:8080/Portlity/studentHomepage.do";
+							window.location = "studentHomepage.do";
 						} else if (result === 'newUser') {
-							window.location = "http://localhost:8080/Portlity/newPersonal.do";
+							window.location = "newPersonal.do";
 						} else {
 							window.location = "";
 						}
