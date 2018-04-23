@@ -29,7 +29,8 @@ public class ActivityController {
 	 @ResponseBody
 	 public String saveActivity(@ModelAttribute("activity") activity activity, BindingResult result,
 				HttpServletRequest request) {	 
-		 String htmlBody = request.getParameter("htmlValue");
+		 String htmlBody = request.getParameter("htmlBody");
+		 System.out.println("htmlBody "+ htmlBody);
 		 String ActivityId = Long.toString(activity.getActivityId());
 		 HttpSession session=request.getSession(false);
 	        String userId = null;
@@ -41,10 +42,10 @@ public class ActivityController {
 		        	System.out.println("userId " + userId);
 		 user user = userser.findUser(Long.parseLong(userId));
 		 	try{
-		 		if(ActivityId != null )
+		 		if(ActivityId == null )
 		 		{	activity.setUser(user);
 		 			activity.setPage(htmlBody);
-		 			activitySer.update(activity);
+		 			activitySer.insert(activity);
 		 			System.out.println("update activity " + activity.getActivityId());
 		 			return "success";
 		 		}else{
@@ -80,4 +81,12 @@ public class ActivityController {
 			}
 		return mv;
 	 }
+	 
+	 @RequestMapping("/deleteActivity")
+	 public String removeTemplate(HttpServletRequest request) {
+		 long activityid = Long.parseLong(request.getParameter("id"));
+		 activitySer.delete(activityid);
+		 return "redirect:listActivityList.do";
+	 }
+	 
 }
