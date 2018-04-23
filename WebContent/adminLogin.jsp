@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login - admin</title>
-<!-- Core CSS - Include with every page -->
-<link href="assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
-<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-<link href="assets/plugins/pace/pace-theme-big-counter.css"
-	rel="stylesheet" />
-<link href="assets/css/style.css" rel="stylesheet" />
-<link href="assets/css/main-style.css" rel="stylesheet" />
+<title>Portlity</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
 <link rel="icon" href="favicon.ico">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css"
+	href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css"
+	href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css"
+	href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css"
+	href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 
 <meta name="google-signin-scope" content="profile email">
@@ -25,73 +36,51 @@
 	src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <!--===============================================================================================-->
 <script>
-	function onFailure(error) {
-		console.log(error);
-	}
-	function renderButton() {
-		gapi.signin2.render('my-signin2', {
-			'scope' : 'profile email',
-			'width' : 240,
-			'height' : 50,
-			'longtitle' : true,
-			'theme' : 'dark',
-			'onsuccess' : onSuccess,
-			'onfailure' : onFailure
-		});
-	}
-	function onSignIn(googleUser) {
-		// Useful data for your client-side scripts:
-		var profile = googleUser.getBasicProfile();
-		console.log("ID: " + profile.getId()); // Don't send this directly to your
-		// server!
-		console.log('Full Name: ' + profile.getName());
-		console.log('Given Name: ' + profile.getGivenName());
-		console.log('Family Name: ' + profile.getFamilyName());
-		console.log("Image URL: " + profile.getImageUrl());
-		console.log("Email: " + profile.getEmail());
+function onlogin(){
+	var userName = $('userName').val();
+	var passWord = $('passWord').val();
+	
+	$.ajax({
+		type: "POST",
+		url:"loginTeacher.do",
+		data:{
+			"userName":userName, "passWord":passWord
+		},
+		sucess:function (data){
+			if(data==""){
+				$(location).attr('href','adminListinformation.jsp');
+			}else{
+                alert('login agarin');
+            }
+			
+		},
+		error:function(xhr, status, error) {
+			console.log('worng')
+			console.log(error);
+		}
+	});
+	
+}
 
-		// The ID token you need to pass to your backend:
-		var id_token = googleUser.getAuthResponse().id_token;
-		console.log("ID Token: " + id_token);
-		$
-				.ajax({
-					url : "checkUser.do",
-					data : {
-						idtoken : id_token
-					},
-					success : function(result) {
-						console.log('result', result);
-						if (result === 'login') {
-							window.location = "http://localhost:8080/Adminportfolio/timeline.jsp";
-						}
-						
-					},
-					error : function(xhr, status, error) {
-						console.log('worng')
-						console.log(error);
-					}
-				});
-
-	};
 </script>
 <!--===============================================================================================-->
 </head>
+<body>
 
-<body class="body-Login-back">
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="img/logo.png" alt="IMG">
+				</div>
 
-	<div class="container">
-
-		<div class="row">
-			<div class="col-md-4 col-md-offset-4 text-center logo-margin ">
-				<img src="assets/img/logo.png" alt="" />
-			</div>
-			<form class="login100-form validate-form">
+				<form class="login100-form validate-form" action="adminListinformation.jsp">
 					<span class="login100-form-title">
-						Welcome Admin Portlity
+						Member Login
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
+						<input class="input100" type="text" name="email"  id="userName" placeholder="Email">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -99,7 +88,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+						<input class="input100" type="password" name="pass" id="passWord" placeholder="Password">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -107,9 +96,8 @@
 					</div>
 					
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
-						</button>
+						<input class="login100-form-btn"  type="submit" value="Login" >
+			
 					</div>
 
 					<div class="text-center p-t-12">
@@ -120,18 +108,30 @@
 							Username / Password?
 						</a>
 					</div>
-
-				
 				</form>
 			</div>
 		</div>
 	</div>
 
-	<!-- Core Scripts - Include with every page -->
-	<script src="assets/plugins/jquery-1.10.2.js"></script>
-	<script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
-	<script src="assets/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+
+
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script>
+		$('.js-tilt').tilt({
+			scale : 1.1
+		})
+	</script>
+	<!--===============================================================================================-->
+	<script src="js/main.js"></script>
 
 </body>
-
 </html>
