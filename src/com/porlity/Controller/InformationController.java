@@ -17,7 +17,7 @@ import com.porlity.entity.information;
 
 @Controller
 public class InformationController {
-	 @EJB(mappedName = "ejb:/Adminportfolio//InformationServiceBean!com.porlity.Service.InformationService")
+	 @EJB(mappedName = "ejb:/Portlity//InformationServiceBean!com.porlity.Service.InformationService")
 	 InformationService informationSer;
 
 	 @RequestMapping("/studentHomepage")
