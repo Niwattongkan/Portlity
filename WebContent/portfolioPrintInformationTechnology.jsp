@@ -26,7 +26,7 @@
 		</div>
 		<input type="submit" onclick="clickPrint();" value="Submit">
 	</center>
-	<div style="none">
+	<div style="display: none;">
 		<c:forEach items="${listuser}" var="listuser">
 			<input type="text" id="FirstName" value="${listuser.firstName}">
 			<input type="text" id="LastName" value="${listuser.surName}">

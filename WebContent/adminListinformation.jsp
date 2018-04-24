@@ -129,9 +129,9 @@
 								<c:forEach items="${adminListinformation}" var="List">
 									<tbody>									
 										<tr class="even gradeC">
-											
+											<td>${List.informationId}</td>
 											<td>${List.body}</td>
-											<td class="center"><button type="button" class="btn btn-warning" ><a href="deleteInformation.do"></a>Delete</button></td>																	
+											<td class="center"><a class="btn btn-warning" href="deleteInformation.do?id=${List.informationId}"></a></td>																	
 										</tr>									
 									</tbody>
 								</c:forEach>

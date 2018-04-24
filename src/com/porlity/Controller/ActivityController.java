@@ -1,5 +1,6 @@
 package com.porlity.Controller;
 
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 import javax.ejb.EJB;
@@ -28,7 +29,8 @@ public class ActivityController {
 	 @RequestMapping("/saveActivity")
 	 @ResponseBody
 	 public String saveActivity(@ModelAttribute("activity") activity activity, BindingResult result,
-				HttpServletRequest request) {	 
+				HttpServletRequest request) throws UnsupportedEncodingException {	 
+		 request.setCharacterEncoding("UTF-8");
 		 String htmlBody = request.getParameter("htmlBody");
 		 System.out.println("htmlBody "+ htmlBody);
 		 String ActivityId = Long.toString(activity.getActivityId());

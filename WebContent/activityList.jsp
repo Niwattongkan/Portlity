@@ -64,14 +64,14 @@
 				<div id="brand">
 					<h1 class="reset">
 						<!--<img src="img/logo.png" alt="logo">-->
-						<a href="studentHomepage.jsp">Portlity</a>
+						<a href="studentHomepage.do">Portlity</a>
 					</h1>
 				</div>
 				<!-- brand -->
 				<a id="menu-toggle" href="#"><i class="fa fa-bars fa-lg"></i></a>
 				<nav>
 					<ul class="reset" role="navigation">
-						<li class="menu-item"><a href="studentHomepage.jsp">Home</a>
+						<li class="menu-item"><a href="studentHomepage.do">Home</a>
 						</li>
 						<li class="menu-item"><a href="editDataSutent.do">Personal</a>
 						</li>

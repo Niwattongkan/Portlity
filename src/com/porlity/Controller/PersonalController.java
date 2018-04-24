@@ -1,6 +1,5 @@
 package com.porlity.Controller;
 
-import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.util.Collections;
 import java.util.List;
@@ -36,7 +35,8 @@ public class PersonalController {
 	UserService userser;
 
 	@RequestMapping("/savePersonal")
-	public String savePersonal(@ModelAttribute("user") user userr, BindingResult result, HttpServletRequest request) {
+	public String savePersonal(@ModelAttribute("user") user userr, BindingResult result, HttpServletRequest request) throws UnsupportedEncodingException {
+		request.setCharacterEncoding("UTF-8");
         HttpSession session=request.getSession(false);
         String userId = null;
 	        if(session!=null){  

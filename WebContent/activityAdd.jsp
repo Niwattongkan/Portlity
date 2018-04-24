@@ -68,6 +68,40 @@
 	<!-- Include Editor JS files. -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.6/js/froala_editor.pkgd.min.js"></script>
 
+<header role="banner" class="transparent light">
+		<div class="row">
+			<div
+				class="nav-inner row-content buffer-left buffer-right even clear-after">
+				<div id="brand">
+					<h1 class="reset">
+						<!--<img src="img/logo.png" alt="logo">-->
+						<a href="studentHomepage.do">Portlity</a>
+					</h1>
+				</div>
+				<!-- brand -->
+				<a id="menu-toggle" href="#"><i class="fa fa-bars fa-lg"></i></a>
+				<nav>
+					<ul class="reset" role="navigation">
+						<li class="menu-item"><a href="studentHomepage.do">Home</a>
+						</li>
+						<li class="menu-item"><a href="editDataSutent.do">Personal</a>
+						</li>
+						<li class="menu-item"><a href="#">Activity</a></li>
+						<li class="menu-item"><a>Portfolio</a>
+							<ul class="sub-menu">
+								<li><a href="portfolioWork.jsp">Work portfolio</a></li>
+								<li><a href="portfolioExample.jsp">Example portfolio</a></li>
+							</ul></li>
+						<li class="menu-item"><a href="studentLogin.jsp"
+							onclick="signOut();">Sign off</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- row-content -->
+		</div>
+		<!-- row -->
+	</header>
+
 	<div id="main" class="row">
 				<div class="row-content buffer clear-after">
 				<!-- ใช่ forloop list template -->
@@ -95,7 +129,7 @@
 					</div><!-- grid-items -->	
 				</div><!-- row-content -->
 			</div><!-- row -->
-				<section  class="container text-center my-auto" id="editerArea">
+				<section  class="row-content buffer even clear-after" id="editerArea">
 				<div id="myDIV" style="display: none;"  class="grid-items portfolio-section preload">
 					<form>
 					 <textarea  id="froala-editor">
@@ -103,7 +137,10 @@
 							${temActivityList.bodyHTML}
 						</c:forEach>
 					</textarea>
-						<input type="button" value="Next" onclick="onClickSave()">
+													
+						<div class="more-btn">				
+						<input class="button transparent pink" type="button" value="Next" onclick="onClickSave()">
+						</div>
 					</form>
 				</div>
 				</section>

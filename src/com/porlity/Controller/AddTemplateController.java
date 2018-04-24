@@ -1,5 +1,6 @@
 package com.porlity.Controller;
 
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 import javax.ejb.EJB;
@@ -36,7 +37,8 @@ public class AddTemplateController {
 	 @RequestMapping("/saveTemplateActivity")
 	 @ResponseBody
 	 public String saveTemplateActivity(@ModelAttribute("templateActivity") templateActivity templateActivity, BindingResult result,
-				HttpServletRequest request) {	 
+				HttpServletRequest request) throws UnsupportedEncodingException {	
+		 		request.setCharacterEncoding("UTF-8");
 		 		String htmlBody = request.getParameter("htmlBody");
 		 		System.out.println("htmlBody "+htmlBody);
 		 	try{
@@ -89,7 +91,8 @@ public class AddTemplateController {
 	 @RequestMapping("/saveTemplatePortfolio")
 	 @ResponseBody
 	 public String saveTemplatePortfolio(@ModelAttribute("templatePortfolio") templatePortfolio templatePortfolio, BindingResult result,
-				HttpServletRequest request) {	 
+				HttpServletRequest request) throws UnsupportedEncodingException {	 
+		 		request.setCharacterEncoding("UTF-8");
 		 		String htmlBody = request.getParameter("htmlBody");
 		 		System.out.println("htmlBody"+htmlBody);
 		 	try{
