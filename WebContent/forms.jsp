@@ -69,16 +69,20 @@
 						data : {
 							htmlValue : htmlValue
 						},
+						type:"post",
 						success : function(result) {
 							console.log('result', result);
 							if (result === 'success') {
-								window.location = "http://localhost:8080/Adminportfolio/adminListinformation.do";
-							}
+								window.location = "adminListinformation.do";
+								console.log('success');}
 						},
 						error : function(xhr, status, error) {
 							console.log('worng')
 							console.log(error);
-						}
+						},
+						complete:function(){
+			                console.log("Request finished.");
+			            }
 					});
 		}
 	</script>
@@ -199,8 +203,35 @@
 									'outdent', '-', 'insertImage',
 									'insertLink', 'insertFile', 'insertVideo',
 									'undo', 'redo' ],
-							toolbarVisibleWithoutSelection : true
+							toolbarVisibleWithoutSelection : true,
+							// Set the image upload parameter.
+					        			 
+					        // Set max image size to 5MB.
+					        imageMaxSize: 5 * 1024 * 1024,
+					 
+					        // Allow to upload PNG and JPG.
+					        imageAllowedTypes: ['jpeg', 'jpg', 'png']
 						})
+						.on('froalaEditor.image.beforeUpload', function (e, editor, files) {
+					    if (files.length) {
+					      // Create a File Reader.
+					      var reader = new FileReader();
+					 
+					      // Set the reader to insert images when they are loaded.
+					      reader.onload = function (e) {
+					        var result = e.target.result;
+					        editor.image.insert(result, null, null, editor.image.get());
+					      };
+					      
+					      // Read image as base64.
+					      reader.readAsDataURL(files[0]);
+					    }
+					
+					    editor.popups.hideAll();
+					
+					    // Stop default upload chain.
+					    return false;
+					  })
 			</script>
 			<!-- Addinformation -->
 

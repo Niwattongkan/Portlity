@@ -74,7 +74,7 @@ function onlogin(){
 					<img src="img/logo.png" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form" action="adminListinformation.jsp">
+				<form class="login100-form validate-form" action="adminListinformation.do">
 					<span class="login100-form-title">
 						Member Login
 					</span>

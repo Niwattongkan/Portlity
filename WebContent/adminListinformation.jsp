@@ -49,7 +49,7 @@
 							Profile</a></li>
 					<li><a href="#"><i class="fa fa-gear fa-fw"></i>Settings</a></li>
 					<li class="divider"></li>
-					<li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+					<li><a href="adminLogin.jsp"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
 					</li>
 				</ul> <!-- end dropdown-user --></li>
 			<!-- end main dropdown -->
@@ -122,19 +122,16 @@
 									id="dataTables-example">
 									<thead>
 										<tr>
-											<th class="center">Lists information</th>	
-											<th>id</th>
-											
-																		
+											<th class="center">ID</th>	
+											<th class="center">Lists information</th>									
 										</tr>
 									</thead>
 								<c:forEach items="${adminListinformation}" var="List">
 									<tbody>									
 										<tr class="even gradeC">
+											
 											<td>${List.body}</td>
-											<td>${List.informationId}</td>
-											<td class="center"><button type="button" class="btn btn-warning" >Edit</button></td>
-											<td class="center"><a href="deleteInformation.do"></a>Delete</button></td>																	
+											<td class="center"><button type="button" class="btn btn-warning" ><a href="deleteInformation.do"></a>Delete</button></td>																	
 										</tr>									
 									</tbody>
 								</c:forEach>
