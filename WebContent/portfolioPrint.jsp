@@ -76,10 +76,9 @@
             }
         };
         margins = {
-            top: 80,
-            bottom: 60,
-            left: 40,
-            width: 522
+        		top : 50,
+        		left : 60,
+        		width : 545
         };
         // all coords and widths are in jsPDF instance's declared units
         // 'inches' in this case

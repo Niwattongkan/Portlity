@@ -91,39 +91,93 @@
 		<!-- row -->
 	</header>
 	<main role="main">
-	<div id="intro-wrap" class="full-height">
-		<div id="intro" class="preload darken more-button">
-			<div class="intro-item"
-				style="background-image: url(images/activity.jpg);">
-				<div class="caption">
-					<h2>Activity portfolio</h2>
-					<p>You can add an event by yourself.</p>
-				</div>
-				<!-- caption -->
-			</div>
-		</div>
-		<!-- intro -->
-	</div>
-	<!-- intro-wrap -->
+			<div id="intro-wrap">
+					<div id="intro" class="preload" data-autoplay="5000" data-navigation="true" data-pagination="true" data-transition="fade">					
+						<div class="intro-item" style="background-color: #65C2E1;">		
+							<div class="intro-mockup-wrapper">		
+								<div class="caption-mockup caption-right column six last-special">
+									<h2>Template Information Technology</h2>
+									<p>You can create portfolio after you cerate activity.
+								</div><!-- caption -->
+								<div class="intro-mockup intro-left column six">
+									<img src="images/pictures/InformationTechnology/cover.jpg" alt="">
+								</div><!-- intro-mockup -->							
+							</div><!-- intro-mockup-wrapper -->
+						</div>					
+						<div class="intro-item" style="background-color: #f5be55;">
+							<div class="intro-mockup-wrapper">						
+								<div class="caption-mockup">
+									<h2>Template shool of Law</h2>
+									<p>You can create portfolio after you cerate activity.</p>
+								</div><!-- caption -->	
+								<div class="photocaption">
+									
+								</div><!-- photocaption -->													
+								<div class="intro-mockup">
+									<img src="images/pictures/Law/personal.jpg" alt="">
+								</div><!-- intro-mockup -->	
+							</div><!-- intro-mockup-wrapper -->										
+						</div>
+						<div class="intro-item" style="background-color: #6b3f4f;">
+							<div class="intro-mockup-wrapper">
+								<div class="caption-mockup caption-left column six">
+									<h2>Template shool of Nurse</h2>
+									<p>Although nursing practice varies both through its.
+								</div><!-- caption -->												
+								<div class="intro-mockup intro-right column six last">
+									<img src="images/pictures/Nurse/cover.jpg" alt="">
+								</div><!-- intro-mockup -->	
+							</div><!-- intro-mockup-wrapper -->
+						</div>	
+						<div class="intro-item" style="background-color: #32cba3;">
+							<div class="intro-mockup-wrapper">						
+								<div class="caption-mockup">
+									<h2>Create portfolio of Science</h2>
+									<a class="button white transparent" href="portfolioPrintScience.jsp">Cerate</a>
+								</div><!-- caption -->	
+								<div class="photocaption">
+								
+								</div><!-- photocaption -->													
+								<div class="intro-mockup">
+									<img src="images/pictures/Science/cover.jpg" alt="">
+								</div><!-- intro-mockup -->	
+							</div><!-- intro-mockup-wrapper -->										
+						</div>
+					</div><!-- intro -->
+				</div><!-- intro-wrap -->
 	<div id="main" class="row">
-	<center><a class="button red" href="listTemplateActivity.do"><i class="icon icon-add"></i>Add yours activity</a></center>
-		<div class="row-content buffer clear-after">
+	
+	<section class="row section call-to-action">
+			<div class="row-content buffer even">
+				<p>You can add information each a day</p>
+				<a class="button aqua" href="listTemplateActivity.do"> Add your activity!</a>
+			</div>
+	</section>
+
+	<section class="row section text-light" style="background-color: #FC6E51">
+			<div class="row-content buffer even clear-after">
+				
+				<c:forEach items="${listActivity}" var="listActivity">
+					<div class="column four centertxt">
+						<div class="big-icon red">
+							<i class="icon icon-flash"></i>
+						</div>
+						<div class="big-icon-text clear-after">
+							<h4>${list.activityId}</h4>
+							<p class="text-s">${list.page}</p>
+							<a class="button transparent white" href="deleteActivity.do?id=${listActivity.activityId}">Delete</a>
+						</div>
+					</div>
+				</c:forEach>
+			</div>
+	</section>
+
+		
+	<div class="row-content buffer clear-after">
 			<div class="grid-items portfolio-section preload">
 				<ul class="inline cats filter-options">
 					<c:forEach items="${listActivity}" var="listActivity">
-					<tr>
-								<td><article class="item column four" >
-									<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></figure>
-											<a class="overlay" href="#editerArea"  >
-												<div class="overlay-content">
-													<div class="post-type"><i class="icon icon-picture"></i></div>
-													<h2>${list.activityId}</h2>
-													<p>${list.page}</p>
-												</div><!-- overlay-content -->
-											</a><!-- overlay -->
-								</article></td>
-								<td><a href="deleteActivity.do?id=${listActivity.activityId}">delelet</a></td>
-					</tr>
+					
 					</c:forEach>
 				</ul>
 		</div>

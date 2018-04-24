@@ -45,6 +45,7 @@ public class AddTemplateController {
 		 		if( templateActivity.getTemplateActivityId() != 0 )
 		 		{	templateActivity.setBodyHTML(htmlBody);
 		 			temActivity.update(templateActivity);
+		 			System.out.println(htmlBody);
 		 			return "success";
 		 		}else{
 		 			templateActivity.setBodyHTML(htmlBody);

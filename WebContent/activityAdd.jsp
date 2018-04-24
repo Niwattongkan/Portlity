@@ -103,13 +103,23 @@
 	</header>
 
 	<div id="main" class="row">
+
+			<section class="row section text-light" style="background-color:#4FCEAD;">
+					<div class="row-content buffer even clear-after">
+						<div class="slogan animation onscreen">
+							<h2>Your activity will come to portfolio</h2>	
+							<p>Here you can select .</p>						
+						</div><!-- slogan -->				
+					</div>
+			</section>
+
 				<div class="row-content buffer clear-after">
 				<!-- ใช่ forloop list template -->
 					<ul class="inline cats filter-options">
 						<li data-group="advertising">All template</li>
-						<li data-group="nomal">Nomal</li>
+				<!--	<li data-group="nomal">Nomal</li>
 						<li data-group="icons"></li>
-				<!--    <li data-group="infographics">Infographics</li>
+				    	<li data-group="infographics">Infographics</li>
 						<li data-group="lightbox">Lightbox</li>
 						<li data-group="minimal">Minimal</li>
 						<li data-group="web-design">Web design</li>
@@ -117,18 +127,22 @@
 				 -->
 					</ul>
 					<div class="grid-items portfolio-section preload">
-						<article class="item column four" data-groups='["nomal", "icons"]'>
-							<figure><img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt=""></figure>
-							<a class="overlay" href="#editerArea" onclick="myFunction()" >
-								<div class="overlay-content">
-									<div class="post-type"><i class="icon icon-picture"></i></di>
-								</div><!-- overlay-content -->
-							</a><!-- overlay -->
-						</article>
-						
+					
+						<article class="item column four">
+								<figure><img src="images/icons/TechData-Icon.jpg" alt=""></figure>
+								<a class="overlay" href="#editerArea" onclick="myFunction()">
+									<div class="overlay-content">
+										<div class="post-type"><i class="icon icon-camera"></i></div>
+										<h2>template</h2>
+										<p>basic of activity</p>
+									</div><!-- overlay-content -->
+								</a><!-- overlay -->
+							</article>	
 					</div><!-- grid-items -->	
 				</div><!-- row-content -->
 			</div><!-- row -->
+
+
 				<section  class="row-content buffer even clear-after" id="editerArea">
 				<div id="myDIV" style="display: none;"  class="grid-items portfolio-section preload">
 					<form>
