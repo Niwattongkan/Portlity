@@ -106,7 +106,7 @@ function renderButton() {
 						data-onsuccess="onSignIn" data-longtitle="true"></div>
 						
 					<div class="text-center p-t-136">
-						<a class="txt2" href="https://accounts.google.com/SignUp?hl=th"> Create your Account <i
+						<a class="txt2" href="adminLogin.jsp">Teacher click here<i
 							class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>
 					</div>

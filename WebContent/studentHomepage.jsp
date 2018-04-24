@@ -53,7 +53,7 @@
             <div class="nav-inner row-content buffer-left buffer-right even clear-after">
                 <div id="brand">
                     <h1 class="reset">
-                        <a href="studentHomepage.jsp">Portlity</a></h1>
+                        <a href="studentHomepage.do">Portlity</a></h1>
                 </div>
                 <!-- brand -->
                 <a id="menu-toggle" href="#"><i class="fa fa-bars fa-lg"></i></a>
@@ -88,7 +88,7 @@
                     <div class="caption">
                         <h2>PORTFOLIO BY MFU GROUP</h2>
                         <p>Feel the new experience of using portfolio.</p> 
-                        <a class="button white transparent" href="#">Read More</a>                               
+                                                
                     </div>
                 </div>
                 <div class="intro-item" style="background-image: url(images/cover2.jpg);">
