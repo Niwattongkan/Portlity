@@ -249,7 +249,7 @@
                 <!-- top-footer -->
                 <section id="bottom-footer">
                     <p class="keep-left">&copy; 2018 <a href="" alt="Mokaine Lab">Portlity</a>.</p>
-                </section>s
+                </section>
                 <!-- bottom-footer -->
             </div>
             <!-- row-content -->
