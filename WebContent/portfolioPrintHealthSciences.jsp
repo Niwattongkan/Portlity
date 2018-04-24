@@ -55,6 +55,11 @@
 			doc.addImage(cover, 'JPEG', 0, 0, 628.2, 890.2);
 			doc.addPage();
 			doc.addImage(preface, 'JPEG', 0, 0, 628.2, 890.2);
+			var FirstName = $('#FirstName').val();
+			var LastName = $('#LastName').val();
+			doc.text(350, 370, 'Mr.');
+			doc.text(380, 370, FirstName);
+			doc.text(450, 370, LastName);
 			doc.addPage();
 			doc.addImage(personal, 'JPEG', 0, 0, 628.2, 890.2);
 			var FirstName = $('#FirstName').val();
