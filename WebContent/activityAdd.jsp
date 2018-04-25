@@ -90,7 +90,7 @@
 						<li class="menu-item"><a>Portfolio</a>
 							<ul class="sub-menu">
 								<li><a href="portfolioWork.jsp">Work portfolio</a></li>
-								<li><a href="portfolioExample.jsp">Example portfolio</a></li>
+							
 							</ul></li>
 						<li class="menu-item"><a href="studentLogin.jsp"
 							onclick="signOut();">Sign off</a></li>

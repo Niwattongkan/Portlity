@@ -57,7 +57,7 @@
 						<li class="menu-item"><a>Portfolio</a>
 							<ul class="sub-menu">
 								<li><a href="portfolioWork.jsp">Work portfolio</a></li>
-								<li><a href="portfolioExample.jsp">Example portfolio</a></li>
+							 
 							</ul></li>
 						<li class="menu-item"><a href="studentLogin.jsp"
 							onclick="signOut();">Sign off</a></li>
@@ -202,7 +202,7 @@
             <div class="row-content buffer clear-after">
                 <section id="top-footer">
                     <div class="widget column three">
-                        <!-- la class="widget" è forse generata utomaticamente da wp -->
+                        <!-- la class="widget" ï¿½ forse generata utomaticamente da wp -->
                         <h4>Menu</h4>
                         <ul class="plain">
                             <li><a href="home-01.html">Home</a></li>
