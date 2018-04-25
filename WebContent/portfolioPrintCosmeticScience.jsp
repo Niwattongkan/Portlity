@@ -98,7 +98,7 @@
 				<img alt="" src="images/pictures/CosmeticScience/preface.jpg" width="500" height="650">
 				<br>
 				<br>
-				<img alt="" src="images/pictures/CosmeticScience/personal.jpg" width="500" height="650">
+				 
 				<br>
 				<br>
 

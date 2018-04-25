@@ -77,7 +77,7 @@
 											<a href="portfolioWork.jsp">Work portfolio</a>
 										</li>
 										<li>
-											<a href="portfolioExample.jsp">Example portfolio</a>
+										
 										</li>
 									</ul>
 								</li>
