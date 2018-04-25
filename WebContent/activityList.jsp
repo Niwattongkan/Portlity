@@ -1,4 +1,4 @@
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,27 +32,30 @@
 	href="img/apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" sizes="152x152"
 	href="img/apple-touch-icon-152x152.png">
-	
-	<meta name="google-signin-client_id" content="322812928410-ru9dr6in3oa9gcqbu6tefptb61fd1pt9.apps.googleusercontent.com">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://apis.google.com/js/platform.js" async defer></script>
- 	<script src="https://apis.google.com/js/platform.js?onload=init" async
-	defer></script>
-	<script>
-    function signOut() {
-        var auth2 = gapi.auth2.getAuthInstance();
-        auth2.signOut().then(function () {
-          console.log('User signed out.');
-        });
-      }
 
-      function onLoad() {
-        gapi.load('auth2', function() {
-          gapi.auth2.init();
-        });
-      }
-	</script>
-	<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+<meta name="google-signin-client_id"
+	content="322812928410-ru9dr6in3oa9gcqbu6tefptb61fd1pt9.apps.googleusercontent.com">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://apis.google.com/js/platform.js?onload=init" async
+	defer></script>
+<script>
+	function signOut() {
+		var auth2 = gapi.auth2.getAuthInstance();
+		auth2.signOut().then(function() {
+			console.log('User signed out.');
+		});
+	}
+
+	function onLoad() {
+		gapi.load('auth2', function() {
+			gapi.auth2.init();
+		});
+	}
+</script>
+<script src="https://apis.google.com/js/platform.js?onload=onLoad" async
+	defer></script>
 </head>
 
 <body class="portfolio">
@@ -71,8 +74,7 @@
 				<a id="menu-toggle" href="#"><i class="fa fa-bars fa-lg"></i></a>
 				<nav>
 					<ul class="reset" role="navigation">
-						<li class="menu-item"><a href="studentHomepage.do">Home</a>
-						</li>
+						<li class="menu-item"><a href="studentHomepage.do">Home</a></li>
 						<li class="menu-item"><a href="editDataSutent.do">Personal</a>
 						</li>
 						<li class="menu-item"><a href="#">Activity</a></li>
@@ -91,97 +93,115 @@
 		<!-- row -->
 	</header>
 	<main role="main">
-			<div id="intro-wrap">
-					<div id="intro" class="preload" data-autoplay="5000" data-navigation="true" data-pagination="true" data-transition="fade">					
-						<div class="intro-item" style="background-color: #65C2E1;">		
-							<div class="intro-mockup-wrapper">		
-								<div class="caption-mockup caption-right column six last-special">
-									<h2>Template Information Technology</h2>
-									<p>You can create portfolio after you cerate activity.
-								</div><!-- caption -->
-								<div class="intro-mockup intro-left column six">
-									<img src="images/pictures/InformationTechnology/cover.jpg" alt="">
-								</div><!-- intro-mockup -->							
-							</div><!-- intro-mockup-wrapper -->
-						</div>					
-						<div class="intro-item" style="background-color: #f5be55;">
-							<div class="intro-mockup-wrapper">						
-								<div class="caption-mockup">
-									<h2>Template shool of Law</h2>
-									<p>You can create portfolio after you cerate activity.</p>
-								</div><!-- caption -->	
-								<div class="photocaption">
-									
-								</div><!-- photocaption -->													
-								<div class="intro-mockup">
-									<img src="images/pictures/Law/personal.jpg" alt="">
-								</div><!-- intro-mockup -->	
-							</div><!-- intro-mockup-wrapper -->										
-						</div>
-						<div class="intro-item" style="background-color: #6b3f4f;">
-							<div class="intro-mockup-wrapper">
-								<div class="caption-mockup caption-left column six">
-									<h2>Template shool of Nurse</h2>
-									<p>Although nursing practice varies both through its.
-								</div><!-- caption -->												
-								<div class="intro-mockup intro-right column six last">
-									<img src="images/pictures/Nurse/cover.jpg" alt="">
-								</div><!-- intro-mockup -->	
-							</div><!-- intro-mockup-wrapper -->
-						</div>	
-						<div class="intro-item" style="background-color: #32cba3;">
-							<div class="intro-mockup-wrapper">						
-								<div class="caption-mockup">
-									<h2>Create portfolio of Science</h2>
-									<a class="button white transparent" href="portfolioPrintScience.jsp">Cerate</a>
-								</div><!-- caption -->	
-								<div class="photocaption">
-								
-								</div><!-- photocaption -->													
-								<div class="intro-mockup">
-									<img src="images/pictures/Science/cover.jpg" alt="">
-								</div><!-- intro-mockup -->	
-							</div><!-- intro-mockup-wrapper -->										
-						</div>
-					</div><!-- intro -->
-				</div><!-- intro-wrap -->
+	<div id="intro-wrap">
+		<div id="intro" class="preload" data-autoplay="5000"
+			data-navigation="true" data-pagination="true" data-transition="fade">
+			<div class="intro-item" style="background-color: #65C2E1;">
+				<div class="intro-mockup-wrapper">
+					<div class="caption-mockup caption-right column six last-special">
+						<h2>Template Information Technology</h2>
+						<p>You can create portfolio after you cerate activity.
+					</div>
+					<!-- caption -->
+					<div class="intro-mockup intro-left column six">
+						<img src="images/pictures/InformationTechnology/cover.jpg" alt="">
+					</div>
+					<!-- intro-mockup -->
+				</div>
+				<!-- intro-mockup-wrapper -->
+			</div>
+			<div class="intro-item" style="background-color: #f5be55;">
+				<div class="intro-mockup-wrapper">
+					<div class="caption-mockup">
+						<h2>Template shool of Law</h2>
+						<p>You can create portfolio after you cerate activity.</p>
+					</div>
+					<!-- caption -->
+					<div class="photocaption"></div>
+					<!-- photocaption -->
+					<div class="intro-mockup">
+						<img src="images/pictures/Law/personal.jpg" alt="">
+					</div>
+					<!-- intro-mockup -->
+				</div>
+				<!-- intro-mockup-wrapper -->
+			</div>
+			<div class="intro-item" style="background-color: #6b3f4f;">
+				<div class="intro-mockup-wrapper">
+					<div class="caption-mockup caption-left column six">
+						<h2>Template shool of Nurse</h2>
+						<p>Although nursing practice varies both through its.
+					</div>
+					<!-- caption -->
+					<div class="intro-mockup intro-right column six last">
+						<img src="images/pictures/Nurse/cover.jpg" alt="">
+					</div>
+					<!-- intro-mockup -->
+				</div>
+				<!-- intro-mockup-wrapper -->
+			</div>
+			<div class="intro-item" style="background-color: #32cba3;">
+				<div class="intro-mockup-wrapper">
+					<div class="caption-mockup">
+						<h2>Create portfolio of Science</h2>
+						<a class="button white transparent"
+							href="portfolioPrintScience.jsp">Cerate</a>
+					</div>
+					<!-- caption -->
+					<div class="photocaption"></div>
+					<!-- photocaption -->
+					<div class="intro-mockup">
+						<img src="images/pictures/Science/cover.jpg" alt="">
+					</div>
+					<!-- intro-mockup -->
+				</div>
+				<!-- intro-mockup-wrapper -->
+			</div>
+		</div>
+		<!-- intro -->
+	</div>
+	<!-- intro-wrap -->
 	<div id="main" class="row">
-	
-	<section class="row section call-to-action">
+
+		<section class="row section call-to-action"
+			style="background-color: #FFEBCD">
 			<div class="row-content buffer even">
 				<p>You can add information each a day</p>
-				<a class="button aqua" href="listTemplateActivity.do"> Add your activity!</a>
+				<a class="button aqua" href="listTemplateActivity.do"> Add your
+					activity!</a>
 			</div>
-	</section>
+		</section>
 
-	<section class="row section text-light" style="background-color: #FC6E51">
+		<section class="row section text-light"
+			style="background-color: #FC6E51">
 			<div class="row-content buffer even clear-after">
-				
 				<c:forEach items="${listActivity}" var="listActivity">
 					<div class="column four centertxt">
+						<h3 class="text-primary">Image activity </h3>
 						<div class="big-icon red">
 							<i class="icon icon-flash"></i>
 						</div>
 						<div class="big-icon-text clear-after">
 							<h4>${list.activityId}</h4>
 							<p class="text-s">${list.page}</p>
-							<a class="button transparent white" href="deleteActivity.do?id=${listActivity.activityId}">Delete</a>
+							<a class="button transparent white"
+								href="deleteActivity.do?id=${listActivity.activityId}">Delete</a>
 						</div>
 					</div>
 				</c:forEach>
 			</div>
-	</section>
+		</section>
 
-		
-	<div class="row-content buffer clear-after">
+
+		<div class="row-content buffer clear-after">
 			<div class="grid-items portfolio-section preload">
 				<ul class="inline cats filter-options">
 					<c:forEach items="${listActivity}" var="listActivity">
-					
+
 					</c:forEach>
 				</ul>
+			</div>
 		</div>
-	</div>
 		<!-- row-content -->
 	</div>
 	<!-- row --> </main>

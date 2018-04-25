@@ -16,6 +16,7 @@
 	
 		<!-- Custom CSS -->
 		<link href="css/stylish-portfolio.min.css" rel="stylesheet">
+		<link rel="icon" href="favicon.ico">
 	
 <script>
 	function OpenTemplateIT() {
@@ -156,7 +157,7 @@
 		<div class="container text-center my-auto">
 			<h1 class="mb-1">Welcome to portfolio</h1>
 			<h3 class="mb-5">
-				<em>your activity can keep in portfolio</em>
+				<em>You can keep your activity in portfolio</em>
 			</h3>
 			<a class="btn btn-primary btn-xl js-scroll-trigger" href="#SchoolOf">Let start</a>
 		</div>
@@ -167,9 +168,10 @@
 		<div class="container text-center">
 			<div class="container">
 				<div class="content-section-heading text-center">
-					<h3 class="text-secondary mb-0">Choose</h3>
-					<h2 class="mb-5">School of</h2>
+					<h2 class="text-secondary mb-0">Select Template</h2>
 				</div>
+				<br>
+				<br>
 
 				<div class="row no-gutters">
 					<div class="col-lg-4">
@@ -291,19 +293,34 @@
 		<section id="templateIT" class="content-section">
 			<div class="container text-center">
 			<div class="content-section-heading text-center">
-				<h3 class="text-secondary mb-0">Portfolio</h3>
-				<h2 class="mb-5">template</h2>
+				<h2 class="text-secondary mb-0">Portfolio template</h2>	
 			</div>
-
+			<br>
+			<br>
 			<div class="row no-gutters">
-				<div class="col-lg-6">
+				<div class="col-lg-4">
 					<a class="portfolio-item" href="printPortfolio.do"> <span
 						class="caption"> <span class="caption-content"> </span>
 					</span> <img class="img-fluid"
 						src="images/pictures/InformationTechnology/cover.jpg" alt="">
 					</a>
 				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid"
+						src="images/pictures/InformationTechnology/coverComputerEngineering.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid"
+						src="images/pictures/InformationTechnology/coverComputerScienceandInnovation.jpg" alt="">
+					</a>
+				</div>
 			</div>
+			
 			</div>
 		</section>
 	</div>
@@ -317,12 +334,27 @@
 			</div>
 
 			<div class="row no-gutters">
-				<div class="col-lg-6">
+				<div class="col-lg-4">
 					<a class="portfolio-item" href="printPortfolio2.do"> <span
 						class="caption"> <span class="caption-content"> </span>
 					</span> <img class="img-fluid"
 						src="images/pictures/AgroIndustry/cover.jpg" alt="">
 					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio2.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid"
+						src="images/pictures/AgroIndustry/coverFoodTechnology.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio2.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid"
+						src="images/pictures/AgroIndustry/cover.jpg" alt="">
+					</a>
+				</div>
 				</div>
 		</section>
 	</div>
@@ -336,12 +368,27 @@
 			</div>
 
 			<div class="row no-gutters">
-				<div class="col-lg-6">
+				<div class="col-lg-4">
 					<a class="portfolio-item" href="printPortfolio3.do"> <span
 						class="caption"> <span class="caption-content"> </span>
 					</span> <img class="img-fluid"
 						src="images/pictures/ChineseStudies/cover.jpg" alt="">
 					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio3.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid"
+						src="images/pictures/ChineseStudies/coverBusinesschinese.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio3.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid"
+						src="images/pictures/ChineseStudies/cover.jpg" alt="">
+					</a>
+				</div>
 				</div>
 		</section>
 	</div>
@@ -355,12 +402,27 @@
 			</div>
 
 			<div class="row no-gutters">
-				<div class="col-lg-6">
+				<div class="col-lg-4">
 					<a class="portfolio-item" href="printPortfolio4.do"> <span
 						class="caption"> <span class="caption-content"> </span>
 					</span> <img class="img-fluid"
 						src="images/pictures/CosmeticScience/cover.jpg" alt="">
 					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio4.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid"
+						src="images/pictures/CosmeticScience/coverBeautyTechnology.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio4.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid"
+						src="images/pictures/CosmeticScience/cover.jpg" alt="">
+					</a>
+				</div>
 				</div>
 		</section>
 	</div>
@@ -374,12 +436,27 @@
 			</div>
 
 			<div class="row no-gutters">
-				<div class="col-lg-6">
+				<div class="col-lg-4">
 					<a class="portfolio-item" href="printPortfolio5.do"> <span
 						class="caption"> <span class="caption-content"> </span>
 					</span> <img class="img-fluid" src="images/pictures/Dentistry/cover.jpg"
 						alt="">
 					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio5.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid" src="images/pictures/Dentistry/cover.jpg"
+						alt="">
+					</a>
+				</div>	
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio5.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid" src="images/pictures/Dentistry/cover.jpg"
+						alt="">
+					</a>
+				</div>					
 				</div>
 		</section>
 	</div>
@@ -393,12 +470,27 @@
 			</div>
 
 			<div class="row no-gutters">
-				<div class="col-lg-6">
+				<div class="col-lg-4">
 					<a class="portfolio-item" href="printPortfolio6.do"> <span
 						class="caption"> <span class="caption-content"> </span>
 					</span> <img class="img-fluid"
 						src="images/pictures/HealthSciences/cover.jpg" alt="">
 					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio6.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid"
+						src="images/pictures/HealthSciences/coverPublicHealth.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio6.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid"
+						src="images/pictures/HealthSciences/coverTraditionalChineseMedicine.jpg" alt="">
+					</a>
+				</div>
 				</div>
 		</section>
 	</div>
@@ -412,11 +504,24 @@
 			</div>
 
 			<div class="row no-gutters">
-				<div class="col-lg-6">
+				<div class="col-lg-4">
 					<a class="portfolio-item" href="printPortfolio7.do"> <span
 						class="caption"> <span class="caption-content"> </span>
 					</span> <img class="img-fluid" src="images/pictures/Law/cover.jpg" alt="">
 					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio7.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid" src="images/pictures/Law/cover.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio7.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid" src="images/pictures/Law/cover.jpg" alt="">
+					</a>
+				</div>
 				</div>
 		</section>
 	</div>
@@ -430,12 +535,27 @@
 			</div>
 
 			<div class="row no-gutters">
-				<div class="col-lg-6">
+				<div class="col-lg-4">
 					<a class="portfolio-item" href="printPortfolio8.do"> <span
 						class="caption"> <span class="caption-content"> </span>
 					</span> <img class="img-fluid" src="images/pictures/LiberalArts/cover.jpg"
 						alt="">
 					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio8.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid" src="images/pictures/LiberalArts/coverThaiLanguageandCulture.jpg"
+						alt="">
+					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio8.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid" src="images/pictures/LiberalArts/cover.jpg"
+						alt="">
+					</a>
+				</div>
 				</div>
 		</section>
 	</div>
@@ -449,12 +569,27 @@
 			</div>
 
 			<div class="row no-gutters">
-				<div class="col-lg-6">
+				<div class="col-lg-4">
 					<a class="portfolio-item" href="printPortfolio9.do"> <span
 						class="caption"> <span class="caption-content"> </span>
 					</span> <img class="img-fluid" src="images/pictures/Management/cover.jpg"
 						alt="">
 					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio9.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid" src="images/pictures/Management/coverAviationBusinessManagement.jpg"
+						alt="">
+					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio9.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid" src="images/pictures/Management/cover.jpg"
+						alt="">
+					</a>
+				</div>
 				</div>
 		</section>
 	</div>
@@ -468,13 +603,28 @@
 			</div>
 
 			<div class="row no-gutters">
-				<div class="col-lg-6">
+				<div class="col-lg-4">
 					<a class="portfolio-item" href="printPortfolio10.do"> <span
 						class="caption"> <span class="caption-content"> </span>
 					</span> <img class="img-fluid" src="images/pictures/Medicine/cover.jpg"
 						alt="">
 					</a>
 				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio10.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid" src="images/pictures/Medicine/cover.jpg"
+						alt="">
+					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio10.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid" src="images/pictures/Medicine/cover.jpg"
+						alt="">
+					</a>
+				</div>
+					</div>
 		</section>
 	</div>
 	<div class="container" id="templateIT11" style="display: none;">
@@ -487,12 +637,27 @@
 			</div>
 
 			<div class="row no-gutters">
-				<div class="col-lg-6">
+				<div class="col-lg-4">
 					<a class="portfolio-item" href="printPortfolio11.do"> <span
 						class="caption"> <span class="caption-content"> </span>
 					</span> <img class="img-fluid" src="images/pictures/Nurse/cover.jpg"
 						alt="">
 					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio11.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid" src="images/pictures/Nurse/cover.jpg"
+						alt="">
+					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio11.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid" src="images/pictures/Nurse/cover.jpg"
+						alt="">
+					</a>
+				</div>
 				</div>
 		</section>
 	</div>
@@ -506,12 +671,27 @@
 			</div>
 
 			<div class="row no-gutters">
-				<div class="col-lg-6">
+				<div class="col-lg-4">
 					<a class="portfolio-item" href="printPortfolio12.do"> <span
 						class="caption"> <span class="caption-content"> </span>
 					</span> <img class="img-fluid" src="images/pictures/Science/cover.jpg"
 						alt="">
 					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio12.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid" src="images/pictures/Science/coverBiosciences.jpg"
+						alt="">
+					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio12.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid" src="images/pictures/Science/coverMaterialEngineering.jpg"
+						alt="">
+					</a>
+				</div>
 				</div>
 		</section>
 	</div>
@@ -525,12 +705,27 @@
 			</div>
 
 			<div class="row no-gutters">
-				<div class="col-lg-6">
+				<div class="col-lg-4">
 					<a class="portfolio-item" href="printPortfolio13.do"> <span
 						class="caption"> <span class="caption-content"> </span>
 					</span> <img class="img-fluid"
 						src="images/pictures/SocialInnovation/cover.jpg" alt="">
 					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio13.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid"
+						src="images/pictures/SocialInnovation/cover.jpg" alt="">
+					</a>
+				</div>
+				<div class="col-lg-4">
+					<a class="portfolio-item" href="printPortfolio13.do"> <span
+						class="caption"> <span class="caption-content"> </span>
+					</span> <img class="img-fluid"
+						src="images/pictures/SocialInnovation/cover.jpg" alt="">
+					</a>
+				</div>
 				</div>
 		</section>
 	</div>
@@ -539,7 +734,7 @@
 		<div class="container">
 			<ul class="list-inline mb-5">
 			</ul>
-			<p class="text-muted small mb-0">Goodlack&copy;in interview</p>
+			<p class="text-muted small mb-0">Goodluck&copy;in interview</p>
 		</div>
 	</footer>
 
