@@ -1,6 +1,7 @@
 package com.porlity.Controller;
 
 import java.io.UnsupportedEncodingException;
+import java.text.ParseException;
 import java.util.List;
 
 import javax.ejb.EJB;
@@ -36,7 +37,7 @@ public class InformationController {
 	 @RequestMapping("/saveInformation")
 	 @ResponseBody
 	 public String saveInformation(@ModelAttribute("information") information information, BindingResult result,
-				HttpServletRequest request) throws UnsupportedEncodingException {
+				HttpServletRequest request) throws ParseException,UnsupportedEncodingException {
 		 request.setCharacterEncoding("UTF-8");
 		 String htmlBody = request.getParameter("htmlValue");
 		 String InformationId = Long.toString(information.getInformationId());
@@ -46,6 +47,7 @@ public class InformationController {
 				 information.setBody(htmlBody);
 				 informationSer.update(information);
 				 System.out.println("update Body");
+				 System.out.println(htmlBody);
 				 return "success";
 			 }else{
 				 information.setBody(htmlBody);

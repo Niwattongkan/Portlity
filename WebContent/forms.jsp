@@ -1,6 +1,10 @@
+
 <!DOCTYPE html>
+<%@page contentType="text/html;charset=UTF-8"%>
+<%@page pageEncoding="UTF-8"%>
 <htmll ang="en">
 <head>
+<META http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Admin</title>
@@ -63,7 +67,7 @@
 		function onClickSave() {
 			var htmlValue = $('textarea#froala-editor').val();
 			console.log('Save ', htmlValue);
-			$
+			$	
 					.ajax({
 						url : "saveInformation.do",
 						data : {
@@ -194,6 +198,7 @@
 			<script>
 				$('textarea#froala-editor').froalaEditor(
 						{
+							language: 'th',
 							toolbarInline : true,
 							charCounterCount : false,
 							toolbarButtons : [ 'bold', 'italic', 'underline',
@@ -242,6 +247,7 @@
 	<!-- end wrapper -->
 
 	<!-- Core Scripts - Include with every page -->
+	<script src='js/languages/th.js'></script>
 	<script src="assets/plugins/jquery-1.10.2.js"></script>
 	<script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
 	<script src="assets/plugins/metisMenu/jquery.metisMenu.js"></script>

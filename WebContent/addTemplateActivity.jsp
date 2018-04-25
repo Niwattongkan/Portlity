@@ -70,8 +70,10 @@
 	</table>
 	
 	<script>
+	$(function(){
 		$('textarea#froala-editor')
 				.froalaEditor({
+					language: 'th',
 					toolbarInline : true,
 					charCounterCount : false,
 					toolbarButtons : [ 'bold', 'italic', 'underline',
@@ -110,15 +112,6 @@
 					    // Stop default upload chain.
 					    return false;
 					  })
-     			 .on('froalaEditor.image.uploaded', function (e, editor, response) {
-     			   // Image was uploaded to the server.
-   			   		})
-     			 .on('froalaEditor.image.inserted', function (e, editor, $img, response) {
-        			// Image was inserted in the editor.
-    			  })
-     			 .on('froalaEditor.image.replaced', function (e, editor, $img, response) {
-     			   // Image was replaced in the editor.
-     				})
      			   .on('froalaEditor.image.error', function (e, editor, error, response) {
      			 if (error.code == 1) {
 						console.log('Bad link.');
@@ -142,13 +135,13 @@
 			        // Image can be uploaded only to same domain in IE 8 and IE 9.
 			        else if (error.code == 7) { console.log(' Image can be uploaded only to same domain in IE 8 and IE 9.'); }
      			  });
-
+	});
 
 
 
     
 	</script>
-
+	<script src='js/languages/th.js'></script>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script src="js/plugins.js"></script>

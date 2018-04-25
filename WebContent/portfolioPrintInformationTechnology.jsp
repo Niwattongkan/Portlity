@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link rel="icon" href="favicon.ico">
 <title>InfoemationTechnology</title>
+<link href="css/htmlBody" rel="stylesheet">
 </head>
 <body>
 	<center>
@@ -19,10 +20,11 @@
 
 		<div></div>
 		<div id="htmlbody">
+			<div id="SizeHtml">
 			<c:forEach items="${listActivity}" var="listActivity">
 		${listActivity.page}
-		
-	</c:forEach>
+		</c:forEach>
+		</div>
 		</div>
 		<input type="submit" onclick="clickPrint();" value="Submit">
 	</center>
@@ -88,7 +90,7 @@
 			
 			 var img = canvas.toDataURL('image/png');
 
-                doc.addImage(img, 'JPEG', 0, 0,800, 400)
+                doc.addImage(img, 'JPEG', 0, 0)
 				doc.save('Nameportfolio.pdf');
 		
 			});
