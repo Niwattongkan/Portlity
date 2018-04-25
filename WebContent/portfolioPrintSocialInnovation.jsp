@@ -90,9 +90,11 @@ html2canvas(document.getElementById("htmlbody")).then(function(canvas){
 			doc.text(250, 696, HistoryEducattionHihgthschool46);
 			doc.addPage();
 			
-			 var img = canvas.toDataURL('image/png');
+			 doc.addImage(img, 'JPEG', -407 , 0);
+             doc.addPage();
+             doc.addPage();
 
-                doc.addImage(img, 'JPEG', 0, 0,800, 400)
+                doc.addImage(img, 'JPEG', 0, 0 )
 				doc.save('Nameportfolio.pdf');
 		
 			});

@@ -92,7 +92,9 @@
 			
 			 var img = canvas.toDataURL('image/png');
 
-                doc.addImage(img, 'JPEG', 0, 0,800, 400)
+			 doc.addImage(img, 'JPEG', -407 , 0);
+             doc.addPage();
+             doc.addPage();
 				doc.save('Nameportfolio.pdf');
 		
 			});

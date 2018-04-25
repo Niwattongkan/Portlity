@@ -1,7 +1,7 @@
-#SizeHtml {
-  margin: 0 auto;
+SizeHtml {
+  			margin: 0 auto;
             width: 100%;
             min-height: 100%;
             max-width: 1263px; /* background-limit*/
-            text-align: center
+            
 }
