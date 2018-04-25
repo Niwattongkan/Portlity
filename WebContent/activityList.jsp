@@ -163,21 +163,21 @@
 	<!-- intro-wrap -->
 	<div id="main" class="row">
 
-		<section class="row section call-to-action"
-			style="background-color: #FFEBCD">
+		<section class="row section call-to-action">
 			<div class="row-content buffer even">
 				<p>You can add information each a day</p>
-				<a class="button aqua" href="listTemplateActivity.do"> Add your
-					activity!</a>
+				<a class="button aqua" href="listTemplateActivity.do"> Add your activity!</a>
 			</div>
 		</section>
 
 		<section class="row section text-light"
 			style="background-color: #FC6E51">
+			
 			<div class="row-content buffer even clear-after">
+			<center><h4 class="text-primary">Item activity </h4></center>
 				<c:forEach items="${listActivity}" var="listActivity">
 					<div class="column four centertxt">
-						<h3 class="text-primary">Image activity </h3>
+						
 						<div class="big-icon red">
 							<i class="icon icon-flash"></i>
 						</div>
@@ -213,15 +213,7 @@
 				<section id="top-footer">
 					<div class="widget column three">
 						<!-- la class="widget" è forse generata utomaticamente da wp -->
-						<h4>Menu</h4>
-						<ul class="plain">
-							<li><a href="home-01.html">Home</a></li>
-							<li><a href="works-3-columns.html">Portfolio</a></li>
-							<li><a href="blog-4-columns-masonry.html">Blog</a></li>
-							<li><a href="resume.html">Resume</a></li>
-							<li><a
-								href="file:///Users/pasqualevitiello/My%20Folder/Job/Envato/PR%20Themeforest/Flattie/Markup/Beetle/contact.html">Contact</a></li>
-						</ul>
+						
 					</div>
 					<div class="widget column three">
 						<h4>Portlity</h4>
@@ -231,12 +223,10 @@
 					<div class="widget meta-social column three">
 						<h4>Follow Us</h4>
 						<ul class="inline">
-							<li><a href="#" class="twitter-share border-box"><i
-									class="fa fa-twitter fa-lg"></i></a></li>
-							<li><a href="#" class="facebook-share border-box"><i
+							
+							<li><a href="https://www.facebook.com/profile.php?id=100008621857819" class="facebook-share border-box"><i
 									class="fa fa-facebook fa-lg"></i></a></li>
-							<li><a href="#" class="pinterest-share border-box"><i
-									class="fa fa-pinterest fa-lg"></i></a></li>
+							
 						</ul>
 					</div>
 				</section>
