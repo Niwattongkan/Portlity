@@ -160,7 +160,7 @@
 												placeholder="Triamudom School"
 												path="historyEducattionHihgthschool46" />
 										</div>
-										<input type="submit" class="btn btn-info btn-fill btn-wd" value="Next" />
+										<center><input type="submit" class="btn btn-info btn-fill btn-wd" value="Next" /></center>
 									</div>
 								</form:form>
 							</div>

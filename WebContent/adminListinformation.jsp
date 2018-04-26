@@ -80,18 +80,8 @@
 							</div>
 						</div> <!--end user image section-->
 					</li>
-					<li class="sidebar-search">
-						<!-- search section-->
-						<div class="input-group custom-search-form">
-							<input type="text" class="form-control" placeholder="Search...">
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="button">
-									<i class="fa fa-search"></i>
-								</button>
-							</span>
-						</div> <!--end search section-->
-					</li>
-					<li><a href="timeline.jsp"><i class="fa fa-flask fa-fw"></i>Timeline</a></li>
+					 
+				
 					<li><a href="forms.jsp"><i class="fa fa-edit fa-fw"></i>Forms</a></li>
 					<li class="selected"><a href="adminListinformation.do"><i class="fa fa-files-o fa-fw"></i> List News</a>
 					 <!-- second-level-items --></li>
@@ -132,7 +122,7 @@
 										<tr class="even gradeC">
 											<td>${List.informationId}</td>
 											<td>${List.body}</td>
-											<td class="center"><a class="btn btn-warning" href="deleteInformation.do?id=${List.informationId}"></a></td>																	
+											<td class="center"><a class="btn btn-warning" href="deleteInformation.do?id=${List.informationId}">delete</a></td>																	
 										</tr>									
 									</tbody>
 								</c:forEach>

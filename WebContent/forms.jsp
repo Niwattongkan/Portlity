@@ -147,18 +147,8 @@
 							</div>
 						</div> <!--end user image section-->
 					</li>
-					<li class="sidebar-search">
-						<!-- search section-->
-						<div class="input-group custom-search-form">
-							<input type="text" class="form-control" placeholder="Search...">
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="button">
-									<i class="fa fa-search"></i>
-								</button>
-							</span>
-						</div> <!--end search section-->
-					</li>
-					<li><a href="timeline.jsp"><i class="fa fa-flask fa-fw"></i>Timeline</a></li>
+					 
+					
 					<li class="selected"><a href="forms.jsp"><i
 							class="fa fa-edit fa-fw"></i>Forms</a></li>
 					<li><a href="adminListinformation.do"><i
@@ -185,7 +175,7 @@
 				<textarea id="froala-editor">
 		
 				</textarea>
-				<input type="button" value="Next" onclick="onClickSave()">
+				<a class="btn btn-warning"  type="button" onclick="onClickSave()">Submit</a>
 			</form>
 			<br />
 			<script>

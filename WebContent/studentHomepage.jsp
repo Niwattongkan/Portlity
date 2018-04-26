@@ -103,13 +103,14 @@
 
                             </div>
                         </div>
-                        <div class="intro-item" style="background-image: url(images/cover2.jpg);">
+                 <!--   <div class="intro-item" style="background-image: url(images/cover2.jpg);">
                             <div class="caption">
                                 <h2>Example portfolio</h2>
                                 <p>There are many examples of work.</p>
                                 <a class="button white transparent" href="portfolioExample.jsp">Example More</a>
                             </div>
                         </div>
+                  -->     
                         <div class="intro-item" style="background-image: url(images/cover3.jpg);">
                             <div class="caption">
                                 <h2>Activity portfolio</h2>
@@ -170,9 +171,9 @@
                                 <div class="shuffle-sizer three"></div>
                             </div>
                             <!-- grid-items -->
-                            <div class="more-btn">
+                  <!--         <div class="more-btn">
                                 <a class="button transparent aqua" href="#">Read all News</a>
-                            </div>
+                            </div> -->  
                         </div>
                     </section>
                     <!--             <section class="row section">
@@ -244,24 +245,7 @@
                         <section id="top-footer">
                             <div class="widget column three">
                                 <!-- la class="widget" è forse generata utomaticamente da wp -->
-                                <h4>Menu</h4>
-                                <ul class="plain">
-                                    <li>
-                                        <a href="home-01.html">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="works-3-columns.html">Portfolio</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-4-columns-masonry.html">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="resume.html">Resume</a>
-                                    </li>
-                                    <li>
-                                        <a href="file:///Users/pasqualevitiello/My%20Folder/Job/Envato/PR%20Themeforest/Flattie/Markup/Beetle/contact.html">Contact</a>
-                                    </li>
-                                </ul>
+                               
                             </div>
                             <div class="widget column three">
                                 <h4>Portlity</h4>
@@ -270,21 +254,13 @@
                             <div class="widget meta-social column three">
                                 <h4>Follow Us</h4>
                                 <ul class="inline">
+                                    
                                     <li>
-                                        <a href="#" class="twitter-share border-box">
-                                            <i class="fa fa-twitter fa-lg"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="facebook-share border-box">
+                                        <a href="https://www.facebook.com/profile.php?id=100008621857819" class="facebook-share border-box">
                                             <i class="fa fa-facebook fa-lg"></i>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#" class="pinterest-share border-box">
-                                            <i class="fa fa-pinterest fa-lg"></i>
-                                        </a>
-                                    </li>
+                                    
                                 </ul>
                             </div>
                         </section>
