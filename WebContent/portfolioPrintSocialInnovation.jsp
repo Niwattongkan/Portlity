@@ -181,11 +181,11 @@
 						doc.text(250, 696, HistoryEducattionHihgthschool46);
 						doc.addPage();
 
+						var img = canvas.toDataURL('image/png');
+
 						doc.addImage(img, 'JPEG', -407, 0);
 						doc.addPage();
 						doc.addPage();
-
-						doc.addImage(img, 'JPEG', 0, 0)
 						doc.save('Nameportfolio.pdf');
 
 					});
