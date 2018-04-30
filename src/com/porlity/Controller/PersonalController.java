@@ -34,6 +34,9 @@ public class PersonalController {
 	@EJB(mappedName = "ejb:/Portlity//UserServiecBean!com.porlity.Service.UserService")
 	UserService userser;
 
+	
+	
+	
 	@RequestMapping("/savePersonal")
 	public String savePersonal(@ModelAttribute("user") user userr, BindingResult result, HttpServletRequest request) throws UnsupportedEncodingException {
 		request.setCharacterEncoding("UTF-8");

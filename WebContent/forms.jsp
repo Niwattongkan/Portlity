@@ -111,9 +111,7 @@
 					data-toggle="dropdown" href="#"> <i class="fa fa-user fa-3x"></i>
 				</a> <!-- dropdown user-->
 					<ul class="dropdown-menu dropdown-user">
-						<li><a href="#"><i class="fa fa-user fa-fw"></i>User
-								Profile</a></li>
-						<li><a href="#"><i class="fa fa-gear fa-fw"></i>Settings</a></li>
+						
 						<li class="divider"></li>
 						<li><a href="adminLogin.jsp" onclick="signOut();"><i
 								class="fa fa-sign-out fa-fw"></i>Sign off</a></li>
@@ -153,6 +151,7 @@
 							class="fa fa-edit fa-fw"></i>Forms</a></li>
 					<li><a href="adminListinformation.do"><i
 							class="fa fa-files-o fa-fw"></i> List News</a> <!-- second-level-items --></li>
+							
 				</ul>
 				<!-- end side-menu -->
 			</div>
@@ -173,7 +172,9 @@
 
 			<form>			
 				<textarea id="froala-editor">
-		
+				<center>
+			
+				</center>
 				</textarea>
 				<a class="btn btn-warning"  type="button" onclick="onClickSave()">Submit</a>
 			</form>

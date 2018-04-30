@@ -46,7 +46,9 @@
 				data-toggle="dropdown" href="#"> <i class="fa fa-user fa-3x"></i>
 			</a> <!-- dropdown user-->
 				<ul class="dropdown-menu dropdown-user">
-					
+					<li><a href="#"><i class="fa fa-user fa-fw"></i>User
+							Profile</a></li>
+					<li><a href="#"><i class="fa fa-gear fa-fw"></i>Settings</a></li>
 					<li class="divider"></li>
 					<li><a href="adminLogin.jsp"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
 					</li>
@@ -81,9 +83,8 @@
 					 
 				
 					<li><a href="forms.jsp"><i class="fa fa-edit fa-fw"></i>Forms</a></li>
-					<li class="selected" ><a href="adminListinformation.do"><i class="fa fa-files-o fa-fw"></i> List News</a>
-					 <!-- second-level-items --></li>
-				
+					<li><a href="adminListinformation.do"><i class="fa fa-files-o fa-fw"></i> List News</a>
+					<li class="selected"><a href="adminList.jsp"><i class="fa fa-files-o fa-fw"></i> List</a>
 					 <!-- second-level-items --></li>
 				</ul>
 				<!-- end side-menu -->
@@ -106,7 +107,7 @@
 				<div class="col-lg-12">	
 					<!-- Advanced Tables -->
 					<div class="panel panel-default">
-						<div class="panel-heading">List News</div>
+						<div class="panel-heading">Advanced Tables</div>
 						<div class="panel-body">
 							<div class="table-responsive">
 								<table class="table table-striped table-bordered table-hover"

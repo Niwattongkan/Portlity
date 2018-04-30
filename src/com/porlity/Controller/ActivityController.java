@@ -91,4 +91,23 @@ public class ActivityController {
 		 return "redirect:listActivityList.do";
 	 }
 	 
+	 @RequestMapping("/listActivityDelete")
+	 public ModelAndView listActivityDelete(HttpServletRequest request){
+		 ModelAndView mv = new ModelAndView("activityList.jsp#ItemAvtivity");
+			HttpSession session=request.getSession(false);
+			String userId = null;
+            if(session!=null){  
+                userId = (String)session.getAttribute("userId"); 
+                System.out.println("userId" + userId);
+            }
+
+			List<activity> listActivity;
+			try{
+				listActivity = activitySer.getfindbyuserID(Long.parseLong(userId));
+				mv.addObject("listActivity",listActivity);
+			}catch (Exception e) {
+				// TODO: handle exception
+			}
+		return mv;
+	 }
 }

@@ -173,10 +173,10 @@
 		<section class="row section text-light"
 			style="background-color: #FC6E51">
 			
-			<div class="row-content buffer even clear-after">
+			<div class="row-content buffer even clear-after" id="ItemAvtivity">
 			<center><h4 class="text-primary">Item activity </h4></center>
 				<c:forEach items="${listActivity}" var="listActivity">
-					<div class="column four centertxt">
+					<div class="column four centertxt">	
 						
 						<div class="big-icon red">
 							<i class="icon icon-flash"></i>

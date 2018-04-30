@@ -47,8 +47,8 @@ function onlogin(){
 			"userName":userName, "passWord":passWord
 		},
 		sucess:function (data){
-			if(data==""){
-				$(location).attr('href','adminListinformation.jsp');
+			if(data=="sucess"){
+				window.location = "adminListinformation.do";
 			}else{
                 alert('login agarin');
             }
@@ -76,7 +76,7 @@ function onlogin(){
 
 				<form class="login100-form validate-form" action="adminListinformation.do">
 					<span class="login100-form-title">
-						Member Login
+						Member Lo
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
@@ -99,7 +99,9 @@ function onlogin(){
 						<input class="login100-form-btn"  type="submit" value="Login" >
 			
 					</div>
-
+					<div class="text-center p-t-12">
+				
+					</div>
 					<div class="text-center p-t-12">
 						<span class="txt1">
 							Forgot
