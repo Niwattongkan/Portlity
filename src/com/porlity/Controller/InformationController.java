@@ -40,7 +40,7 @@ public class InformationController {
 				HttpServletRequest request) throws ParseException,UnsupportedEncodingException {
 		 request.setCharacterEncoding("UTF-8");
 		 String htmlBody = request.getParameter("htmlValue");
-		 String InformationId = Long.toString(information.getInformationId());
+		 String InformationId = Long.toString(information.getInformationID());
 		 
 		 try{
 			 if(InformationId != null){
