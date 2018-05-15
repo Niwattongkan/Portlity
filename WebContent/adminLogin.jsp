@@ -76,7 +76,7 @@ function onlogin(){
 
 				<form class="login100-form validate-form" action="adminListinformation.do">
 					<span class="login100-form-title">
-						Member Lo
+						Member Login
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
