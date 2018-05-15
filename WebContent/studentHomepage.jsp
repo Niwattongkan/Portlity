@@ -151,16 +151,11 @@
                                 <c:forEach items="${listInformation}" var="list">
                                     <article class="item column three">
                                         <a href="#">
-                                            <figure>
-                                                <img src="http://placehold.it/800x600/ddd/fff&text=Beetle%20image" alt="">
-                                                <span class="blog-overlay">
-                                                    <i class="icon icon-doc"></i>
-                                                </span>
-                                            </figure>
+                                 
                                             <div class="blog-excerpt">
                                                 <div class="blog-excerpt-inner">
                                                     <h5 class="meta-post">News</h5>
-                                                    <h2>${list.body}</h2>
+                                                    <h2>${list.body}</h2>                                                  
                                                 </div>
                                                 <!-- blog-excerpt -->
                                             </div>
