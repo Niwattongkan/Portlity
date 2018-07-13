@@ -97,8 +97,7 @@
 		<div id="intro" class="preload darken" data-autoplay="5000"
 			data-navigation="true" data-pagination="true"
 			data-transition="fadeUp">
-			<div class="intro-item"
-				style="background-image: url(images/cover1.jpg);">
+			<div class="intro-item" style="background-image: url(images/cover1.jpg);">
 				<div class="caption">
 					<h2>PORTFOLIO BY MFU GROUP</h2>
 					<p>Feel the new experience of using portfolio.</p>
@@ -154,14 +153,14 @@
 				</div>
 
 				<c:forEach items="${listInformation}" var="list">
-					<div class="col-lg-12">
+				
+				 
 
 						<div class="small-icon-text clear-after">
-
-							<p class="text-xs">${list.body}</p>
-
+							 <p>${list.body}</p>
 						</div>
-					</div>
+				 
+					
 				</c:forEach>
 			</div>
 		</section>

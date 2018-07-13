@@ -80,11 +80,10 @@
 					</li>
 					 
 				
-					<li><a href="forms.jsp"><i class="fa fa-edit fa-fw"></i>Forms</a></li>
-					<li class="selected" ><a href="adminListinformation.do"><i class="fa fa-files-o fa-fw"></i> List News</a>
-					 <!-- second-level-items --></li>
-				
-					 <!-- second-level-items --></li>
+					<li class="selected"><a href="forms.jsp"><i
+							class="fa fa-edit fa-fw"></i>Forms</a></li>
+					<li><a href="adminListinformation.do"><i
+							class="fa fa-files-o fa-fw"></i> List News</a> <!-- second-level-items --></li>
 				</ul>
 				<!-- end side-menu -->
 			</div>
@@ -122,7 +121,7 @@
 										<tr class="even gradeC">
 											<td>${List.informationId}</td>
 											<td>${List.body}</td>	
-											<td class="center"><a class="btn btn-warning" href="deleteInformation.do?id=${List.informationId}">delete</a></td>																	
+											<td><a class="btn btn-warning" href="deleteInformation.do?id=${List.informationId}">delete</a></td>																	
 										</tr>									
 									</tbody>
 								</c:forEach>

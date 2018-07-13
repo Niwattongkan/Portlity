@@ -84,7 +84,7 @@
 				
 					<li><a href="forms.jsp"><i class="fa fa-edit fa-fw"></i>Forms</a></li>
 					<li><a href="adminListinformation.do"><i class="fa fa-files-o fa-fw"></i> List News</a>
-					<li class="selected"><a href="adminList.jsp"><i class="fa fa-files-o fa-fw"></i> List</a>
+					
 					 <!-- second-level-items --></li>
 				</ul>
 				<!-- end side-menu -->

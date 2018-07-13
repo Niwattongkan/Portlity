@@ -40,7 +40,7 @@ public class InformationController {
 				HttpServletRequest request) throws ParseException,UnsupportedEncodingException {
 		 request.setCharacterEncoding("UTF-8");
 		 String htmlBody = request.getParameter("htmlValue");
-		 String InformationId = Long.toString(information.getInformationID());
+		 String InformationId = String.valueOf(information.getInformationId());
 		 
 		 try{
 			 if(InformationId != null){
@@ -63,7 +63,7 @@ public class InformationController {
 	 
 	 @RequestMapping("/adminListinformation")
 	 public ModelAndView listInformation(HttpServletRequest request){
-		 ModelAndView mv = new ModelAndView("adminListinformation.jsp");
+		 ModelAndView mv = new ModelAndView("adminList.jsp");
 		 List<information> listinformation;
 		 try{
 			 listinformation = informationSer.getAll();
